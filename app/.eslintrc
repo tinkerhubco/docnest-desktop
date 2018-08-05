@@ -17,6 +17,6 @@
     "flowtype/union-intersection-spacing": ["error", "always"],
     "flowtype/use-flow-type": "error",
     "flowtype/valid-syntax": "error",
-    "import/no-named-as-default": "false"
+    "import/no-named-as-default": "off"
   }
 }
