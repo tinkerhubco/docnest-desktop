@@ -1,0 +1,219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Button/Contained default 1`] = `
+<button
+  className="MuiButtonBase-root-154 MuiButton-root-130 MuiButton-contained-139 MuiButton-raised-142"
+  disabled={false}
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex="0"
+  type="button"
+>
+  <span
+    className="MuiButton-label-131"
+  >
+    Button
+  </span>
+  <span
+    className="MuiTouchRipple-root-157"
+  />
+</button>
+`;
+
+exports[`Storyshots Button/Contained disabled 1`] = `
+<button
+  className="MuiButtonBase-root-256 MuiButtonBase-disabled-257 MuiButton-root-232 MuiButton-contained-241 MuiButton-raised-244 MuiButton-disabled-250"
+  disabled={true}
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex="-1"
+  type="button"
+>
+  <span
+    className="MuiButton-label-233"
+  >
+    Button
+  </span>
+</button>
+`;
+
+exports[`Storyshots Button/Contained primary 1`] = `
+<button
+  className="MuiButtonBase-root-188 MuiButton-root-164 MuiButton-contained-173 MuiButton-containedPrimary-174 MuiButton-raised-176 MuiButton-raisedPrimary-177"
+  disabled={false}
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex="0"
+  type="button"
+>
+  <span
+    className="MuiButton-label-165"
+  >
+    Button
+  </span>
+  <span
+    className="MuiTouchRipple-root-191"
+  />
+</button>
+`;
+
+exports[`Storyshots Button/Contained secondary 1`] = `
+<button
+  className="MuiButtonBase-root-222 MuiButton-root-198 MuiButton-contained-207 MuiButton-containedSecondary-209 MuiButton-raised-210 MuiButton-raisedSecondary-212"
+  disabled={false}
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex="0"
+  type="button"
+>
+  <span
+    className="MuiButton-label-199"
+  >
+    Button
+  </span>
+  <span
+    className="MuiTouchRipple-root-225"
+  />
+</button>
+`;
+
+exports[`Storyshots Button/Text default 1`] = `
+<button
+  className="MuiButtonBase-root-25 MuiButton-root-1 MuiButton-text-3 MuiButton-flat-6"
+  disabled={false}
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex="0"
+  type="button"
+>
+  <span
+    className="MuiButton-label-2"
+  >
+    Button
+  </span>
+  <span
+    className="MuiTouchRipple-root-28"
+  />
+</button>
+`;
+
+exports[`Storyshots Button/Text disabled 1`] = `
+<button
+  className="MuiButtonBase-root-127 MuiButtonBase-disabled-128 MuiButton-root-103 MuiButton-text-105 MuiButton-flat-108 MuiButton-disabled-121"
+  disabled={true}
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex="-1"
+  type="button"
+>
+  <span
+    className="MuiButton-label-104"
+  >
+    Button
+  </span>
+</button>
+`;
+
+exports[`Storyshots Button/Text primary 1`] = `
+<button
+  className="MuiButtonBase-root-59 MuiButton-root-35 MuiButton-text-37 MuiButton-textPrimary-38 MuiButton-flat-40 MuiButton-flatPrimary-41"
+  disabled={false}
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex="0"
+  type="button"
+>
+  <span
+    className="MuiButton-label-36"
+  >
+    Button
+  </span>
+  <span
+    className="MuiTouchRipple-root-62"
+  />
+</button>
+`;
+
+exports[`Storyshots Button/Text secondary 1`] = `
+<button
+  className="MuiButtonBase-root-93 MuiButton-root-69 MuiButton-text-71 MuiButton-textSecondary-73 MuiButton-flat-74 MuiButton-flatSecondary-76"
+  disabled={false}
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex="0"
+  type="button"
+>
+  <span
+    className="MuiButton-label-70"
+  >
+    Button
+  </span>
+  <span
+    className="MuiTouchRipple-root-96"
+  />
+</button>
+`;
