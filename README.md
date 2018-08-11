@@ -56,6 +56,12 @@ To package apps with options:
 $ npm run package -- --[option]
 ```
 
+To run Snapshot/Unit Test
+
+```bash
+$ npm run test
+```
+
 To run End-to-End Test
 
 ```bash
