@@ -1,5 +1,8 @@
 import { spy } from 'sinon';
-import * as actions from '../../app/actions/counter';
+import {
+  CounterActions as actions,
+  CounterActionTypes as actionTypes
+} from '../../app/modules/counter';
 
 describe('actions', () => {
   it('should increment should create increment action', () => {
@@ -16,7 +19,9 @@ describe('actions', () => {
     const dispatch = spy();
     const getState = () => ({ counter: 1 });
     fn(dispatch, getState);
-    expect(dispatch.calledWith({ type: actions.INCREMENT_COUNTER })).toBe(true);
+    expect(dispatch.calledWith({ type: actionTypes.INCREMENT_COUNTER })).toBe(
+      true
+    );
   });
 
   it('should incrementIfOdd shouldnt create increment action if counter is even', () => {
@@ -34,7 +39,7 @@ describe('actions', () => {
     const dispatch = spy();
     fn(dispatch);
     setTimeout(() => {
-      expect(dispatch.calledWith({ type: actions.INCREMENT_COUNTER })).toBe(
+      expect(dispatch.calledWith({ type: actionTypes.INCREMENT_COUNTER })).toBe(
         true
       );
       done();
