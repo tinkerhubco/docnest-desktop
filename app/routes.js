@@ -1,9 +1,9 @@
 /* eslint flowtype-errors/show-errors: 0 */
 import React from 'react';
 import { Switch, Route } from 'react-router';
-import App from './containers/App';
-import HomePage from './containers/HomePage';
-import CounterPage from './containers/CounterPage';
+import App from './screens/App';
+import HomePage from './screens/HomePage';
+import CounterPage from './screens/CounterPage';
 
 export default () => (
   <App>

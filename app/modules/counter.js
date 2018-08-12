@@ -1,12 +1,26 @@
 // @flow
-import type { counterStateType } from '../reducers/counter';
+
+export type counterStateType = {
+  +counter: number
+};
 
 type actionType = {
   +type: string
 };
 
-export const INCREMENT_COUNTER = 'INCREMENT_COUNTER';
-export const DECREMENT_COUNTER = 'DECREMENT_COUNTER';
+export default function counterReducer(state: number = 0, action: actionType) {
+  switch (action.type) {
+    case INCREMENT_COUNTER:
+      return state + 1;
+    case DECREMENT_COUNTER:
+      return state - 1;
+    default:
+      return state;
+  }
+}
+
+const INCREMENT_COUNTER = 'INCREMENT_COUNTER';
+const DECREMENT_COUNTER = 'DECREMENT_COUNTER';
 
 export function increment() {
   return {
@@ -42,3 +56,10 @@ export function incrementAsync(delay: number = 1000) {
     }, delay);
   };
 }
+
+export const CounterActions = {
+  decrement,
+  increment,
+  incrementIfOdd,
+  incrementAsync
+};
