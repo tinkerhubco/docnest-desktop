@@ -1,8 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Button/Card container 1`] = `
+<div
+  className="MuiPaper-root-260 MuiPaper-elevation1-263 MuiPaper-rounded-261 MuiCard-root-259 sc-htpNat lbVwXU"
+>
+  <div>
+    Card container
+  </div>
+</div>
+`;
+
 exports[`Storyshots Button/Contained default 1`] = `
 <button
-  className="MuiButtonBase-root-154 MuiButton-root-130 MuiButton-contained-139 MuiButton-raised-142"
+  className="MuiButtonBase-root-154 MuiButton-root-130 MuiButton-contained-139 MuiButton-raised-142 sc-bdVaJa bDWFJH"
   disabled={false}
   onBlur={[Function]}
   onFocus={[Function]}
@@ -30,7 +40,7 @@ exports[`Storyshots Button/Contained default 1`] = `
 
 exports[`Storyshots Button/Contained disabled 1`] = `
 <button
-  className="MuiButtonBase-root-256 MuiButtonBase-disabled-257 MuiButton-root-232 MuiButton-contained-241 MuiButton-raised-244 MuiButton-disabled-250"
+  className="MuiButtonBase-root-256 MuiButtonBase-disabled-257 MuiButton-root-232 MuiButton-contained-241 MuiButton-raised-244 MuiButton-disabled-250 sc-bdVaJa bDWFJH"
   disabled={true}
   onBlur={[Function]}
   onFocus={[Function]}
@@ -55,7 +65,7 @@ exports[`Storyshots Button/Contained disabled 1`] = `
 
 exports[`Storyshots Button/Contained primary 1`] = `
 <button
-  className="MuiButtonBase-root-188 MuiButton-root-164 MuiButton-contained-173 MuiButton-containedPrimary-174 MuiButton-raised-176 MuiButton-raisedPrimary-177"
+  className="MuiButtonBase-root-188 MuiButton-root-164 MuiButton-contained-173 MuiButton-containedPrimary-174 MuiButton-raised-176 MuiButton-raisedPrimary-177 sc-bdVaJa bDWFJH"
   disabled={false}
   onBlur={[Function]}
   onFocus={[Function]}
@@ -83,7 +93,7 @@ exports[`Storyshots Button/Contained primary 1`] = `
 
 exports[`Storyshots Button/Contained secondary 1`] = `
 <button
-  className="MuiButtonBase-root-222 MuiButton-root-198 MuiButton-contained-207 MuiButton-containedSecondary-209 MuiButton-raised-210 MuiButton-raisedSecondary-212"
+  className="MuiButtonBase-root-222 MuiButton-root-198 MuiButton-contained-207 MuiButton-containedSecondary-209 MuiButton-raised-210 MuiButton-raisedSecondary-212 sc-bdVaJa bDWFJH"
   disabled={false}
   onBlur={[Function]}
   onFocus={[Function]}
@@ -111,7 +121,7 @@ exports[`Storyshots Button/Contained secondary 1`] = `
 
 exports[`Storyshots Button/Text default 1`] = `
 <button
-  className="MuiButtonBase-root-25 MuiButton-root-1 MuiButton-text-3 MuiButton-flat-6"
+  className="MuiButtonBase-root-25 MuiButton-root-1 MuiButton-text-3 MuiButton-flat-6 sc-bdVaJa bDWFJH"
   disabled={false}
   onBlur={[Function]}
   onFocus={[Function]}
@@ -139,7 +149,7 @@ exports[`Storyshots Button/Text default 1`] = `
 
 exports[`Storyshots Button/Text disabled 1`] = `
 <button
-  className="MuiButtonBase-root-127 MuiButtonBase-disabled-128 MuiButton-root-103 MuiButton-text-105 MuiButton-flat-108 MuiButton-disabled-121"
+  className="MuiButtonBase-root-127 MuiButtonBase-disabled-128 MuiButton-root-103 MuiButton-text-105 MuiButton-flat-108 MuiButton-disabled-121 sc-bdVaJa bDWFJH"
   disabled={true}
   onBlur={[Function]}
   onFocus={[Function]}
@@ -164,7 +174,7 @@ exports[`Storyshots Button/Text disabled 1`] = `
 
 exports[`Storyshots Button/Text primary 1`] = `
 <button
-  className="MuiButtonBase-root-59 MuiButton-root-35 MuiButton-text-37 MuiButton-textPrimary-38 MuiButton-flat-40 MuiButton-flatPrimary-41"
+  className="MuiButtonBase-root-59 MuiButton-root-35 MuiButton-text-37 MuiButton-textPrimary-38 MuiButton-flat-40 MuiButton-flatPrimary-41 sc-bdVaJa bDWFJH"
   disabled={false}
   onBlur={[Function]}
   onFocus={[Function]}
@@ -192,7 +202,7 @@ exports[`Storyshots Button/Text primary 1`] = `
 
 exports[`Storyshots Button/Text secondary 1`] = `
 <button
-  className="MuiButtonBase-root-93 MuiButton-root-69 MuiButton-text-71 MuiButton-textSecondary-73 MuiButton-flat-74 MuiButton-flatSecondary-76"
+  className="MuiButtonBase-root-93 MuiButton-root-69 MuiButton-text-71 MuiButton-textSecondary-73 MuiButton-flat-74 MuiButton-flatSecondary-76 sc-bdVaJa bDWFJH"
   disabled={false}
   onBlur={[Function]}
   onFocus={[Function]}
