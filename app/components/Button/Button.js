@@ -1,20 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
 import MUIButton from '@material-ui/core/Button';
 
 Button.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]),
-};
-
-Button.defaultProps = {
-  children: undefined,
+    PropTypes.node
+  ]).isRequired
 };
 
 function Button(props) {
   return <MUIButton {...props}>{props.children}</MUIButton>;
 }
 
-export default Button;
+export const StyledButton = styled(Button)``;
+
+export default StyledButton;
