@@ -1,8 +1,8 @@
 {
-  "name": "electron-react-boilerplate",
-  "productName": "ElectronReact",
-  "version": "0.13.3",
-  "description": "Electron application boilerplate based on React, React Router, Webpack, React Hot Loader for rapid application development",
+  "name": "docnest-desktop-app",
+  "productName": "DocNest",
+  "version": "0.0.0",
+  "description": "DocNest platform desktop application.",
   "scripts": {
     "build": "concurrently \"npm run build-main\" \"npm run build-renderer\"",
     "build-dll": "cross-env NODE_ENV=development node --trace-warnings -r babel-register ./node_modules/webpack/bin/webpack --config webpack.config.renderer.dev.dll.js --colors",
@@ -21,12 +21,13 @@
     "package-linux": "npm run build && build --linux",
     "package-win": "npm run build && build --win --x64",
     "postinstall": "node -r babel-register internals/scripts/CheckNativeDep.js && npm run flow-typed && npm run build-dll && electron-builder install-app-deps && node node_modules/fbjs-scripts/node/check-dev-engines.js package.json",
-    "postlint-fix": "prettier --ignore-path .eslintignore --single-quote --write '**/*.js'",
+    "postlint-fix": "prettier --ignore-path .eslintignore --write '**/*.js'",
     "precommit": "lint-staged",
     "prestart": "npm run build",
     "start": "cross-env NODE_ENV=production electron ./app/",
     "start-main-dev": "cross-env HOT=1 NODE_ENV=development electron -r babel-register ./app/main.dev.js",
     "start-renderer-dev": "cross-env NODE_ENV=development node --trace-warnings -r babel-register ./node_modules/webpack-dev-server/bin/webpack-dev-server --config webpack.config.renderer.dev.js",
+    "storybook": "start-storybook -p 9001 -c .storybook",
     "test": "cross-env NODE_ENV=test BABEL_DISABLE_CACHE=1 node --trace-warnings -r babel-register ./internals/scripts/RunTests.js",
     "test-all": "npm run lint && npm run flow && npm run build && npm run test && npm run test-e2e",
     "test-e2e": "cross-env NODE_ENV=test BABEL_DISABLE_CACHE=1 node --trace-warnings -r babel-register ./internals/scripts/RunTests.js e2e",
@@ -36,13 +37,13 @@
   "lint-staged": {
     "*.js": [
       "cross-env NODE_ENV=development eslint --cache --format=node_modules/eslint-formatter-pretty",
-      "prettier --ignore-path .eslintignore --single-quote --write",
+      "prettier --ignore-path .eslintignore --write",
       "git add"
     ]
   },
   "build": {
-    "productName": "ElectronReact",
-    "appId": "org.develar.ElectronReact",
+    "productName": "DocNest",
+    "appId": "org.tinker.DocNest",
     "files": [
       "dist/",
       "node_modules/",
@@ -84,36 +85,27 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chentsulin/electron-react-boilerplate.git"
+    "url": "git+https://github.com/tinker-hub/docnest-desktop.git"
   },
   "author": {
-    "name": "C. T. Lin",
-    "email": "chentsulin@gmail.com",
-    "url": "https://github.com/chentsulin"
+    "name": "Tinker",
+    "url": "https://github.com/tinker-hub"
   },
-  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chentsulin/electron-react-boilerplate/issues"
+    "url": "https://github.com/tinker-hub/docnest-desktop/issues"
   },
   "keywords": [
-    "electron",
-    "boilerplate",
-    "react",
-    "redux",
-    "flow",
-    "sass",
-    "webpack",
-    "hot",
-    "reload"
+    "docnest"
   ],
-  "homepage": "https://github.com/chentsulin/electron-react-boilerplate#readme",
+  "homepage": "https://github.com/tinker-hub/docnest-desktop.git#readme",
   "jest": {
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/internals/mocks/fileMock.js",
       "\\.(css|less|sass|scss)$": "identity-obj-proxy"
     },
     "moduleFileExtensions": [
-      "js"
+      "js",
+      "json"
     ],
     "moduleDirectories": [
       "node_modules",
@@ -127,6 +119,8 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-storyshots": "^3.4.10",
+    "@storybook/react": "^3.4.10",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",
     "babel-jest": "^23.0.0",
@@ -200,10 +194,11 @@
     "webpack-merge": "^4.1.2"
   },
   "dependencies": {
+    "@material-ui/core": "^1.4.3",
     "devtron": "^1.4.0",
     "electron-debug": "^1.5.0",
-    "font-awesome": "^4.7.0",
     "history": "^4.7.2",
+    "prop-types": "^15.6.2",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-hot-loader": "^4.2.0",
@@ -213,7 +208,8 @@
     "react-router-redux": "^5.0.0-alpha.6",
     "redux": "^4.0.0",
     "redux-thunk": "^2.2.0",
-    "source-map-support": "^0.5.6"
+    "source-map-support": "^0.5.6",
+    "typeface-roboto": "^0.0.54"
   },
   "devEngines": {
     "node": ">=7.x",
