@@ -195,6 +195,7 @@
   },
   "dependencies": {
     "@material-ui/core": "^1.4.3",
+    "@material-ui/icons": "^2.0.2",
     "devtron": "^1.4.0",
     "electron-debug": "^1.5.0",
     "history": "^4.7.2",
