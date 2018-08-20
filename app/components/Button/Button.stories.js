@@ -28,3 +28,24 @@ storiesOf('Button/Contained', module)
       {placeholderText}
     </Button>
   ));
+
+storiesOf('Button/Fab', module)
+  .add('default', () => <Button variant="fab"> {placeholderText} </Button>)
+  .add('primary', () => (
+    <Button variant="fab" color="primary">
+      {' '}
+      {placeholderText}{' '}
+    </Button>
+  ))
+  .add('secondary', () => (
+    <Button variant="fab" color="secondary">
+      {' '}
+      {placeholderText}{' '}
+    </Button>
+  ))
+  .add('disabled', () => (
+    <Button variant="fab" disabled>
+      {' '}
+      {placeholderText}{' '}
+    </Button>
+  ));
