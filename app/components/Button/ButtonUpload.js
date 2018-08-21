@@ -1,46 +1,57 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
-import Button from '@material-ui/core/Button';
-import { withStyles } from '@material-ui/core/styles';
+import Button from './Button';
 
 ButtonUpload.propTypes = {
+  accept: PropTypes.string,
+  buttonProps: PropTypes.object,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
+    PropTypes.node
   ]),
+  disabled: PropTypes.bool
 };
 
 ButtonUpload.defaultProps = {
+  accept: 'image/*',
   children: undefined,
+  disabled: false,
+  buttonProps: {}
 };
 
-const styles = (theme) => ({
-  button: {
-    margin: theme.spacing.unit,
-  },
-  input: {
-    display: 'none',
-  },
-});
+const StyledInput = styled('input')`
+  display: none;
+`;
 
 function ButtonUpload(props) {
-  const { accept, classes, disabled, buttonProps } = props;
+  const { accept, disabled, buttonProps } = props;
   // this is intended because it is not allowed to have buttonProps (camel case)
   const buttonprops = buttonProps;
 
   // Might cause issue if all instance of <ButtonUpload> have a the same id
   // Might trigger other instances
   const uniqueElementId = `button-upload-input-${Date.now()}`;
-  console.log('props', props);
   return (
     <div>
-      <input accept={accept} className={classes.input} type="file" id={uniqueElementId} disabled={disabled}/>
+      <StyledInput
+        accept={accept}
+        type="file"
+        id={uniqueElementId}
+        disabled={disabled}
+      />
       <label htmlFor={uniqueElementId}>
-        <Button {...buttonprops} component="span" className={classes.button} disabled={disabled}>{props.children}</Button>
+        <Button {...buttonprops} component="span" disabled={disabled}>
+          {props.children}
+        </Button>
       </label>
     </div>
   );
 }
 
-export default withStyles(styles)(ButtonUpload);
+const StyledUploadButton = styled(ButtonUpload)``;
+
+export { StyledUploadButton as UploadButton };
+
+export default StyledUploadButton;
