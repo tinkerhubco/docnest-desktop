@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import Button from './Button';
+import PropUtil from '../../utils/prop.util';
 
 ButtonUpload.propTypes = {
   accept: PropTypes.string,
-  buttonProps: PropTypes.object,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node
@@ -17,8 +17,7 @@ ButtonUpload.propTypes = {
 ButtonUpload.defaultProps = {
   accept: 'image/*',
   children: undefined,
-  disabled: false,
-  buttonProps: {}
+  disabled: false
 };
 
 const StyledInput = styled('input')`
@@ -26,13 +25,15 @@ const StyledInput = styled('input')`
 `;
 
 function ButtonUpload(props) {
-  const { accept, disabled, buttonProps } = props;
+  const { accept, disabled } = props;
   // this is intended because it is not allowed to have buttonProps (camel case)
-  const buttonprops = buttonProps;
+  const buttonprops = PropUtil.getPropsByPrefix('button', props);
 
   // Might cause issue if all instance of <ButtonUpload> have a the same id
   // Might trigger other instances
   const uniqueElementId = `button-upload-input-${Date.now()}`;
+  console.log('buttonprops', buttonprops);
+  console.log('props', JSON.stringify(props));
   return (
     <div>
       <StyledInput
