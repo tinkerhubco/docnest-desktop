@@ -9,7 +9,7 @@ storiesOf('ButtonUpload', module).add('default', () => (
   <ButtonUpload>{placeholderText}</ButtonUpload>
 ));
 
-storiesOf('ButtonUploadText', module)
+storiesOf('ButtonUpload/Text', module)
   .add('default', () => <ButtonUpload>{placeholderText}</ButtonUpload>)
   .add('primary', () => (
     <ButtonUpload button-color="primary">{placeholderText}</ButtonUpload>
@@ -21,7 +21,7 @@ storiesOf('ButtonUploadText', module)
     <ButtonUpload disabled>{placeholderText}</ButtonUpload>
   ));
 
-storiesOf('ButtonUploadContained', module)
+storiesOf('ButtonUpload/Contained', module)
   .add('default', () => (
     <ButtonUpload button-variant="contained">{placeholderText}</ButtonUpload>
   ))
