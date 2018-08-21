@@ -1,38 +1,21 @@
 import React from 'react';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import MUITextField from '@material-ui/core/TextField';
 
 TextField.propTypes = {
-  children: React.PropTypes.oneOfType([
-    React.PropTypes.arrayOf(React.PropTypes.node),
-    React.PropTypes.node
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
   ])
 };
 
-class TextField extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      textFieldValue: ''
-    };
-  }
-
-  onTextFieldChanged() {
-    return event => {
-      this.setState({ textFieldValue: event.target.value });
-    };
-  }
-
-  render() {
-    return (
-      <MUITextField
-        {...this.props}
-        value={this.state.textFieldValue}
-        onChange={this.onTextFieldChanged()}
-      >
-        {this.props.children}
-      </MUITextField>
-    );
-  }
+function TextField(props) {
+  return <MUITextField {...props}>{props.children}</MUITextField>;
 }
 
-export default TextField;
+const StyledTextField = styled(TextField)``;
+
+export { StyledTextField as TextField };
+
+export default StyledTextField;
