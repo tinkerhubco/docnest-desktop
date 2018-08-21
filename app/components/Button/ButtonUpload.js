@@ -32,8 +32,6 @@ function ButtonUpload(props) {
   // Might cause issue if all instance of <ButtonUpload> have a the same id
   // Might trigger other instances
   const uniqueElementId = `button-upload-input-${Date.now()}`;
-  console.log('buttonprops', buttonprops);
-  console.log('props', JSON.stringify(props));
   return (
     <div>
       <StyledInput
