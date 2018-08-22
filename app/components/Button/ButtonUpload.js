@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import Button from './Button';
-import PropUtil from '../../utils/prop.util';
 
 ButtonUpload.propTypes = {
   accept: PropTypes.string,
@@ -25,9 +24,7 @@ const StyledInput = styled('input')`
 `;
 
 function ButtonUpload(props) {
-  const { accept, disabled } = props;
-  // this is intended because it is not allowed to have buttonProps (camel case)
-  const buttonprops = PropUtil.getPropsByPrefix('button', props);
+  const { accept, disabled, ...buttonProps } = props;
 
   // Might cause issue if all instance of <ButtonUpload> have a the same id
   // Might trigger other instances
@@ -41,9 +38,7 @@ function ButtonUpload(props) {
         disabled={disabled}
       />
       <label htmlFor={uniqueElementId}>
-        <Button {...buttonprops} component="span" disabled={disabled}>
-          {props.children}
-        </Button>
+        <Button {...buttonProps} component="span" disabled={disabled} />
       </label>
     </div>
   );

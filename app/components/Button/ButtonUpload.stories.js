@@ -12,10 +12,10 @@ storiesOf('ButtonUpload', module).add('default', () => (
 storiesOf('ButtonUpload/Text', module)
   .add('default', () => <ButtonUpload>{placeholderText}</ButtonUpload>)
   .add('primary', () => (
-    <ButtonUpload button-color="primary">{placeholderText}</ButtonUpload>
+    <ButtonUpload color="primary">{placeholderText}</ButtonUpload>
   ))
   .add('secondary', () => (
-    <ButtonUpload button-color="secondary">{placeholderText}</ButtonUpload>
+    <ButtonUpload color="secondary">{placeholderText}</ButtonUpload>
   ))
   .add('disabled', () => (
     <ButtonUpload disabled>{placeholderText}</ButtonUpload>
@@ -23,20 +23,20 @@ storiesOf('ButtonUpload/Text', module)
 
 storiesOf('ButtonUpload/Contained', module)
   .add('default', () => (
-    <ButtonUpload button-variant="contained">{placeholderText}</ButtonUpload>
+    <ButtonUpload variant="contained">{placeholderText}</ButtonUpload>
   ))
   .add('primary', () => (
-    <ButtonUpload button-color="primary" button-variant="contained">
+    <ButtonUpload color="primary" variant="contained">
       {placeholderText}
     </ButtonUpload>
   ))
   .add('secondary', () => (
-    <ButtonUpload button-color="secondary" button-variant="contained">
+    <ButtonUpload color="secondary" variant="contained">
       {placeholderText}
     </ButtonUpload>
   ))
   .add('disabled', () => (
-    <ButtonUpload button-variant="contained" disabled>
+    <ButtonUpload variant="contained" disabled>
       {placeholderText}
     </ButtonUpload>
   ));
