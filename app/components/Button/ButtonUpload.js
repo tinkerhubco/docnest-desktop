@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Button from './Button';
 
 ButtonUpload.propTypes = {
+  id: PropTypes.string.isRequired,
   accept: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
@@ -24,20 +25,19 @@ const StyledInput = styled('input')`
 `;
 
 function ButtonUpload(props) {
-  const { accept, disabled, ...buttonProps } = props;
+  const { accept, disabled, id, ...buttonProps } = props;
 
   // Might cause issue if all instance of <ButtonUpload> have a the same id
-  // Might trigger other instances
-  const uniqueElementId = `button-upload-input-${Date.now()}`;
+  // Might trigger other instancesid={placeholderButtonId}
   return (
     <div>
       <StyledInput
         accept={accept}
         type="file"
-        id={uniqueElementId}
+        id={`${id}`}
         disabled={disabled}
       />
-      <label htmlFor={uniqueElementId}>
+      <label htmlFor={id}>
         <Button {...buttonProps} component="span" disabled={disabled} />
       </label>
     </div>
