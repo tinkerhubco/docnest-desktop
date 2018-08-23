@@ -16,7 +16,7 @@ Snackbar.propTypes = {
 Snackbar.defaultProps = {
   vertical: 'bottom',
   horizontal: 'left',
-  children: undefined
+  children: <CloseAction />
 };
 
 function Snackbar(props) {
@@ -26,12 +26,12 @@ function Snackbar(props) {
     <MUISnackbar
       {...props}
       anchorOrigin={{ vertical, horizontal }}
-      action={[props.children ? props.children : defaultAction()]}
+      action={[props.children]}
     />
   );
 }
 
-function defaultAction() {
+function CloseAction() {
   return (
     <IconButton key="close" color="inherit">
       <CloseIcon />
