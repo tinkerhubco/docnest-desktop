@@ -25,15 +25,29 @@ const onChangeHandler = event => {
   alert(`You have selected ${event.target.value}`);
 };
 
+const placeholderId = 'select-id';
+
 storiesOf('Select', module)
   .add('default', () => (
-    <Select value={1} onChange={onChangeHandler} items={menuItems} />
+    <Select
+      id={placeholderId}
+      value={1}
+      onChange={onChangeHandler}
+      items={menuItems}
+    />
   ))
   .add('disabled', () => (
-    <Select disabled value={1} onChange={onChangeHandler} items={menuItems} />
+    <Select
+      id={placeholderId}
+      disabled
+      value={1}
+      onChange={onChangeHandler}
+      items={menuItems}
+    />
   ))
   .add('required', () => (
     <Select
+      id={placeholderId}
       required
       value={1}
       label="Name"
@@ -44,6 +58,7 @@ storiesOf('Select', module)
 
 storiesOf('Select/Label', module).add('default', () => (
   <Select
+    id={placeholderId}
     label="Items"
     value={1}
     onChange={onChangeHandler}
@@ -54,6 +69,7 @@ storiesOf('Select/Label', module).add('default', () => (
 storiesOf('Select/HelperText', module)
   .add('default', () => (
     <Select
+      id={placeholderId}
       value={1}
       onChange={onChangeHandler}
       items={menuItems}
@@ -62,6 +78,7 @@ storiesOf('Select/HelperText', module)
   ))
   .add('With Label', () => (
     <Select
+      id={placeholderId}
       label="Items"
       value={1}
       onChange={onChangeHandler}
