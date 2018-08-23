@@ -8,6 +8,7 @@ import FormControl from '@material-ui/core/FormControl';
 import FormHelperText from '@material-ui/core/FormHelperText';
 
 SelectFormField.propTypes = {
+  id: PropTypes.string.isRequired,
   label: PropTypes.string,
   'helper-text': PropTypes.string,
   items: PropTypes.arrayOf(
@@ -38,17 +39,14 @@ function toggleDisplay(determinator) {
 }
 
 function SelectFormField(props) {
-  const { disabled, required } = props;
-  const uniqueElementId = `select-form-field-${Date.now()}`;
+  const { disabled, id, required } = props;
+
   return (
     <FormControl required={required}>
-      <StyledInputLabel hidden={!props.label} htmlFor={uniqueElementId}>
+      <StyledInputLabel hidden={!props.label} htmlFor={id}>
         {props.label}
       </StyledInputLabel>
-      <Select
-        {...props}
-        inputProps={{ id: uniqueElementId, readOnly: disabled }}
-      >
+      <Select {...props} inputProps={{ id, readOnly: disabled }}>
         {props.items.map((item = {}) => (
           <MenuItem key={item.value} value={item.value}>
             {item.label}
