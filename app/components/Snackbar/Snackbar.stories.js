@@ -3,6 +3,8 @@ import { storiesOf } from '@storybook/react';
 
 import Snackbar from './Snackbar';
 
+// TODO: Fix snapshot tests - https://github.com/mui-org/material-ui/issues/10679
+
 storiesOf('Snackbar', module).add('default', () => (
   <Snackbar message="Default Snackbar" open />
 ));
