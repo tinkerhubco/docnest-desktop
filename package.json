@@ -119,8 +119,8 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-storyshots": "^3.4.10",
-    "@storybook/react": "^4.0.0-alpha.3",
+    "@storybook/addon-storyshots": "^4.0.0-alpha.16",
+    "@storybook/react": "^4.0.0-alpha.16",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",
     "babel-jest": "^23.0.0",
@@ -128,6 +128,7 @@
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-dev-expression": "^0.2.1",
     "babel-plugin-flow-runtime": "^0.17.0",
+    "babel-plugin-require-context-hook": "^1.0.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-es2015-classes": "^6.24.1",
     "babel-preset-env": "^1.7.0",
