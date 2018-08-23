@@ -4,39 +4,54 @@ import { storiesOf } from '@storybook/react';
 import ButtonUpload from './ButtonUpload';
 
 const placeholderText = 'Upload';
+const placeholderButtonId = 'test-button';
 
 storiesOf('ButtonUpload', module).add('default', () => (
   <ButtonUpload>{placeholderText}</ButtonUpload>
 ));
 
 storiesOf('ButtonUpload/Text', module)
-  .add('default', () => <ButtonUpload>{placeholderText}</ButtonUpload>)
+  .add('default', () => (
+    <ButtonUpload id={placeholderButtonId}>{placeholderText}</ButtonUpload>
+  ))
   .add('primary', () => (
-    <ButtonUpload color="primary">{placeholderText}</ButtonUpload>
+    <ButtonUpload id={placeholderButtonId} color="primary">
+      {placeholderText}
+    </ButtonUpload>
   ))
   .add('secondary', () => (
-    <ButtonUpload color="secondary">{placeholderText}</ButtonUpload>
+    <ButtonUpload id={placeholderButtonId} color="secondary">
+      {placeholderText}
+    </ButtonUpload>
   ))
   .add('disabled', () => (
-    <ButtonUpload disabled>{placeholderText}</ButtonUpload>
+    <ButtonUpload id={placeholderButtonId} disabled>
+      {placeholderText}
+    </ButtonUpload>
   ));
 
 storiesOf('ButtonUpload/Contained', module)
   .add('default', () => (
-    <ButtonUpload variant="contained">{placeholderText}</ButtonUpload>
+    <ButtonUpload id={placeholderButtonId} variant="contained">
+      {placeholderText}
+    </ButtonUpload>
   ))
   .add('primary', () => (
-    <ButtonUpload color="primary" variant="contained">
+    <ButtonUpload id={placeholderButtonId} color="primary" variant="contained">
       {placeholderText}
     </ButtonUpload>
   ))
   .add('secondary', () => (
-    <ButtonUpload color="secondary" variant="contained">
+    <ButtonUpload
+      id={placeholderButtonId}
+      color="secondary"
+      variant="contained"
+    >
       {placeholderText}
     </ButtonUpload>
   ))
   .add('disabled', () => (
-    <ButtonUpload variant="contained" disabled>
+    <ButtonUpload id={placeholderButtonId} variant="contained" disabled>
       {placeholderText}
     </ButtonUpload>
   ));
