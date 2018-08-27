@@ -115,7 +115,8 @@
       "^.+\\.js$": "babel-jest"
     },
     "setupFiles": [
-      "./internals/scripts/CheckBuiltsExist.js"
+      "./internals/scripts/CheckBuiltsExist.js",
+      "./internals/scripts/PolyfillRequireContext.js"
     ]
   },
   "devDependencies": {
