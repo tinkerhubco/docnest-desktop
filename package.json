@@ -120,6 +120,7 @@
     ]
   },
   "devDependencies": {
+    "@sambego/storybook-state": "^1.2.0",
     "@storybook/addon-storyshots": "^4.0.0-alpha.16",
     "@storybook/react": "^4.0.0-alpha.16",
     "babel-core": "^6.26.3",
