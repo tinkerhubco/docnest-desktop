@@ -12,7 +12,9 @@ import TableCell from './TableCell';
 Table.propTypes = {
   rowOptions: PropTypes.object,
   columns: PropTypes.array,
-  rows: PropTypes.array
+  rows: PropTypes.array,
+  renderHead: PropTypes.func,
+  renderBody: PropTypes.func
 };
 
 Table.defaultProps = {
@@ -34,37 +36,39 @@ Table.defaultProps = {
  */
 
 function Table(props) {
-  const { rowOptions, columns, rows } = props;
+  const { rowOptions, columns, rows, renderHead, renderBody } = props;
 
   return (
     <MUITable>
       <MUITableHead>
         <MUITableRow>
-          {columns.map(column => (
-            <TableCell
-              key={column.key}
-              numeric={column.numeric}
-              value={column.label}
-            >
-              {column.label}
-            </TableCell>
-          ))}
+          {(renderHead && renderHead(columns)) ||
+            columns.map(column => (
+              <TableCell
+                key={column.key}
+                numeric={column.numeric}
+                value={column.label}
+              >
+                {column.label}
+              </TableCell>
+            ))}
         </MUITableRow>
       </MUITableHead>
       <MUITableBody>
-        {rows.map(row => (
-          <MUITableRow key={row.id} {...rowOptions}>
-            {columns.map(column => (
-              <TableCell
-                {...column}
-                numeric={column.numeric}
-                value={row[column.value]}
-              >
-                {row[column.value]}
-              </TableCell>
-            ))}
-          </MUITableRow>
-        ))}
+        {(renderBody && renderBody(rows)) ||
+          rows.map(row => (
+            <MUITableRow key={row.id} {...rowOptions}>
+              {columns.map(column => (
+                <TableCell
+                  {...column}
+                  numeric={column.numeric}
+                  value={row[column.value]}
+                >
+                  {row[column.value]}
+                </TableCell>
+              ))}
+            </MUITableRow>
+          ))}
       </MUITableBody>
     </MUITable>
   );
