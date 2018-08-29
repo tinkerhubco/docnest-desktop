@@ -1074,7 +1074,6 @@ exports[`Storyshots Checkbox default 1`] = `
     <input
       checked={false}
       className="MuiSwitchBase-input"
-      disabled={false}
       onChange={[Function]}
       type="checkbox"
     />
@@ -1155,7 +1154,6 @@ exports[`Storyshots Checkbox primary 1`] = `
     <input
       checked={false}
       className="MuiSwitchBase-input"
-      disabled={false}
       onChange={[Function]}
       type="checkbox"
     />
@@ -1197,172 +1195,6 @@ exports[`Storyshots Checkbox secondary 1`] = `
     <input
       checked={false}
       className="MuiSwitchBase-input"
-      disabled={false}
-      onChange={[Function]}
-      type="checkbox"
-    />
-  </span>
-  <span
-    className="MuiTouchRipple-root"
-  />
-</span>
-`;
-
-exports[`Storyshots Checkbox/Checked default 1`] = `
-<span
-  className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked "
-  onBlur={[Function]}
-  onFocus={[Function]}
-  onKeyDown={[Function]}
-  onKeyUp={[Function]}
-  onMouseDown={[Function]}
-  onMouseLeave={[Function]}
-  onMouseUp={[Function]}
-  onTouchEnd={[Function]}
-  onTouchMove={[Function]}
-  onTouchStart={[Function]}
-  tabIndex={null}
->
-  <span
-    className="MuiIconButton-label"
-  >
-    <svg
-      aria-hidden="true"
-      className="MuiSvgIcon-root"
-      focusable="false"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-      />
-    </svg>
-    <input
-      checked={true}
-      className="MuiSwitchBase-input"
-      disabled={false}
-      onChange={[Function]}
-      type="checkbox"
-    />
-  </span>
-  <span
-    className="MuiTouchRipple-root"
-  />
-</span>
-`;
-
-exports[`Storyshots Checkbox/Checked disabled 1`] = `
-<span
-  className="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root MuiIconButton-disabled MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked MuiSwitchBase-disabled MuiCheckbox-disabled "
-  onBlur={[Function]}
-  onFocus={[Function]}
-  onKeyDown={[Function]}
-  onKeyUp={[Function]}
-  onMouseDown={[Function]}
-  onMouseLeave={[Function]}
-  onMouseUp={[Function]}
-  onTouchEnd={[Function]}
-  onTouchMove={[Function]}
-  onTouchStart={[Function]}
-  tabIndex="-1"
->
-  <span
-    className="MuiIconButton-label"
-  >
-    <svg
-      aria-hidden="true"
-      className="MuiSvgIcon-root"
-      focusable="false"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-      />
-    </svg>
-    <input
-      checked={true}
-      className="MuiSwitchBase-input"
-      disabled={true}
-      onChange={[Function]}
-      type="checkbox"
-    />
-  </span>
-</span>
-`;
-
-exports[`Storyshots Checkbox/Checked primary 1`] = `
-<span
-  className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked "
-  onBlur={[Function]}
-  onFocus={[Function]}
-  onKeyDown={[Function]}
-  onKeyUp={[Function]}
-  onMouseDown={[Function]}
-  onMouseLeave={[Function]}
-  onMouseUp={[Function]}
-  onTouchEnd={[Function]}
-  onTouchMove={[Function]}
-  onTouchStart={[Function]}
-  tabIndex={null}
->
-  <span
-    className="MuiIconButton-label"
-  >
-    <svg
-      aria-hidden="true"
-      className="MuiSvgIcon-root"
-      focusable="false"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-      />
-    </svg>
-    <input
-      checked={true}
-      className="MuiSwitchBase-input"
-      disabled={false}
-      onChange={[Function]}
-      type="checkbox"
-    />
-  </span>
-  <span
-    className="MuiTouchRipple-root"
-  />
-</span>
-`;
-
-exports[`Storyshots Checkbox/Checked secondary 1`] = `
-<span
-  className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorSecondary MuiSwitchBase-checked MuiCheckbox-checked "
-  onBlur={[Function]}
-  onFocus={[Function]}
-  onKeyDown={[Function]}
-  onKeyUp={[Function]}
-  onMouseDown={[Function]}
-  onMouseLeave={[Function]}
-  onMouseUp={[Function]}
-  onTouchEnd={[Function]}
-  onTouchMove={[Function]}
-  onTouchStart={[Function]}
-  tabIndex={null}
->
-  <span
-    className="MuiIconButton-label"
-  >
-    <svg
-      aria-hidden="true"
-      className="MuiSvgIcon-root"
-      focusable="false"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-      />
-    </svg>
-    <input
-      checked={true}
-      className="MuiSwitchBase-input"
-      disabled={false}
       onChange={[Function]}
       type="checkbox"
     />
@@ -1508,54 +1340,6 @@ exports[`Storyshots Divider light 1`] = `
 <hr
   className="MuiDivider-root MuiDivider-light "
 />
-`;
-
-exports[`Storyshots Form default 1`] = `
-<form
-  onSubmit={[Function]}
->
-  <div
-    className="form-group"
-  >
-    <label
-      htmlFor="email"
-    >
-      Email
-      <input
-        id="email"
-        name="email"
-        onBlur={[Function]}
-        onChange={[Function]}
-        type="text"
-        value=""
-      />
-    </label>
-  </div>
-  <div
-    className="form-group"
-  >
-    <label
-      htmlFor="username"
-    >
-      Username
-      <input
-        id="username"
-        name="username"
-        onBlur={[Function]}
-        onChange={[Function]}
-        type="text"
-        value=""
-      />
-    </label>
-  </div>
-  <button
-    className="btn btn-outline-primary"
-    disabled={false}
-    type="submit"
-  >
-    CLICK ME
-  </button>
-</form>
 `;
 
 exports[`Storyshots Grid default 1`] = `
@@ -1965,12 +1749,15 @@ exports[`Storyshots LinearProgress secondary 1`] = `
 </div>
 `;
 
-exports[`Storyshots Menu/simple close 1`] = `
-<div>
+exports[`Storyshots Menu simple 1`] = `
+<div
+  open={false}
+>
   <button
     className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat "
     disabled={false}
     onBlur={[Function]}
+    onClick={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
     onKeyUp={[Function]}
