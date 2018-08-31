@@ -1324,6 +1324,264 @@ exports[`Storyshots CircularProgress static 1`] = `
 </div>
 `;
 
+exports[`Storyshots DatePicker default 1`] = `
+<div
+  className="MuiFormControl-root"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      mask={null}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      required={false}
+      type="text"
+      value="September 1st"
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`Storyshots DateTimePicker Disable Future 1`] = `
+<div
+  className="MuiFormControl-root"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+  >
+    Default
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      mask={null}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      required={false}
+      type="text"
+      value="September 5th 04:00 p.m."
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`Storyshots DateTimePicker Disable Past 1`] = `
+<div
+  className="MuiFormControl-root"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+  >
+    Default
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      mask={null}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      required={false}
+      type="text"
+      value="September 5th 04:00 p.m."
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`Storyshots DateTimePicker Turn off AM PM 1`] = `
+<div
+  className="MuiFormControl-root"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+  >
+    AM PM
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      mask={null}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      required={false}
+      type="text"
+      value="September 5th 16:00"
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`Storyshots DateTimePicker autoOk 1`] = `
+<div
+  className="MuiFormControl-root"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+  >
+    Auto Ok
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      mask={null}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      required={false}
+      type="text"
+      value="September 5th 04:00 p.m."
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`Storyshots DateTimePicker clearable 1`] = `
+<div
+  className="MuiFormControl-root"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+  >
+    Clearable
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      mask={null}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      required={false}
+      type="text"
+      value="September 5th 04:00 p.m."
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`Storyshots DateTimePicker default 1`] = `
+<div
+  className="MuiFormControl-root"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+  >
+    Default
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      mask={null}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      required={false}
+      type="text"
+      value="September 5th 04:00 p.m."
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`Storyshots DateTimePicker showTodayButton 1`] = `
+<div
+  className="MuiFormControl-root"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+  >
+    Show Today Button
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      mask={null}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      required={false}
+      type="text"
+      value="September 5th 04:00 p.m."
+    />
+  </div>
+  
+</div>
+`;
+
 exports[`Storyshots Divider default 1`] = `
 <hr
   className="MuiDivider-root "
@@ -1749,15 +2007,12 @@ exports[`Storyshots LinearProgress secondary 1`] = `
 </div>
 `;
 
-exports[`Storyshots Menu simple 1`] = `
-<div
-  open={false}
->
+exports[`Storyshots Menu/simple close 1`] = `
+<div>
   <button
     className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat "
     disabled={false}
     onBlur={[Function]}
-    onClick={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
     onKeyUp={[Function]}
@@ -5023,7 +5278,7 @@ exports[`Storyshots Table/Cell/Date default 1`] = `
         aria-sort={null}
         className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
       >
-        2018-08-25T10:24:44.000+08:00
+        2018-08-25T02:44:44Z
       </td>
     </tr>
     <tr
@@ -5045,7 +5300,7 @@ exports[`Storyshots Table/Cell/Date default 1`] = `
         aria-sort={null}
         className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
       >
-        2018-08-25T10:24:44.000+08:00
+        2018-08-25T02:44:44Z
       </td>
     </tr>
     <tr
@@ -5067,7 +5322,7 @@ exports[`Storyshots Table/Cell/Date default 1`] = `
         aria-sort={null}
         className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
       >
-        2018-08-25T10:24:44.000+08:00
+        2018-08-25T02:44:44Z
       </td>
     </tr>
     <tr
@@ -5089,7 +5344,7 @@ exports[`Storyshots Table/Cell/Date default 1`] = `
         aria-sort={null}
         className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
       >
-        2018-08-25T10:24:44.000+08:00
+        2018-08-25T02:44:44Z
       </td>
     </tr>
     <tr
@@ -5111,7 +5366,7 @@ exports[`Storyshots Table/Cell/Date default 1`] = `
         aria-sort={null}
         className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
       >
-        2018-08-25T10:24:44.000+08:00
+        2018-08-25T02:44:44Z
       </td>
     </tr>
   </tbody>
@@ -5935,6 +6190,171 @@ exports[`Storyshots TextField/Password With Helper Text, Error And Label 1`] = `
   >
     Helper Text
   </p>
+</div>
+`;
+
+exports[`Storyshots TimePicker Turn off AM PM 1`] = `
+<div
+  className="MuiFormControl-root"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+  >
+    AM PM
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      mask={null}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      required={false}
+      type="text"
+      value="08:00"
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`Storyshots TimePicker autoOk 1`] = `
+<div
+  className="MuiFormControl-root"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+  >
+    Auto Ok
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      mask={null}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      required={false}
+      type="text"
+      value="08:00 AM"
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`Storyshots TimePicker clearable 1`] = `
+<div
+  className="MuiFormControl-root"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+  >
+    Clearable
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      mask={null}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      required={false}
+      type="text"
+      value="08:00 AM"
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`Storyshots TimePicker default 1`] = `
+<div
+  className="MuiFormControl-root"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+  >
+    Default
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      mask={null}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      required={false}
+      type="text"
+      value="08:00 AM"
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`Storyshots TimePicker showTodayButton 1`] = `
+<div
+  className="MuiFormControl-root"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+  >
+    Show Today Button
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      mask={null}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      required={false}
+      type="text"
+      value="08:00 AM"
+    />
+  </div>
+  
 </div>
 `;
 
