@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import MUIPickersUtilsProvider from 'material-ui-pickers/utils/MuiPickersUtilsProvider';
 import MUIDateTimePicker from 'material-ui-pickers/DateTimePicker';
+import MUIPickersUtilsProvider from 'material-ui-pickers/utils/MuiPickersUtilsProvider';
 import DateFnsUtils from 'material-ui-pickers/utils/date-fns-utils';
 
 DateTimePicker.propTypes = {
@@ -23,12 +22,12 @@ DateTimePicker.defaultProps = {
   onChange: () => {}
 };
 
-function DateTimePicker (props) {
+function DateTimePicker(props) {
   return (
     <MUIPickersUtilsProvider utils={DateFnsUtils}>
       <MUIDateTimePicker {...props} />
     </MUIPickersUtilsProvider>
-  )
+  );
 }
 
 export { DateTimePicker };
