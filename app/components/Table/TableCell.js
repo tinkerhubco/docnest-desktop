@@ -45,7 +45,7 @@ function TableCell(props) {
     rawValue,
     value
   } = props;
-  if (isDate) {
+  if (isDate && dateFormat) {
     const date = format(value, dateFormat);
     return <MUITableCell numeric={numeric}>{date}</MUITableCell>;
   } else if (isButton) {
