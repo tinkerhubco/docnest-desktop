@@ -3,8 +3,9 @@
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
 
- @import '~typeface-roboto';
+@import '~typeface-roboto';
+@import '~material-design-icons/iconfont/material-icons.css';
 
- body {
-     font-family: 'Roboto'
- }
+body {
+  font-family: 'Roboto';
+}
