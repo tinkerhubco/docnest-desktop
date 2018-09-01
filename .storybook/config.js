@@ -1,6 +1,7 @@
 import { configure, addDecorator } from '@storybook/react';
 import React from 'react';
 import JssProvider from 'react-jss/lib/JssProvider';
+import 'material-design-icons/iconfont/material-icons.css';
 
 const generateClassName = (rule, styleSheet) =>
   `${styleSheet.options.classNamePrefix}-${rule.key}`;
