@@ -5,11 +5,11 @@ import styled from 'styled-components';
 import MUIPaper from '@material-ui/core/Paper';
 
 Paper.propTypes = {
-  elevation: PropTypes.string
+  elevation: PropTypes.number
 };
 
 Paper.defaultProps = {
-  elevation: undefined
+  elevation: 2
 };
 
 function Paper(props) {
