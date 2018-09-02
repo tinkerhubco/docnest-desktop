@@ -7,7 +7,7 @@ const placeholderText = 'Upload';
 const placeholderButtonId = 'test-button';
 
 storiesOf('ButtonUpload', module).add('default', () => (
-  <ButtonUpload>{placeholderText}</ButtonUpload>
+  <ButtonUpload id={placeholderButtonId}>{placeholderText}</ButtonUpload>
 ));
 
 storiesOf('ButtonUpload/Text', module)
