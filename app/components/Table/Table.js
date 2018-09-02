@@ -22,7 +22,27 @@ Table.defaultProps = {
     hover: false
   },
   columns: [],
-  rows: []
+  rows: [],
+  renderHead: columns =>
+    columns.map(({ key, numeric, label, value }) => (
+      <TableCell key={key} numeric={numeric} value={value || label}>
+        {label || value}
+      </TableCell>
+    )),
+  renderBody: ({ columns, rows, rowOptions }) =>
+    rows.map(row => (
+      <MUITableRow key={row.id} {...rowOptions}>
+        {columns.map(column => (
+          <TableCell
+            {...column}
+            numeric={column.numeric}
+            value={row[column.value]}
+          >
+            {row[column.value]}
+          </TableCell>
+        ))}
+      </MUITableRow>
+    ))
 };
 
 /**
@@ -41,35 +61,9 @@ function Table(props) {
   return (
     <MUITable>
       <MUITableHead>
-        <MUITableRow>
-          {(renderHead && renderHead(columns)) ||
-            columns.map(column => (
-              <TableCell
-                key={column.key}
-                numeric={column.numeric}
-                value={column.label}
-              >
-                {column.label}
-              </TableCell>
-            ))}
-        </MUITableRow>
+        <MUITableRow>{renderHead(columns)}</MUITableRow>
       </MUITableHead>
-      <MUITableBody>
-        {(renderBody && renderBody(rows)) ||
-          rows.map(row => (
-            <MUITableRow key={row.id} {...rowOptions}>
-              {columns.map(column => (
-                <TableCell
-                  {...column}
-                  numeric={column.numeric}
-                  value={row[column.value]}
-                >
-                  {row[column.value]}
-                </TableCell>
-              ))}
-            </MUITableRow>
-          ))}
-      </MUITableBody>
+      <MUITableBody>{renderBody({ columns, rows, rowOptions })}</MUITableBody>
     </MUITable>
   );
 }
