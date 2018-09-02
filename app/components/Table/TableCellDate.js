@@ -49,7 +49,7 @@ TableCellDate.propTypes = {
 
 TableCellDate.defaultProps = {
   numeric: false,
-  dateFormat: 'YYYY-MM-DDTHH:mm:ssZ'
+  dateFormat: `yyyy-MM-dd'T'HH:mm:ssZ`
 };
 
 export function TableCellDate(props) {
