@@ -386,10 +386,12 @@ exports[`Storyshots ButtonUpload default 1`] = `
     accept="image/*"
     className="c0"
     disabled={false}
-    id="undefined"
+    id="test-button"
     type="file"
   />
-  <label>
+  <label
+    htmlFor="test-button"
+  >
     <span
       className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat "
       onBlur={[Function]}
@@ -1344,7 +1346,7 @@ exports[`Storyshots DatePicker default 1`] = `
       readOnly={true}
       required={false}
       type="text"
-      value="September 1st"
+      value="September 5th"
     />
   </div>
   
@@ -1410,7 +1412,7 @@ exports[`Storyshots DateTimePicker Disable Past 1`] = `
       readOnly={true}
       required={false}
       type="text"
-      value="September 5th 04:00 p.m."
+      value="September 5th 08:00 a.m."
     />
   </div>
   
@@ -2554,6 +2556,7 @@ exports[`Storyshots Select default 1`] = `
         },
       ]
     }
+    renderMenuItem={[Function]}
   >
     <div
       className="MuiSelect-root"
@@ -2634,6 +2637,7 @@ exports[`Storyshots Select disabled 1`] = `
         },
       ]
     }
+    renderMenuItem={[Function]}
   >
     <div
       className="MuiSelect-root"
@@ -2722,6 +2726,7 @@ exports[`Storyshots Select required 1`] = `
       ]
     }
     label="Name"
+    renderMenuItem={[Function]}
     required={true}
   >
     <div
@@ -2786,7 +2791,7 @@ exports[`Storyshots Select/HelperText With Label 1`] = `
   </label>
   <div
     className="MuiInput-root MuiInput-formControl MuiInput-underline "
-    helper-text="Helper Text"
+    helperText="Helper Text"
     items={
       Array [
         Object {
@@ -2807,6 +2812,7 @@ exports[`Storyshots Select/HelperText With Label 1`] = `
       ]
     }
     label="Items"
+    renderMenuItem={[Function]}
   >
     <div
       className="MuiSelect-root"
@@ -2870,7 +2876,7 @@ exports[`Storyshots Select/HelperText default 1`] = `
   />
   <div
     className="MuiInput-root MuiInput-formControl MuiInput-underline "
-    helper-text="Helper Text"
+    helperText="Helper Text"
     items={
       Array [
         Object {
@@ -2890,6 +2896,7 @@ exports[`Storyshots Select/HelperText default 1`] = `
         },
       ]
     }
+    renderMenuItem={[Function]}
   >
     <div
       className="MuiSelect-root"
@@ -2975,6 +2982,7 @@ exports[`Storyshots Select/Label default 1`] = `
       ]
     }
     label="Items"
+    renderMenuItem={[Function]}
   >
     <div
       className="MuiSelect-root"
