@@ -5,6 +5,7 @@ import DateTimePicker from './DateTimePicker';
 
 const placeholderDateDefault = new Date('2018-09-05T08:00:00Z');
 const placeholderDatePast = new Date('2017-09-05T08:00:00Z');
+const placeholderDateFuture = new Date('2050-09-05T00:00:00Z');
 
 storiesOf('DateTimePicker', module)
   .add('default', () => (
@@ -59,7 +60,7 @@ storiesOf('DateTimePicker', module)
     <DateTimePicker
       label="Default"
       disablePast
-      value={placeholderDateDefault}
+      value={placeholderDateFuture}
       onChange={() => {}}
     />
   ));
