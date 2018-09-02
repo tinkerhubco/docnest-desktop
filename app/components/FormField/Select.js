@@ -11,26 +11,32 @@ import MenuItem from '../Menu/MenuItem';
 SelectFormField.propTypes = {
   id: PropTypes.string.isRequired,
   label: PropTypes.string,
-  'helper-text': PropTypes.string,
+  helperText: PropTypes.string,
   items: PropTypes.arrayOf(
     PropTypes.shape({
       value: PropTypes.any,
       label: PropTypes.string
     })
-  ),
+  ).isRequired,
   disabled: PropTypes.bool,
-  required: PropTypes.bool
+  required: PropTypes.bool,
+  renderMenuItem: PropTypes.func
 };
 
 SelectFormField.defaultProps = {
-  items: []
+  renderMenuItem: items =>
+    items.map(({ value, label } = {}) => (
+      <MenuItem key={value || label} value={value || label}>
+        {label || value}
+      </MenuItem>
+    ))
 };
 
 const StyledInputLabel = styled(InputLabel)`
   ${props => toggleDisplay(props.label)};
 `;
 const StyledFormHelperText = styled(FormHelperText)`
-  ${props => toggleDisplay(props['helper-text'])};
+  ${props => toggleDisplay(props.helperText)};
 `;
 
 function toggleDisplay(determinator) {
@@ -40,21 +46,25 @@ function toggleDisplay(determinator) {
 }
 
 function SelectFormField(props) {
-  const { disabled, id, required } = props;
+  const {
+    disabled,
+    helperText,
+    id,
+    items,
+    label,
+    required,
+    renderMenuItem
+  } = props;
 
   return (
     <FormControl required={required}>
-      <StyledInputLabel hidden={!props.label} htmlFor={id}>
-        {props.label}
+      <StyledInputLabel hidden={!label} htmlFor={id}>
+        {label}
       </StyledInputLabel>
       <Select {...props} inputProps={{ id, readOnly: disabled }}>
-        {props.items.map((item = {}) => (
-          <MenuItem key={item.value} value={item.value}>
-            {item.label}
-          </MenuItem>
-        ))}
+        {renderMenuItem(items)}
       </Select>
-      <StyledFormHelperText>{props['helper-text']}</StyledFormHelperText>
+      <StyledFormHelperText>{helperText}</StyledFormHelperText>
     </FormControl>
   );
 }
