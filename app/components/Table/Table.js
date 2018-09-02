@@ -14,7 +14,8 @@ Table.propTypes = {
   columns: PropTypes.array,
   rows: PropTypes.array,
   renderHead: PropTypes.func,
-  renderBody: PropTypes.func
+  renderBodyRow: PropTypes.func,
+  renderBodyRowCell: PropTypes.func
 };
 
 Table.defaultProps = {
@@ -29,19 +30,17 @@ Table.defaultProps = {
         {label || value}
       </TableCell>
     )),
-  renderBody: ({ columns, rows, rowOptions }) =>
+  renderBodyRow: (columns, rows, rowOptions, renderBodyRowCell) =>
     rows.map(row => (
       <MUITableRow key={row.id} {...rowOptions}>
-        {columns.map(column => (
-          <TableCell
-            {...column}
-            numeric={column.numeric}
-            value={row[column.value]}
-          >
-            {row[column.value]}
-          </TableCell>
-        ))}
+        {renderBodyRowCell(columns, row)}
       </MUITableRow>
+    )),
+  renderBodyRowCell: (columns, row) =>
+    columns.map(column => (
+      <TableCell {...column} numeric={column.numeric} value={row[column.value]}>
+        {row[column.value]}
+      </TableCell>
     ))
 };
 
@@ -56,14 +55,23 @@ Table.defaultProps = {
  */
 
 function Table(props) {
-  const { rowOptions, columns, rows, renderHead, renderBody } = props;
+  const {
+    rowOptions,
+    columns,
+    rows,
+    renderHead,
+    renderBodyRow,
+    renderBodyRowCell
+  } = props;
 
   return (
     <MUITable>
       <MUITableHead>
         <MUITableRow>{renderHead(columns)}</MUITableRow>
       </MUITableHead>
-      <MUITableBody>{renderBody({ columns, rows, rowOptions })}</MUITableBody>
+      <MUITableBody>
+        {renderBodyRow(columns, rows, rowOptions, renderBodyRowCell)}
+      </MUITableBody>
     </MUITable>
   );
 }
