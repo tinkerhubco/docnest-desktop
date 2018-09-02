@@ -73,7 +73,7 @@ storiesOf('Select/HelperText', module)
       value={1}
       onChange={onChangeHandler}
       items={menuItems}
-      helper-text="Helper Text"
+      helperText="Helper Text"
     />
   ))
   .add('With Label', () => (
@@ -83,6 +83,6 @@ storiesOf('Select/HelperText', module)
       value={1}
       onChange={onChangeHandler}
       items={menuItems}
-      helper-text="Helper Text"
+      helperText="Helper Text"
     />
   ));
