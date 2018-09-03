@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import format from 'date-fns/format';
 
 import MUITableCell from '@material-ui/core/TableCell';
 
-import Button from '../Button/Button';
+import { TableCellButton } from './TableCellButton';
+import { TableCellDate } from './TableCellDate';
 
 TableCell.propTypes = {
   children: PropTypes.node,
@@ -14,7 +14,6 @@ TableCell.propTypes = {
   isButton: PropTypes.bool,
   numeric: PropTypes.bool,
   ownProps: PropTypes.object,
-  rawValue: PropTypes.string,
   value: PropTypes.any
 };
 
@@ -25,7 +24,6 @@ TableCell.defaultProps = {
   isButton: false,
   numeric: false,
   ownProps: {},
-  rawValue: '',
   value: ''
 };
 
@@ -42,21 +40,21 @@ function TableCell(props) {
     isButton,
     numeric,
     ownProps,
-    rawValue,
     value
   } = props;
-  if (isDate && dateFormat) {
-    const date = format(value, dateFormat);
-    return <MUITableCell numeric={numeric}>{date}</MUITableCell>;
+  if (isDate) {
+    return (
+      <TableCellDate
+        numeric={numeric}
+        value={value}
+        dateFormat={dateFormat || undefined}
+      />
+    );
   } else if (isButton) {
     // For this to send an event.. Should we run it through Redux?
     // Create a "special" event for the button clicked in the table?
     // Or pass the event handler?
-    return (
-      <MUITableCell numeric={numeric}>
-        <Button {...ownProps}>{rawValue}</Button>
-      </MUITableCell>
-    );
+    return <TableCellButton numeric={numeric} buttonProps={ownProps} />;
   }
   return <MUITableCell numeric={numeric}>{children}</MUITableCell>;
 }

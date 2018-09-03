@@ -41,6 +41,10 @@ TableCellDate.propTypes = {
    */
   sortDirection: PropTypes.oneOf(['asc', 'desc', false]),
   /**
+   * The date value
+   */
+  value: PropTypes.string,
+  /**
    * Specify the cell type.
    * By default, the TableHead, TableBody or TableFooter parent component set the value.
    */
@@ -49,7 +53,8 @@ TableCellDate.propTypes = {
 
 TableCellDate.defaultProps = {
   numeric: false,
-  dateFormat: `yyyy-MM-dd'T'HH:mm:ssZ`
+  dateFormat: `yyyy-MM-dd'T'HH:mm:ssZ`,
+  value: '2018-08-25T02:44:44Z'
 };
 
 export function TableCellDate(props) {

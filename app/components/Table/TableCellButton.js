@@ -23,6 +23,10 @@ TableCellButton.propTypes = {
     PropTypes.object
   ]),
   /**
+   * A props to be passed in the <Button />
+   */
+  buttonProps: PropTypes.any,
+  /**
    * If `true`, content will align to the right.
    */
   numeric: PropTypes.bool,
@@ -47,7 +51,10 @@ TableCellButton.propTypes = {
 };
 
 TableCellButton.defaultProps = {
-  numeric: false
+  numeric: false,
+  buttonProps: {
+    children: 'Click me'
+  }
 };
 
 export function TableCellButton(props) {

@@ -47,10 +47,11 @@ const TableCellButtonStory = {
       {
         key: 'action',
         label: 'Action',
-        value: undefined,
-        rawValue: 'Click Me',
         numeric: true,
-        isButton: true
+        isButton: true,
+        ownProps: {
+          children: 'Click Me'
+        }
       }
     ]
   },
@@ -61,12 +62,11 @@ const TableCellButtonStory = {
       {
         key: 'action',
         label: 'Action',
-        value: undefined,
-        rawValue: 'Click Me',
         numeric: true,
         isButton: true,
         ownProps: {
-          color: 'primary'
+          color: 'primary',
+          children: 'Click Me'
         }
       }
     ]
@@ -78,12 +78,11 @@ const TableCellButtonStory = {
       {
         key: 'action',
         label: 'Action',
-        value: undefined,
-        rawValue: 'Click Me',
         numeric: true,
         isButton: true,
         ownProps: {
-          color: 'secondary'
+          color: 'secondary',
+          children: 'Click Me'
         }
       }
     ]
@@ -95,12 +94,11 @@ const TableCellButtonStory = {
       {
         key: 'action',
         label: 'Action',
-        value: undefined,
-        rawValue: 'Click Me',
         numeric: true,
         isButton: true,
         ownProps: {
-          disabled: true
+          disabled: true,
+          children: 'Click Me'
         }
       }
     ]
@@ -112,13 +110,12 @@ const TableCellButtonStory = {
       {
         key: 'action',
         label: 'Action',
-        value: undefined,
-        rawValue: 'Click Me',
         numeric: true,
         isButton: true,
         ownProps: {
           variant: 'contained',
-          color: 'primary'
+          color: 'primary',
+          children: 'Click Me'
         }
       }
     ]
