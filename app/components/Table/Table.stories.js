@@ -64,7 +64,7 @@ const TableCellButtonStory = {
         label: 'Action',
         numeric: true,
         isButton: true,
-        ownProps: {
+        buttonProps: {
           color: 'primary',
           children: 'Click Me'
         }
@@ -80,7 +80,7 @@ const TableCellButtonStory = {
         label: 'Action',
         numeric: true,
         isButton: true,
-        ownProps: {
+        buttonProps: {
           color: 'secondary',
           children: 'Click Me'
         }
@@ -96,7 +96,7 @@ const TableCellButtonStory = {
         label: 'Action',
         numeric: true,
         isButton: true,
-        ownProps: {
+        buttonProps: {
           disabled: true,
           children: 'Click Me'
         }
@@ -112,7 +112,7 @@ const TableCellButtonStory = {
         label: 'Action',
         numeric: true,
         isButton: true,
-        ownProps: {
+        buttonProps: {
           variant: 'contained',
           color: 'primary',
           children: 'Click Me'

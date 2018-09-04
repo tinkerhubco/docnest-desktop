@@ -13,7 +13,7 @@ TableCell.propTypes = {
   isDate: PropTypes.bool,
   isButton: PropTypes.bool,
   numeric: PropTypes.bool,
-  ownProps: PropTypes.object,
+  buttonProps: PropTypes.object,
   value: PropTypes.any
 };
 
@@ -23,7 +23,7 @@ TableCell.defaultProps = {
   isDate: false,
   isButton: false,
   numeric: false,
-  ownProps: {},
+  buttonProps: undefined,
   value: ''
 };
 
@@ -39,7 +39,7 @@ function TableCell(props) {
     isDate,
     isButton,
     numeric,
-    ownProps,
+    buttonProps,
     value
   } = props;
   if (isDate) {
@@ -54,7 +54,12 @@ function TableCell(props) {
     // For this to send an event.. Should we run it through Redux?
     // Create a "special" event for the button clicked in the table?
     // Or pass the event handler?
-    return <TableCellButton numeric={numeric} buttonProps={ownProps} />;
+    return (
+      <TableCellButton
+        numeric={numeric}
+        buttonProps={buttonProps || undefined}
+      />
+    );
   }
   return <MUITableCell numeric={numeric}>{children}</MUITableCell>;
 }

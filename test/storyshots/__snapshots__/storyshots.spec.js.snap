@@ -4210,7 +4210,7 @@ exports[`Storyshots Table/Cell/Button default 1`] = `
           <span
             className="MuiButton-label"
           >
-            Click Me
+            Click me
           </span>
           <span
             className="MuiTouchRipple-root"
@@ -4256,7 +4256,7 @@ exports[`Storyshots Table/Cell/Button default 1`] = `
           <span
             className="MuiButton-label"
           >
-            Click Me
+            Click me
           </span>
           <span
             className="MuiTouchRipple-root"
@@ -4302,7 +4302,7 @@ exports[`Storyshots Table/Cell/Button default 1`] = `
           <span
             className="MuiButton-label"
           >
-            Click Me
+            Click me
           </span>
           <span
             className="MuiTouchRipple-root"
@@ -4348,7 +4348,7 @@ exports[`Storyshots Table/Cell/Button default 1`] = `
           <span
             className="MuiButton-label"
           >
-            Click Me
+            Click me
           </span>
           <span
             className="MuiTouchRipple-root"
@@ -4394,7 +4394,7 @@ exports[`Storyshots Table/Cell/Button default 1`] = `
           <span
             className="MuiButton-label"
           >
-            Click Me
+            Click me
           </span>
           <span
             className="MuiTouchRipple-root"
@@ -5256,7 +5256,7 @@ exports[`Storyshots Table/Cell/Date default 1`] = `
         aria-sort={null}
         className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
       >
-        2018-08-25T02:44:44Z
+        2018-08-25T10:44:44Z
       </td>
     </tr>
     <tr
@@ -5278,7 +5278,7 @@ exports[`Storyshots Table/Cell/Date default 1`] = `
         aria-sort={null}
         className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
       >
-        2018-08-25T02:44:44Z
+        2018-08-25T10:44:44Z
       </td>
     </tr>
     <tr
@@ -5300,7 +5300,7 @@ exports[`Storyshots Table/Cell/Date default 1`] = `
         aria-sort={null}
         className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
       >
-        2018-08-25T02:44:44Z
+        2018-08-25T10:44:44Z
       </td>
     </tr>
     <tr
@@ -5322,7 +5322,7 @@ exports[`Storyshots Table/Cell/Date default 1`] = `
         aria-sort={null}
         className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
       >
-        2018-08-25T02:44:44Z
+        2018-08-25T10:44:44Z
       </td>
     </tr>
     <tr
@@ -5344,7 +5344,7 @@ exports[`Storyshots Table/Cell/Date default 1`] = `
         aria-sort={null}
         className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
       >
-        2018-08-25T02:44:44Z
+        2018-08-25T10:44:44Z
       </td>
     </tr>
   </tbody>
