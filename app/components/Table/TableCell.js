@@ -19,18 +19,13 @@ TableCell.propTypes = {
 
 TableCell.defaultProps = {
   children: undefined,
-  dateFormat: '',
+  dateFormat: undefined,
   isDate: false,
   isButton: false,
   numeric: false,
   buttonProps: undefined,
   value: ''
 };
-
-/**
- * Should we create different Cell for this?
- * example: <TableDateCell /> and <TableButtonCell />
- */
 
 function TableCell(props) {
   const {
@@ -44,22 +39,13 @@ function TableCell(props) {
   } = props;
   if (isDate) {
     return (
-      <TableCellDate
-        numeric={numeric}
-        value={value}
-        dateFormat={dateFormat || undefined}
-      />
+      <TableCellDate numeric={numeric} value={value} dateFormat={dateFormat} />
     );
   } else if (isButton) {
     // For this to send an event.. Should we run it through Redux?
     // Create a "special" event for the button clicked in the table?
     // Or pass the event handler?
-    return (
-      <TableCellButton
-        numeric={numeric}
-        buttonProps={buttonProps || undefined}
-      />
-    );
+    return <TableCellButton numeric={numeric} buttonProps={buttonProps} />;
   }
   return <MUITableCell numeric={numeric}>{children}</MUITableCell>;
 }
