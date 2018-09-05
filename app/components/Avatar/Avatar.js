@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import MUIAvatar from '@material-ui/core/Avatar';
 
 Avatar.propTypes = {
@@ -59,12 +58,8 @@ Avatar.defaultProps = {
   component: 'div'
 };
 
-function Avatar(props) {
+export function Avatar(props) {
   return <MUIAvatar {...props} />;
 }
 
-const StyledAvatar = styled(Avatar)``;
-
-export { StyledAvatar as Avatar };
-
-export default StyledAvatar;
+export default Avatar;

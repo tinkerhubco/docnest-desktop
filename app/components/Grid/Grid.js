@@ -1,7 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-
 import MUIGrid from '@material-ui/core/Grid';
 import MUIGridList from '@material-ui/core/GridList';
 import MUIGridListTile from '@material-ui/core/GridListTile';
@@ -20,7 +18,7 @@ Grid.defaultProps = {
   title: ''
 };
 
-function Grid(props) {
+export function Grid(props) {
   const { items, title } = props;
   const displayGridTitle = () => {
     if (!title) return;
@@ -66,7 +64,4 @@ function Grid(props) {
   );
 }
 
-const StyledGrid = styled(Grid)``;
-
-export { StyledGrid as Grid };
-export default StyledGrid;
+export default Grid;

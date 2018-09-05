@@ -22,7 +22,7 @@ DateTimePicker.defaultProps = {
   onChange: () => {}
 };
 
-function DateTimePicker(props) {
+export function DateTimePicker(props) {
   return (
     <MUIPickersUtilsProvider utils={DateFnsUtils}>
       <MUIDateTimePicker {...props} />
@@ -30,5 +30,4 @@ function DateTimePicker(props) {
   );
 }
 
-export { DateTimePicker };
 export default DateTimePicker;

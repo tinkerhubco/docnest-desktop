@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Select from '@material-ui/core/Select';
+import MUISelect from '@material-ui/core/Select';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormHelperText from '@material-ui/core/FormHelperText';
 
 import MenuItem from '../Menu/MenuItem';
 
-SelectFormField.propTypes = {
+Select.propTypes = {
   id: PropTypes.string.isRequired,
   label: PropTypes.string,
   helperText: PropTypes.string,
@@ -23,7 +23,7 @@ SelectFormField.propTypes = {
   renderMenuItem: PropTypes.func
 };
 
-SelectFormField.defaultProps = {
+Select.defaultProps = {
   renderMenuItem: items =>
     items.map(({ value, label } = {}) => (
       <MenuItem key={value || label} value={value || label}>
@@ -45,7 +45,7 @@ function toggleDisplay(determinator) {
   `;
 }
 
-function SelectFormField(props) {
+export function Select(props) {
   const {
     disabled,
     helperText,
@@ -61,16 +61,12 @@ function SelectFormField(props) {
       <StyledInputLabel hidden={!label} htmlFor={id}>
         {label}
       </StyledInputLabel>
-      <Select {...props} inputProps={{ id, readOnly: disabled }}>
+      <MUISelect {...props} inputProps={{ id, readOnly: disabled }}>
         {renderMenuItem(items)}
-      </Select>
+      </MUISelect>
       <StyledFormHelperText>{helperText}</StyledFormHelperText>
     </FormControl>
   );
 }
 
-const StyledSelect = styled(SelectFormField)``;
-
-export { StyledSelect as SelectFormField };
-
-export default StyledSelect;
+export default Select;

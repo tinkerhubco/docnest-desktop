@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import MUICard from '@material-ui/core/Card';
 
 Card.propTypes = {
@@ -18,12 +17,8 @@ Card.defaultProps = {
   raised: false
 };
 
-function Card(props) {
+export function Card(props) {
   return <MUICard {...props} />;
 }
 
-const StyledCard = styled(Card)``;
-
-export { StyledCard as Card };
-
-export default StyledCard;
+export default Card;

@@ -1,7 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-
 import MUITableCell from '@material-ui/core/TableCell';
 
 import { TableCellButton } from './TableCellButton';
@@ -27,7 +25,7 @@ TableCell.defaultProps = {
   value: ''
 };
 
-function TableCell(props) {
+export function TableCell(props) {
   const {
     children,
     dateFormat,
@@ -50,7 +48,4 @@ function TableCell(props) {
   return <MUITableCell numeric={numeric}>{children}</MUITableCell>;
 }
 
-const StyledTableCell = styled(TableCell)``;
-
-export { StyledTableCell as TableCell };
 export default TableCell;

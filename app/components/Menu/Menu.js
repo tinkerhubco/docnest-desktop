@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import MUIMenu from '@material-ui/core/Menu';
 
 Menu.propTypes = {
@@ -77,11 +76,8 @@ Menu.defaultProps = {
   transitionDuration: 'auto'
 };
 
-function Menu(props) {
+export function Menu(props) {
   return <MUIMenu {...props} />;
 }
 
-const StyledMenu = styled(Menu)``;
-
-export { StyledMenu as Menu };
-export default StyledMenu;
+export default Menu;

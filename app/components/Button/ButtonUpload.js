@@ -24,7 +24,7 @@ const StyledInput = styled('input')`
   display: none;
 `;
 
-function ButtonUpload(props) {
+export function ButtonUpload(props) {
   const { accept, disabled, id, ...buttonProps } = props;
 
   // Might cause issue if all instance of <ButtonUpload> have a the same id
@@ -44,8 +44,4 @@ function ButtonUpload(props) {
   );
 }
 
-const StyledUploadButton = styled(ButtonUpload)``;
-
-export { StyledUploadButton as UploadButton };
-
-export default StyledUploadButton;
+export default ButtonUpload;

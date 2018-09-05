@@ -1,7 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-
 import MUICheckbox from '@material-ui/core/Checkbox';
 
 Checkbox.propTypes = {
@@ -72,11 +70,8 @@ Checkbox.defaultProps = {
   indeterminate: false
 };
 
-function Checkbox(props) {
+export function Checkbox(props) {
   return <MUICheckbox {...props} />;
 }
 
-const StyledCheckbox = styled(Checkbox)``;
-
-export { StyledCheckbox as Checkbox };
-export default StyledCheckbox;
+export default Checkbox;

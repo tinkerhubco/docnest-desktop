@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import MUIButtonIcon from '@material-ui/core/IconButton';
 
 IconButton.propTypes = {
@@ -31,10 +30,8 @@ IconButton.defaultProps = {
   disabled: false
 };
 
-function IconButton(props) {
+export function IconButton(props) {
   return <MUIButtonIcon {...props} />;
 }
 
-export const StyledIconButton = styled(IconButton)``;
-
-export default StyledIconButton;
+export default IconButton;

@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import MUICardHeader from '@material-ui/core/CardHeader';
 
 CardHeader.propTypes = {
@@ -57,12 +56,8 @@ CardHeader.defaultProps = {
   disableTypography: false
 };
 
-function CardHeader(props) {
+export function CardHeader(props) {
   return <MUICardHeader {...props} />;
 }
 
-const StyledCardHeader = styled(CardHeader)``;
-
-export { StyledCardHeader as CardHeader };
-
-export default StyledCardHeader;
+export default CardHeader;

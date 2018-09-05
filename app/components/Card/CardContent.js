@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import MUICardContent from '@material-ui/core/CardContent';
 
 CardContent.propTypes = {
@@ -23,12 +22,8 @@ CardContent.defaultProps = {
   component: 'div'
 };
 
-function CardContent(props) {
+export function CardContent(props) {
   return <MUICardContent {...props} />;
 }
 
-const StyledCardContent = styled(CardContent)``;
-
-export { StyledCardContent as CardContent };
-
-export default StyledCardContent;
+export default CardContent;

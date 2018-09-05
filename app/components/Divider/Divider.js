@@ -1,7 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-
 import MUIDivider from '@material-ui/core/Divider';
 
 Divider.propTypes = {
@@ -20,11 +18,8 @@ Divider.defaultProps = {
   inset: false
 };
 
-function Divider(props) {
+export function Divider(props) {
   return <MUIDivider {...props} />;
 }
 
-const StyledDivider = styled(Divider)``;
-
-export { StyledDivider as Divider };
-export default StyledDivider;
+export default Divider;

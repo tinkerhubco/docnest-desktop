@@ -1,7 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-
 import MUITable from '@material-ui/core/Table';
 import MUITableHead from '@material-ui/core/TableHead';
 import MUITableBody from '@material-ui/core/TableBody';
@@ -54,7 +52,7 @@ Table.defaultProps = {
  * Support for Table colors
  */
 
-function Table(props) {
+export function Table(props) {
   const {
     rowOptions,
     columns,
@@ -76,7 +74,4 @@ function Table(props) {
   );
 }
 
-const StyledTable = styled(Table)``;
-
-export { StyledTable as Table };
-export default StyledTable;
+export default Table;

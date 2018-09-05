@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import MUICardActions from '@material-ui/core/CardActions';
 
 CardActions.propTypes = {
@@ -22,12 +21,8 @@ CardActions.defaultProps = {
   disableActionSpacing: false
 };
 
-function CardActions(props) {
+export function CardActions(props) {
   return <MUICardActions {...props} />;
 }
 
-const StyledCardActions = styled(CardActions)``;
-
-export { StyledCardActions as CardActions };
-
-export default StyledCardActions;
+export default CardActions;

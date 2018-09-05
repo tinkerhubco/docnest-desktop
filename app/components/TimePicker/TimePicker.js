@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import MUIPickersUtilsProvider from 'material-ui-pickers/utils/MuiPickersUtilsProvider';
 import MUITimePicker from 'material-ui-pickers/TimePicker';
 import DateFnsUtils from 'material-ui-pickers/utils/date-fns-utils';
@@ -21,13 +20,12 @@ TimePicker.defaultProps = {
   onChange: () => {}
 };
 
-function TimePicker (props) {
+export function TimePicker(props) {
   return (
     <MUIPickersUtilsProvider utils={DateFnsUtils}>
       <MUITimePicker {...props} />
     </MUIPickersUtilsProvider>
-  )
+  );
 }
 
-export { TimePicker };
 export default TimePicker;

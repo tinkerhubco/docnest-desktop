@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import MUIMenuItem from '@material-ui/core/MenuItem';
 
 MenuItem.propTypes = {
@@ -36,11 +35,8 @@ MenuItem.defaultProps = {
   role: 'menuitem'
 };
 
-function MenuItem(props) {
+export function MenuItem(props) {
   return <MUIMenuItem {...props} />;
 }
 
-const StyledMenuItem = styled(MenuItem)``;
-
-export { StyledMenuItem as MenuItem };
-export default StyledMenuItem;
+export default MenuItem;

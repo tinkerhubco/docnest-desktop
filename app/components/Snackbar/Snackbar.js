@@ -1,7 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-
 import MUISnackbar from '@material-ui/core/Snackbar';
 import CloseIcon from '@material-ui/icons/Close';
 
@@ -19,7 +17,7 @@ Snackbar.defaultProps = {
   children: <CloseAction />
 };
 
-function Snackbar(props) {
+export function Snackbar(props) {
   const { vertical, horizontal } = props;
 
   return (
@@ -39,8 +37,4 @@ function CloseAction() {
   );
 }
 
-const StyledSnackbar = styled(Snackbar)``;
-
-export { StyledSnackbar as Snackbar };
-
-export default StyledSnackbar;
+export default Snackbar;

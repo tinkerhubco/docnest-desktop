@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-
 import MUIStepper from '@material-ui/core/Stepper';
 import MUIStep from '@material-ui/core/Step';
 import MUILabel from '@material-ui/core/StepLabel';
@@ -15,7 +14,7 @@ const StyledStepperContentContainer = styled('div')`
 `;
 const StyledStepperActionContainer = styled('div')``;
 
-class Stepper extends React.Component {
+export class Stepper extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -147,7 +146,4 @@ Stepper.defaultProps = {
   orientation: 'horizontal'
 };
 
-const StyledStepper = styled(Stepper)``;
-
-export { StyledStepper as Stepper };
-export default StyledStepper;
+export default Stepper;

@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import MUITypography from '@material-ui/core/Typography';
 
 Typography.propTypes = {
@@ -94,12 +93,8 @@ Typography.defaultProps = {
   variant: 'body1'
 };
 
-function Typography(props) {
+export function Typography(props) {
   return <MUITypography {...props} />;
 }
 
-const StyledTypography = styled(Typography)``;
-
-export { StyledTypography as Typography };
-
-export default StyledTypography;
+export default Typography;
