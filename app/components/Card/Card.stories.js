@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
@@ -27,11 +28,11 @@ const placeholderCardContentText = `This impressive paella is a perfect party di
 together with your guests. Add 1 cup of frozen peas along with the
 mussels, if you like.`;
 
-const StyledCard = Card.extend`
+const StyledCard = styled(Card)`
   width: 400px;
 `;
 
-const StyledCardMedia = CardMedia.extend`
+const StyledCardMedia = styled(CardMedia)`
   height: 0;
   padding-top: 56.25%;
 `;
