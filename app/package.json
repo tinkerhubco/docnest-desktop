@@ -9,8 +9,7 @@
     "url": "https://github.com/tinker-hub"
   },
   "scripts": {
-    "electron-rebuild":
-      "node -r babel-register ../internals/scripts/ElectronRebuild.js",
+    "electron-rebuild": "node -r babel-register ../internals/scripts/ElectronRebuild.js",
     "postinstall": "npm run electron-rebuild"
   },
   "dependencies": {}

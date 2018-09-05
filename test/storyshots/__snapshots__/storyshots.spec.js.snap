@@ -1,8 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Avatar icon 1`] = `
+<div
+  className="MuiAvatar-root MuiAvatar-colorDefault"
+>
+  <svg
+    aria-hidden="true"
+    className="MuiSvgIcon-root"
+    focusable="false"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M0 0h24v24H0z"
+      fill="none"
+    />
+    <path
+      d="M11.5 9C10.12 9 9 10.12 9 11.5s1.12 2.5 2.5 2.5 2.5-1.12 2.5-2.5S12.88 9 11.5 9zM20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-3.21 14.21l-2.91-2.91c-.69.44-1.51.7-2.39.7C9.01 16 7 13.99 7 11.5S9.01 7 11.5 7 16 9.01 16 11.5c0 .88-.26 1.69-.7 2.39l2.91 2.9-1.42 1.42z"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots Avatar image 1`] = `
+<div
+  className="MuiAvatar-root"
+>
+  <img
+    alt="avatar"
+    className="MuiAvatar-img"
+    src="https://via.placeholder.com/64x64"
+  />
+</div>
+`;
+
+exports[`Storyshots Avatar letter 1`] = `
+<div
+  className="MuiAvatar-root MuiAvatar-colorDefault"
+>
+  J
+</div>
+`;
+
 exports[`Storyshots Button/Contained default 1`] = `
 <button
-  className="MuiButtonBase-root-154 MuiButton-root-130 MuiButton-contained-139 MuiButton-raised-142"
+  className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-raised "
   disabled={false}
   onBlur={[Function]}
   onFocus={[Function]}
@@ -18,19 +59,19 @@ exports[`Storyshots Button/Contained default 1`] = `
   type="button"
 >
   <span
-    className="MuiButton-label-131"
+    className="MuiButton-label"
   >
     Button
   </span>
   <span
-    className="MuiTouchRipple-root-157"
+    className="MuiTouchRipple-root"
   />
 </button>
 `;
 
 exports[`Storyshots Button/Contained disabled 1`] = `
 <button
-  className="MuiButtonBase-root-256 MuiButtonBase-disabled-257 MuiButton-root-232 MuiButton-contained-241 MuiButton-raised-244 MuiButton-disabled-250"
+  className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-contained MuiButton-raised MuiButton-disabled "
   disabled={true}
   onBlur={[Function]}
   onFocus={[Function]}
@@ -46,7 +87,7 @@ exports[`Storyshots Button/Contained disabled 1`] = `
   type="button"
 >
   <span
-    className="MuiButton-label-233"
+    className="MuiButton-label"
   >
     Button
   </span>
@@ -55,7 +96,7 @@ exports[`Storyshots Button/Contained disabled 1`] = `
 
 exports[`Storyshots Button/Contained primary 1`] = `
 <button
-  className="MuiButtonBase-root-188 MuiButton-root-164 MuiButton-contained-173 MuiButton-containedPrimary-174 MuiButton-raised-176 MuiButton-raisedPrimary-177"
+  className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary "
   disabled={false}
   onBlur={[Function]}
   onFocus={[Function]}
@@ -71,19 +112,19 @@ exports[`Storyshots Button/Contained primary 1`] = `
   type="button"
 >
   <span
-    className="MuiButton-label-165"
+    className="MuiButton-label"
   >
     Button
   </span>
   <span
-    className="MuiTouchRipple-root-191"
+    className="MuiTouchRipple-root"
   />
 </button>
 `;
 
 exports[`Storyshots Button/Contained secondary 1`] = `
 <button
-  className="MuiButtonBase-root-222 MuiButton-root-198 MuiButton-contained-207 MuiButton-containedSecondary-209 MuiButton-raised-210 MuiButton-raisedSecondary-212"
+  className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-raised MuiButton-raisedSecondary "
   disabled={false}
   onBlur={[Function]}
   onFocus={[Function]}
@@ -99,19 +140,19 @@ exports[`Storyshots Button/Contained secondary 1`] = `
   type="button"
 >
   <span
-    className="MuiButton-label-199"
+    className="MuiButton-label"
   >
     Button
   </span>
   <span
-    className="MuiTouchRipple-root-225"
+    className="MuiTouchRipple-root"
   />
 </button>
 `;
 
-exports[`Storyshots Button/Text default 1`] = `
+exports[`Storyshots Button/Fab default 1`] = `
 <button
-  className="MuiButtonBase-root-25 MuiButton-root-1 MuiButton-text-3 MuiButton-flat-6"
+  className="MuiButtonBase-root MuiButton-root MuiButton-fab MuiButton-contained MuiButton-raised "
   disabled={false}
   onBlur={[Function]}
   onFocus={[Function]}
@@ -127,19 +168,21 @@ exports[`Storyshots Button/Text default 1`] = `
   type="button"
 >
   <span
-    className="MuiButton-label-2"
+    className="MuiButton-label"
   >
+     
     Button
+     
   </span>
   <span
-    className="MuiTouchRipple-root-28"
+    className="MuiTouchRipple-root"
   />
 </button>
 `;
 
-exports[`Storyshots Button/Text disabled 1`] = `
+exports[`Storyshots Button/Fab disabled 1`] = `
 <button
-  className="MuiButtonBase-root-127 MuiButtonBase-disabled-128 MuiButton-root-103 MuiButton-text-105 MuiButton-flat-108 MuiButton-disabled-121"
+  className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-fab MuiButton-contained MuiButton-raised MuiButton-disabled "
   disabled={true}
   onBlur={[Function]}
   onFocus={[Function]}
@@ -155,7 +198,122 @@ exports[`Storyshots Button/Text disabled 1`] = `
   type="button"
 >
   <span
-    className="MuiButton-label-104"
+    className="MuiButton-label"
+  >
+     
+    Button
+     
+  </span>
+</button>
+`;
+
+exports[`Storyshots Button/Fab primary 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-fab MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary "
+  disabled={false}
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex="0"
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+     
+    Button
+     
+  </span>
+  <span
+    className="MuiTouchRipple-root"
+  />
+</button>
+`;
+
+exports[`Storyshots Button/Fab secondary 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-fab MuiButton-contained MuiButton-containedSecondary MuiButton-raised MuiButton-raisedSecondary "
+  disabled={false}
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex="0"
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+     
+    Button
+     
+  </span>
+  <span
+    className="MuiTouchRipple-root"
+  />
+</button>
+`;
+
+exports[`Storyshots Button/Text default 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat "
+  disabled={false}
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex="0"
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    Button
+  </span>
+  <span
+    className="MuiTouchRipple-root"
+  />
+</button>
+`;
+
+exports[`Storyshots Button/Text disabled 1`] = `
+<button
+  className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-text MuiButton-flat MuiButton-disabled "
+  disabled={true}
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex="-1"
+  type="button"
+>
+  <span
+    className="MuiButton-label"
   >
     Button
   </span>
@@ -164,7 +322,7 @@ exports[`Storyshots Button/Text disabled 1`] = `
 
 exports[`Storyshots Button/Text primary 1`] = `
 <button
-  className="MuiButtonBase-root-59 MuiButton-root-35 MuiButton-text-37 MuiButton-textPrimary-38 MuiButton-flat-40 MuiButton-flatPrimary-41"
+  className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary "
   disabled={false}
   onBlur={[Function]}
   onFocus={[Function]}
@@ -180,19 +338,19 @@ exports[`Storyshots Button/Text primary 1`] = `
   type="button"
 >
   <span
-    className="MuiButton-label-36"
+    className="MuiButton-label"
   >
     Button
   </span>
   <span
-    className="MuiTouchRipple-root-62"
+    className="MuiTouchRipple-root"
   />
 </button>
 `;
 
 exports[`Storyshots Button/Text secondary 1`] = `
 <button
-  className="MuiButtonBase-root-93 MuiButton-root-69 MuiButton-text-71 MuiButton-textSecondary-73 MuiButton-flat-74 MuiButton-flatSecondary-76"
+  className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-flat MuiButton-flatSecondary "
   disabled={false}
   onBlur={[Function]}
   onFocus={[Function]}
@@ -208,12 +366,6061 @@ exports[`Storyshots Button/Text secondary 1`] = `
   type="button"
 >
   <span
-    className="MuiButton-label-70"
+    className="MuiButton-label"
   >
     Button
   </span>
   <span
-    className="MuiTouchRipple-root-96"
+    className="MuiTouchRipple-root"
   />
 </button>
+`;
+
+exports[`Storyshots ButtonUpload default 1`] = `
+.c0 {
+  display: none;
+}
+
+<div>
+  <input
+    accept="image/*"
+    className="c0"
+    disabled={false}
+    id="test-button"
+    type="file"
+  />
+  <label
+    htmlFor="test-button"
+  >
+    <span
+      className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat "
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex="0"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Upload
+      </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Storyshots ButtonUpload/Contained default 1`] = `
+.c0 {
+  display: none;
+}
+
+<div>
+  <input
+    accept="image/*"
+    className="c0"
+    disabled={false}
+    id="test-button"
+    type="file"
+  />
+  <label
+    htmlFor="test-button"
+  >
+    <span
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-raised "
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex="0"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Upload
+      </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Storyshots ButtonUpload/Contained disabled 1`] = `
+.c0 {
+  display: none;
+}
+
+<div>
+  <input
+    accept="image/*"
+    className="c0"
+    disabled={true}
+    id="test-button"
+    type="file"
+  />
+  <label
+    htmlFor="test-button"
+  >
+    <span
+      className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-contained MuiButton-raised MuiButton-disabled "
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex="-1"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Upload
+      </span>
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Storyshots ButtonUpload/Contained primary 1`] = `
+.c0 {
+  display: none;
+}
+
+<div>
+  <input
+    accept="image/*"
+    className="c0"
+    disabled={false}
+    id="test-button"
+    type="file"
+  />
+  <label
+    htmlFor="test-button"
+  >
+    <span
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary "
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex="0"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Upload
+      </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Storyshots ButtonUpload/Contained secondary 1`] = `
+.c0 {
+  display: none;
+}
+
+<div>
+  <input
+    accept="image/*"
+    className="c0"
+    disabled={false}
+    id="test-button"
+    type="file"
+  />
+  <label
+    htmlFor="test-button"
+  >
+    <span
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-raised MuiButton-raisedSecondary "
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex="0"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Upload
+      </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Storyshots ButtonUpload/Text default 1`] = `
+.c0 {
+  display: none;
+}
+
+<div>
+  <input
+    accept="image/*"
+    className="c0"
+    disabled={false}
+    id="test-button"
+    type="file"
+  />
+  <label
+    htmlFor="test-button"
+  >
+    <span
+      className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat "
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex="0"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Upload
+      </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Storyshots ButtonUpload/Text disabled 1`] = `
+.c0 {
+  display: none;
+}
+
+<div>
+  <input
+    accept="image/*"
+    className="c0"
+    disabled={true}
+    id="test-button"
+    type="file"
+  />
+  <label
+    htmlFor="test-button"
+  >
+    <span
+      className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-text MuiButton-flat MuiButton-disabled "
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex="-1"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Upload
+      </span>
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Storyshots ButtonUpload/Text primary 1`] = `
+.c0 {
+  display: none;
+}
+
+<div>
+  <input
+    accept="image/*"
+    className="c0"
+    disabled={false}
+    id="test-button"
+    type="file"
+  />
+  <label
+    htmlFor="test-button"
+  >
+    <span
+      className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary "
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex="0"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Upload
+      </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Storyshots ButtonUpload/Text secondary 1`] = `
+.c0 {
+  display: none;
+}
+
+<div>
+  <input
+    accept="image/*"
+    className="c0"
+    disabled={false}
+    id="test-button"
+    type="file"
+  />
+  <label
+    htmlFor="test-button"
+  >
+    <span
+      className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-flat MuiButton-flatSecondary "
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex="0"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Upload
+      </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Card complex 1`] = `
+.c0 {
+  width: 400px;
+}
+
+<div
+  className="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded MuiCard-root c0"
+>
+  <div
+    className="MuiCardHeader-root"
+  >
+    <div
+      className="MuiCardHeader-avatar"
+    >
+      <div
+        className="MuiAvatar-root MuiAvatar-colorDefault"
+      >
+        J
+      </div>
+    </div>
+    <div
+      className="MuiCardHeader-content"
+    >
+      <span
+        className="MuiTypography-root MuiTypography-body2 MuiCardHeader-title"
+      >
+        Shrimp and Chorizo Paella
+      </span>
+      <span
+        className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
+      >
+        September 14, 2016
+      </span>
+    </div>
+    <div
+      className="MuiCardHeader-action"
+    >
+      <button
+        className="MuiButtonBase-root MuiIconButton-root"
+        disabled={false}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+            />
+          </svg>
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </div>
+  <div
+    className="MuiCardMedia-root"
+    style={
+      Object {
+        "backgroundImage": "url(\\"https://burst.shopifycdn.com/photos/horseshoe-bend-grand-canyon_373x.progressive.jpg\\")",
+      }
+    }
+    title="Image caption"
+  />
+  <div
+    className="MuiCardContent-root"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      This impressive paella is a perfect party dish and a fun meal to cook
+together with your guests. Add 1 cup of frozen peas along with the
+mussels, if you like.
+    </p>
+  </div>
+  <div
+    className="MuiCardActions-root"
+  >
+    <button
+      className="MuiButtonBase-root MuiIconButton-root"
+      disabled={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex="0"
+      type="button"
+    >
+      <span
+        className="MuiIconButton-label"
+      >
+        <svg
+          aria-hidden="true"
+          className="MuiSvgIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          />
+        </svg>
+      </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      className="MuiButtonBase-root MuiIconButton-root"
+      disabled={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex="0"
+      type="button"
+    >
+      <span
+        className="MuiIconButton-label"
+      >
+        <svg
+          aria-hidden="true"
+          className="MuiSvgIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"
+          />
+        </svg>
+      </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Card media 1`] = `
+.c0 {
+  width: 400px;
+}
+
+.c1 {
+  height: 0;
+  padding-top: 56.25%;
+}
+
+<div
+  className="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded MuiCard-root c0"
+>
+  <div
+    className="MuiCardMedia-root c1"
+    style={
+      Object {
+        "backgroundImage": "url(\\"https://burst.shopifycdn.com/photos/horseshoe-bend-grand-canyon_373x.progressive.jpg\\")",
+      }
+    }
+    title="Image caption"
+  />
+  <div
+    className="MuiCardActions-root"
+  >
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat MuiCardActions-action "
+      disabled={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex="0"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Action Button
+      </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Card simple 1`] = `
+.c0 {
+  width: 400px;
+}
+
+<div
+  className="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded MuiCard-root c0"
+>
+  <div
+    className="MuiCardContent-root"
+  >
+    Lorem Ipsum
+  </div>
+  <div
+    className="MuiCardActions-root"
+  >
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat MuiButton-sizeSmall MuiCardActions-action "
+      disabled={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex="0"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Action Button
+      </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Checkbox default 1`] = `
+<span
+  className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={null}
+>
+  <span
+    className="MuiIconButton-label"
+  >
+    <svg
+      aria-hidden="true"
+      className="MuiSvgIcon-root"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+      />
+    </svg>
+    <input
+      checked={false}
+      className="MuiSwitchBase-input"
+      onChange={[Function]}
+      type="checkbox"
+    />
+  </span>
+  <span
+    className="MuiTouchRipple-root"
+  />
+</span>
+`;
+
+exports[`Storyshots Checkbox disabled 1`] = `
+<span
+  className="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root MuiIconButton-disabled MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-disabled MuiCheckbox-disabled"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex="-1"
+>
+  <span
+    className="MuiIconButton-label"
+  >
+    <svg
+      aria-hidden="true"
+      className="MuiSvgIcon-root"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+      />
+    </svg>
+    <input
+      checked={false}
+      className="MuiSwitchBase-input"
+      disabled={true}
+      onChange={[Function]}
+      type="checkbox"
+    />
+  </span>
+</span>
+`;
+
+exports[`Storyshots Checkbox primary 1`] = `
+<span
+  className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={null}
+>
+  <span
+    className="MuiIconButton-label"
+  >
+    <svg
+      aria-hidden="true"
+      className="MuiSvgIcon-root"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+      />
+    </svg>
+    <input
+      checked={false}
+      className="MuiSwitchBase-input"
+      onChange={[Function]}
+      type="checkbox"
+    />
+  </span>
+  <span
+    className="MuiTouchRipple-root"
+  />
+</span>
+`;
+
+exports[`Storyshots Checkbox secondary 1`] = `
+<span
+  className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorSecondary"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={null}
+>
+  <span
+    className="MuiIconButton-label"
+  >
+    <svg
+      aria-hidden="true"
+      className="MuiSvgIcon-root"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+      />
+    </svg>
+    <input
+      checked={false}
+      className="MuiSwitchBase-input"
+      onChange={[Function]}
+      type="checkbox"
+    />
+  </span>
+  <span
+    className="MuiTouchRipple-root"
+  />
+</span>
+`;
+
+exports[`Storyshots CircularProgress default 1`] = `
+<div
+  className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+  role="progressbar"
+  style={
+    Object {
+      "height": 40,
+      "width": 40,
+    }
+  }
+>
+  <svg
+    className="MuiCircularProgress-svg"
+    viewBox="22 22 44 44"
+  >
+    <circle
+      className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+      cx={44}
+      cy={44}
+      fill="none"
+      r={20.2}
+      strokeWidth={3.6}
+      style={Object {}}
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots CircularProgress primary 1`] = `
+<div
+  className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+  role="progressbar"
+  style={
+    Object {
+      "height": 40,
+      "width": 40,
+    }
+  }
+>
+  <svg
+    className="MuiCircularProgress-svg"
+    viewBox="22 22 44 44"
+  >
+    <circle
+      className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+      cx={44}
+      cy={44}
+      fill="none"
+      r={20.2}
+      strokeWidth={3.6}
+      style={Object {}}
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots CircularProgress secondary 1`] = `
+<div
+  className="MuiCircularProgress-root MuiCircularProgress-colorSecondary MuiCircularProgress-indeterminate"
+  role="progressbar"
+  style={
+    Object {
+      "height": 40,
+      "width": 40,
+    }
+  }
+>
+  <svg
+    className="MuiCircularProgress-svg"
+    viewBox="22 22 44 44"
+  >
+    <circle
+      className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+      cx={44}
+      cy={44}
+      fill="none"
+      r={20.2}
+      strokeWidth={3.6}
+      style={Object {}}
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots CircularProgress static 1`] = `
+<div
+  aria-valuenow={25}
+  className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-static"
+  role="progressbar"
+  style={
+    Object {
+      "height": 40,
+      "transform": "rotate(-90deg)",
+      "width": 40,
+    }
+  }
+>
+  <svg
+    className="MuiCircularProgress-svg"
+    viewBox="22 22 44 44"
+  >
+    <circle
+      className="MuiCircularProgress-circle MuiCircularProgress-circleStatic"
+      cx={44}
+      cy={44}
+      fill="none"
+      r={20.2}
+      strokeWidth={3.6}
+      style={
+        Object {
+          "strokeDasharray": "126.920",
+          "strokeDashoffset": "95.190px",
+        }
+      }
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots DatePicker default 1`] = `
+<div
+  className="MuiFormControl-root"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      mask={null}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      required={false}
+      type="text"
+      value="September 5th"
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`Storyshots DateTimePicker Disable Future 1`] = `
+<div
+  className="MuiFormControl-root"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+  >
+    Default
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      mask={null}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      required={false}
+      type="text"
+      value="September 5th 04:00 p.m."
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`Storyshots DateTimePicker Disable Past 1`] = `
+<div
+  className="MuiFormControl-root"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+  >
+    Default
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      mask={null}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      required={false}
+      type="text"
+      value="September 5th 08:00 a.m."
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`Storyshots DateTimePicker Turn off AM PM 1`] = `
+<div
+  className="MuiFormControl-root"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+  >
+    AM PM
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      mask={null}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      required={false}
+      type="text"
+      value="September 5th 16:00"
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`Storyshots DateTimePicker autoOk 1`] = `
+<div
+  className="MuiFormControl-root"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+  >
+    Auto Ok
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      mask={null}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      required={false}
+      type="text"
+      value="September 5th 04:00 p.m."
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`Storyshots DateTimePicker clearable 1`] = `
+<div
+  className="MuiFormControl-root"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+  >
+    Clearable
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      mask={null}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      required={false}
+      type="text"
+      value="September 5th 04:00 p.m."
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`Storyshots DateTimePicker default 1`] = `
+<div
+  className="MuiFormControl-root"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+  >
+    Default
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      mask={null}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      required={false}
+      type="text"
+      value="September 5th 04:00 p.m."
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`Storyshots DateTimePicker showTodayButton 1`] = `
+<div
+  className="MuiFormControl-root"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+  >
+    Show Today Button
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      mask={null}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      required={false}
+      type="text"
+      value="September 5th 04:00 p.m."
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`Storyshots Divider default 1`] = `
+<hr
+  className="MuiDivider-root"
+/>
+`;
+
+exports[`Storyshots Divider inset 1`] = `
+<hr
+  className="MuiDivider-root MuiDivider-inset"
+/>
+`;
+
+exports[`Storyshots Divider light 1`] = `
+<hr
+  className="MuiDivider-root MuiDivider-light"
+/>
+`;
+
+exports[`Storyshots Grid default 1`] = `
+<div
+  className=""
+>
+  <ul
+    className="MuiGridList-root"
+    style={
+      Object {
+        "margin": -2,
+      }
+    }
+  >
+    <img
+      alt="Breakfast Image"
+      src="https://material-ui.com/static/images/grid-list/breakfast.jpg"
+      style={
+        Object {
+          "height": 184,
+          "padding": 2,
+          "width": "100%",
+        }
+      }
+    />
+  </ul>
+  <ul
+    className="MuiGridList-root"
+    style={
+      Object {
+        "margin": -2,
+      }
+    }
+  >
+    <img
+      alt="Burgers Image"
+      src="https://material-ui.com/static/images/grid-list/burgers.jpg"
+      style={
+        Object {
+          "height": 184,
+          "padding": 2,
+          "width": "100%",
+        }
+      }
+    />
+  </ul>
+  <ul
+    className="MuiGridList-root"
+    style={
+      Object {
+        "margin": -2,
+      }
+    }
+  >
+    <img
+      alt="Camera Image"
+      src="https://material-ui.com/static/images/grid-list/camera.jpg"
+      style={
+        Object {
+          "height": 184,
+          "padding": 2,
+          "width": "100%",
+        }
+      }
+    />
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Grid/Tile default 1`] = `
+<div
+  className=""
+>
+  <ul
+    className="MuiGridList-root"
+    style={
+      Object {
+        "margin": -2,
+      }
+    }
+  >
+    <img
+      alt="Breakfast Image"
+      src="https://material-ui.com/static/images/grid-list/breakfast.jpg"
+      style={
+        Object {
+          "height": 184,
+          "padding": 2,
+          "width": "100%",
+        }
+      }
+    />
+    <div
+      className="MuiGridListTileBar-root MuiGridListTileBar-titlePositionBottom"
+      style={
+        Object {
+          "height": 184,
+          "padding": 2,
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        className="MuiGridListTileBar-titleWrap MuiGridListTileBar-titleWrapActionPosRight"
+      >
+        <div
+          className="MuiGridListTileBar-title"
+        >
+          Tile Bar Title
+        </div>
+      </div>
+      <div
+        className="MuiGridListTileBar-actionIcon"
+      >
+        <button
+          className="MuiButtonBase-root MuiIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+              />
+            </svg>
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </ul>
+  <ul
+    className="MuiGridList-root"
+    style={
+      Object {
+        "margin": -2,
+      }
+    }
+  >
+    <img
+      alt="Burgers Image"
+      src="https://material-ui.com/static/images/grid-list/burgers.jpg"
+      style={
+        Object {
+          "height": 184,
+          "padding": 2,
+          "width": "100%",
+        }
+      }
+    />
+    <div
+      className="MuiGridListTileBar-root MuiGridListTileBar-titlePositionBottom"
+      style={
+        Object {
+          "height": 184,
+          "padding": 2,
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        className="MuiGridListTileBar-titleWrap MuiGridListTileBar-titleWrapActionPosRight"
+      >
+        <div
+          className="MuiGridListTileBar-title"
+        >
+          My Burger Title Tile
+        </div>
+      </div>
+      <div
+        className="MuiGridListTileBar-actionIcon"
+      >
+        <button
+          className="MuiButtonBase-root MuiIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+              />
+            </svg>
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Grid/Title default 1`] = `
+<div
+  className=""
+>
+  <li
+    className="MuiGridListTile-root"
+  >
+    <div
+      className="MuiGridListTile-tile"
+    >
+      <div
+        className="MuiListSubheader-root MuiListSubheader-sticky MuiListSubheader-gutters"
+      >
+        Grid Title Sample
+      </div>
+    </div>
+  </li>
+  <ul
+    className="MuiGridList-root"
+    style={
+      Object {
+        "margin": -2,
+      }
+    }
+  >
+    <img
+      alt="Breakfast Image"
+      src="https://material-ui.com/static/images/grid-list/breakfast.jpg"
+      style={
+        Object {
+          "height": 184,
+          "padding": 2,
+          "width": "100%",
+        }
+      }
+    />
+  </ul>
+  <ul
+    className="MuiGridList-root"
+    style={
+      Object {
+        "margin": -2,
+      }
+    }
+  >
+    <img
+      alt="Burgers Image"
+      src="https://material-ui.com/static/images/grid-list/burgers.jpg"
+      style={
+        Object {
+          "height": 184,
+          "padding": 2,
+          "width": "100%",
+        }
+      }
+    />
+  </ul>
+  <ul
+    className="MuiGridList-root"
+    style={
+      Object {
+        "margin": -2,
+      }
+    }
+  >
+    <img
+      alt="Camera Image"
+      src="https://material-ui.com/static/images/grid-list/camera.jpg"
+      style={
+        Object {
+          "height": 184,
+          "padding": 2,
+          "width": "100%",
+        }
+      }
+    />
+  </ul>
+</div>
+`;
+
+exports[`Storyshots IconButton default 1`] = `
+<button
+  className="MuiButtonBase-root MuiIconButton-root"
+  disabled={false}
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex="0"
+  type="button"
+>
+  <span
+    className="MuiIconButton-label"
+  >
+    <svg
+      aria-hidden="true"
+      className="MuiSvgIcon-root"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+      />
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+    </svg>
+  </span>
+  <span
+    className="MuiTouchRipple-root"
+  />
+</button>
+`;
+
+exports[`Storyshots LinearProgress default 1`] = `
+<div
+  className="MuiLinearProgress-root MuiLinearProgress-colorPrimary"
+  role="progressbar"
+>
+  <div
+    className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Indeterminate"
+    style={Object {}}
+  />
+  <div
+    className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar2Indeterminate"
+    style={Object {}}
+  />
+</div>
+`;
+
+exports[`Storyshots LinearProgress primary 1`] = `
+<div
+  className="MuiLinearProgress-root MuiLinearProgress-colorPrimary"
+  role="progressbar"
+>
+  <div
+    className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Indeterminate"
+    style={Object {}}
+  />
+  <div
+    className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar2Indeterminate"
+    style={Object {}}
+  />
+</div>
+`;
+
+exports[`Storyshots LinearProgress secondary 1`] = `
+<div
+  className="MuiLinearProgress-root MuiLinearProgress-colorSecondary"
+  role="progressbar"
+>
+  <div
+    className="MuiLinearProgress-bar MuiLinearProgress-barColorSecondary MuiLinearProgress-bar1Indeterminate"
+    style={Object {}}
+  />
+  <div
+    className="MuiLinearProgress-bar MuiLinearProgress-barColorSecondary MuiLinearProgress-bar2Indeterminate"
+    style={Object {}}
+  />
+</div>
+`;
+
+exports[`Storyshots MenuItem simple 1`] = `
+<li
+  className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  role="menuitem"
+  tabIndex={-1}
+>
+  MenuItem
+  <span
+    className="MuiTouchRipple-root"
+  />
+</li>
+`;
+
+exports[`Storyshots Paper default 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation2 MuiPaper-rounded"
+>
+  <h1>
+    I am inside a Paper
+  </h1>
+</div>
+`;
+
+exports[`Storyshots Paper/Elevation elevation0 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation0 MuiPaper-rounded"
+>
+  <h3
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    This is a sheet of paper with Elevation Value: \`elevation
+    0
+    \`
+  </h3>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Paper can be used to build surface or other elements for your application.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Paper/Elevation elevation1 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+>
+  <h3
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    This is a sheet of paper with Elevation Value: \`elevation
+    1
+    \`
+  </h3>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Paper can be used to build surface or other elements for your application.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Paper/Elevation elevation2 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation2 MuiPaper-rounded"
+>
+  <h3
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    This is a sheet of paper with Elevation Value: \`elevation
+    2
+    \`
+  </h3>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Paper can be used to build surface or other elements for your application.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Paper/Elevation elevation3 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation3 MuiPaper-rounded"
+>
+  <h3
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    This is a sheet of paper with Elevation Value: \`elevation
+    3
+    \`
+  </h3>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Paper can be used to build surface or other elements for your application.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Paper/Elevation elevation4 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation4 MuiPaper-rounded"
+>
+  <h3
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    This is a sheet of paper with Elevation Value: \`elevation
+    4
+    \`
+  </h3>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Paper can be used to build surface or other elements for your application.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Paper/Elevation elevation5 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation5 MuiPaper-rounded"
+>
+  <h3
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    This is a sheet of paper with Elevation Value: \`elevation
+    5
+    \`
+  </h3>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Paper can be used to build surface or other elements for your application.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Paper/Elevation elevation6 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded"
+>
+  <h3
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    This is a sheet of paper with Elevation Value: \`elevation
+    6
+    \`
+  </h3>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Paper can be used to build surface or other elements for your application.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Paper/Elevation elevation7 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation7 MuiPaper-rounded"
+>
+  <h3
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    This is a sheet of paper with Elevation Value: \`elevation
+    7
+    \`
+  </h3>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Paper can be used to build surface or other elements for your application.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Paper/Elevation elevation8 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation8 MuiPaper-rounded"
+>
+  <h3
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    This is a sheet of paper with Elevation Value: \`elevation
+    8
+    \`
+  </h3>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Paper can be used to build surface or other elements for your application.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Paper/Elevation elevation9 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation9 MuiPaper-rounded"
+>
+  <h3
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    This is a sheet of paper with Elevation Value: \`elevation
+    9
+    \`
+  </h3>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Paper can be used to build surface or other elements for your application.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Paper/Elevation elevation10 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation10 MuiPaper-rounded"
+>
+  <h3
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    This is a sheet of paper with Elevation Value: \`elevation
+    10
+    \`
+  </h3>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Paper can be used to build surface or other elements for your application.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Paper/Elevation elevation11 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation11 MuiPaper-rounded"
+>
+  <h3
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    This is a sheet of paper with Elevation Value: \`elevation
+    11
+    \`
+  </h3>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Paper can be used to build surface or other elements for your application.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Paper/Elevation elevation12 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation12 MuiPaper-rounded"
+>
+  <h3
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    This is a sheet of paper with Elevation Value: \`elevation
+    12
+    \`
+  </h3>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Paper can be used to build surface or other elements for your application.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Paper/Elevation elevation13 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation13 MuiPaper-rounded"
+>
+  <h3
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    This is a sheet of paper with Elevation Value: \`elevation
+    13
+    \`
+  </h3>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Paper can be used to build surface or other elements for your application.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Paper/Elevation elevation14 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation14 MuiPaper-rounded"
+>
+  <h3
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    This is a sheet of paper with Elevation Value: \`elevation
+    14
+    \`
+  </h3>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Paper can be used to build surface or other elements for your application.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Paper/Elevation elevation15 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation15 MuiPaper-rounded"
+>
+  <h3
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    This is a sheet of paper with Elevation Value: \`elevation
+    15
+    \`
+  </h3>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Paper can be used to build surface or other elements for your application.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Paper/Elevation elevation16 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation16 MuiPaper-rounded"
+>
+  <h3
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    This is a sheet of paper with Elevation Value: \`elevation
+    16
+    \`
+  </h3>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Paper can be used to build surface or other elements for your application.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Paper/Elevation elevation17 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation17 MuiPaper-rounded"
+>
+  <h3
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    This is a sheet of paper with Elevation Value: \`elevation
+    17
+    \`
+  </h3>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Paper can be used to build surface or other elements for your application.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Paper/Elevation elevation18 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation18 MuiPaper-rounded"
+>
+  <h3
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    This is a sheet of paper with Elevation Value: \`elevation
+    18
+    \`
+  </h3>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Paper can be used to build surface or other elements for your application.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Paper/Elevation elevation19 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation19 MuiPaper-rounded"
+>
+  <h3
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    This is a sheet of paper with Elevation Value: \`elevation
+    19
+    \`
+  </h3>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Paper can be used to build surface or other elements for your application.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Paper/Elevation elevation20 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation20 MuiPaper-rounded"
+>
+  <h3
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    This is a sheet of paper with Elevation Value: \`elevation
+    20
+    \`
+  </h3>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Paper can be used to build surface or other elements for your application.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Paper/Elevation elevation21 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation21 MuiPaper-rounded"
+>
+  <h3
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    This is a sheet of paper with Elevation Value: \`elevation
+    21
+    \`
+  </h3>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Paper can be used to build surface or other elements for your application.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Paper/Elevation elevation22 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation22 MuiPaper-rounded"
+>
+  <h3
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    This is a sheet of paper with Elevation Value: \`elevation
+    22
+    \`
+  </h3>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Paper can be used to build surface or other elements for your application.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Paper/Elevation elevation23 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation23 MuiPaper-rounded"
+>
+  <h3
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    This is a sheet of paper with Elevation Value: \`elevation
+    23
+    \`
+  </h3>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Paper can be used to build surface or other elements for your application.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Paper/Elevation elevation24 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation24 MuiPaper-rounded"
+>
+  <h3
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    This is a sheet of paper with Elevation Value: \`elevation
+    24
+    \`
+  </h3>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Paper can be used to build surface or other elements for your application.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Select default 1`] = `
+.c0 {
+  display: block;
+}
+
+.c1 {
+  display: block;
+}
+
+<div
+  className="MuiFormControl-root"
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink c0"
+    data-shrink={true}
+    hidden={true}
+    htmlFor="select-id"
+  />
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline"
+    items={
+      Array [
+        Object {
+          "label": "None",
+        },
+        Object {
+          "label": "One",
+          "value": 1,
+        },
+        Object {
+          "label": "Two",
+          "value": 2,
+        },
+        Object {
+          "label": "Three",
+          "value": "3",
+        },
+      ]
+    }
+    renderMenuItem={[Function]}
+  >
+    <div
+      className="MuiSelect-root"
+    >
+      <div
+        aria-haspopup="true"
+        aria-owns={null}
+        aria-pressed="false"
+        className="MuiSelect-select MuiSelect-selectMenu MuiInput-input"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        One
+      </div>
+      <input
+        id="select-id"
+        type="hidden"
+        value={1}
+      />
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root MuiSelect-icon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
+    </div>
+  </div>
+  <p
+    className="MuiFormHelperText-root MuiFormHelperText-filled c1"
+  />
+</div>
+`;
+
+exports[`Storyshots Select disabled 1`] = `
+.c0 {
+  display: block;
+}
+
+.c1 {
+  display: block;
+}
+
+<div
+  className="MuiFormControl-root"
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink c0"
+    data-shrink={true}
+    hidden={true}
+    htmlFor="select-id"
+  />
+  <div
+    className="MuiInput-root MuiInput-disabled MuiInput-formControl MuiInput-underline"
+    items={
+      Array [
+        Object {
+          "label": "None",
+        },
+        Object {
+          "label": "One",
+          "value": 1,
+        },
+        Object {
+          "label": "Two",
+          "value": 2,
+        },
+        Object {
+          "label": "Three",
+          "value": "3",
+        },
+      ]
+    }
+    renderMenuItem={[Function]}
+  >
+    <div
+      className="MuiSelect-root"
+    >
+      <div
+        aria-haspopup="true"
+        aria-owns={null}
+        aria-pressed="false"
+        className="MuiSelect-select MuiSelect-selectMenu MuiSelect-disabled MuiInput-input MuiInput-disabled"
+        onBlur={[Function]}
+        onClick={null}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+        tabIndex={null}
+      >
+        One
+      </div>
+      <input
+        id="select-id"
+        type="hidden"
+        value={1}
+      />
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root MuiSelect-icon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
+    </div>
+  </div>
+  <p
+    className="MuiFormHelperText-root MuiFormHelperText-filled c1"
+  />
+</div>
+`;
+
+exports[`Storyshots Select required 1`] = `
+.c0 {
+  display: block;
+}
+
+.c1 {
+  display: block;
+}
+
+<div
+  className="MuiFormControl-root"
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiFormLabel-required MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink c0"
+    data-shrink={true}
+    hidden={false}
+    htmlFor="select-id"
+  >
+    Name
+    <span
+      className="MuiFormLabel-asterisk"
+    >
+       *
+    </span>
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline"
+    items={
+      Array [
+        Object {
+          "label": "None",
+        },
+        Object {
+          "label": "One",
+          "value": 1,
+        },
+        Object {
+          "label": "Two",
+          "value": 2,
+        },
+        Object {
+          "label": "Three",
+          "value": "3",
+        },
+      ]
+    }
+    label="Name"
+    renderMenuItem={[Function]}
+    required={true}
+  >
+    <div
+      className="MuiSelect-root"
+    >
+      <div
+        aria-haspopup="true"
+        aria-owns={null}
+        aria-pressed="false"
+        className="MuiSelect-select MuiSelect-selectMenu MuiInput-input"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        One
+      </div>
+      <input
+        id="select-id"
+        type="hidden"
+        value={1}
+      />
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root MuiSelect-icon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
+    </div>
+  </div>
+  <p
+    className="MuiFormHelperText-root MuiFormHelperText-filled MuiFormHelperText-required c1"
+  />
+</div>
+`;
+
+exports[`Storyshots Select/HelperText With Label 1`] = `
+.c0 {
+  display: block;
+}
+
+.c1 {
+  display: block;
+}
+
+<div
+  className="MuiFormControl-root"
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink c0"
+    data-shrink={true}
+    hidden={false}
+    htmlFor="select-id"
+  >
+    Items
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline"
+    helperText="Helper Text"
+    items={
+      Array [
+        Object {
+          "label": "None",
+        },
+        Object {
+          "label": "One",
+          "value": 1,
+        },
+        Object {
+          "label": "Two",
+          "value": 2,
+        },
+        Object {
+          "label": "Three",
+          "value": "3",
+        },
+      ]
+    }
+    label="Items"
+    renderMenuItem={[Function]}
+  >
+    <div
+      className="MuiSelect-root"
+    >
+      <div
+        aria-haspopup="true"
+        aria-owns={null}
+        aria-pressed="false"
+        className="MuiSelect-select MuiSelect-selectMenu MuiInput-input"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        One
+      </div>
+      <input
+        id="select-id"
+        type="hidden"
+        value={1}
+      />
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root MuiSelect-icon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
+    </div>
+  </div>
+  <p
+    className="MuiFormHelperText-root MuiFormHelperText-filled c1"
+  >
+    Helper Text
+  </p>
+</div>
+`;
+
+exports[`Storyshots Select/HelperText default 1`] = `
+.c0 {
+  display: block;
+}
+
+.c1 {
+  display: block;
+}
+
+<div
+  className="MuiFormControl-root"
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink c0"
+    data-shrink={true}
+    hidden={true}
+    htmlFor="select-id"
+  />
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline"
+    helperText="Helper Text"
+    items={
+      Array [
+        Object {
+          "label": "None",
+        },
+        Object {
+          "label": "One",
+          "value": 1,
+        },
+        Object {
+          "label": "Two",
+          "value": 2,
+        },
+        Object {
+          "label": "Three",
+          "value": "3",
+        },
+      ]
+    }
+    renderMenuItem={[Function]}
+  >
+    <div
+      className="MuiSelect-root"
+    >
+      <div
+        aria-haspopup="true"
+        aria-owns={null}
+        aria-pressed="false"
+        className="MuiSelect-select MuiSelect-selectMenu MuiInput-input"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        One
+      </div>
+      <input
+        id="select-id"
+        type="hidden"
+        value={1}
+      />
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root MuiSelect-icon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
+    </div>
+  </div>
+  <p
+    className="MuiFormHelperText-root MuiFormHelperText-filled c1"
+  >
+    Helper Text
+  </p>
+</div>
+`;
+
+exports[`Storyshots Select/Label default 1`] = `
+.c0 {
+  display: block;
+}
+
+.c1 {
+  display: block;
+}
+
+<div
+  className="MuiFormControl-root"
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink c0"
+    data-shrink={true}
+    hidden={false}
+    htmlFor="select-id"
+  >
+    Items
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline"
+    items={
+      Array [
+        Object {
+          "label": "None",
+        },
+        Object {
+          "label": "One",
+          "value": 1,
+        },
+        Object {
+          "label": "Two",
+          "value": 2,
+        },
+        Object {
+          "label": "Three",
+          "value": "3",
+        },
+      ]
+    }
+    label="Items"
+    renderMenuItem={[Function]}
+  >
+    <div
+      className="MuiSelect-root"
+    >
+      <div
+        aria-haspopup="true"
+        aria-owns={null}
+        aria-pressed="false"
+        className="MuiSelect-select MuiSelect-selectMenu MuiInput-input"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        One
+      </div>
+      <input
+        id="select-id"
+        type="hidden"
+        value={1}
+      />
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root MuiSelect-icon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
+    </div>
+  </div>
+  <p
+    className="MuiFormHelperText-root MuiFormHelperText-filled c1"
+  />
+</div>
+`;
+
+exports[`Storyshots Stepper default 1`] = `
+.c0 {
+  margin: 1em;
+}
+
+<div
+  className=""
+>
+  <div
+    className="MuiPaper-root MuiPaper-elevation0 MuiStepper-root MuiStepper-horizontal"
+  >
+    <div
+      className="MuiStep-root MuiStep-horizontal"
+    >
+      <span
+        className="MuiStepLabel-root MuiStepLabel-horizontal"
+      >
+        <span
+          className="MuiStepLabel-iconContainer"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root MuiStepIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="12"
+            />
+            <text
+              className="MuiStepIcon-text"
+              textAnchor="middle"
+              x="12"
+              y="16"
+            >
+              1
+            </text>
+          </svg>
+        </span>
+        <span
+          className="MuiStepLabel-labelContainer"
+        >
+          <span
+            className="MuiTypography-root MuiTypography-body1 MuiStepLabel-label"
+          >
+            Select a campaign settings
+          </span>
+        </span>
+      </span>
+    </div>
+    <div
+      className="MuiStepConnector-root MuiStepConnector-horizontal"
+    >
+      <span
+        className="MuiStepConnector-line MuiStepConnector-lineHorizontal"
+      />
+    </div>
+    <div
+      className="MuiStep-root MuiStep-horizontal"
+    >
+      <span
+        className="MuiStepLabel-root MuiStepLabel-horizontal"
+      >
+        <span
+          className="MuiStepLabel-iconContainer"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root MuiStepIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="12"
+            />
+            <text
+              className="MuiStepIcon-text"
+              textAnchor="middle"
+              x="12"
+              y="16"
+            >
+              2
+            </text>
+          </svg>
+        </span>
+        <span
+          className="MuiStepLabel-labelContainer"
+        >
+          <span
+            className="MuiTypography-root MuiTypography-body1 MuiStepLabel-label"
+          >
+            Create an ad group
+          </span>
+        </span>
+      </span>
+    </div>
+    <div
+      className="MuiStepConnector-root MuiStepConnector-horizontal"
+    >
+      <span
+        className="MuiStepConnector-line MuiStepConnector-lineHorizontal"
+      />
+    </div>
+    <div
+      className="MuiStep-root MuiStep-horizontal"
+    >
+      <span
+        className="MuiStepLabel-root MuiStepLabel-horizontal"
+      >
+        <span
+          className="MuiStepLabel-iconContainer"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root MuiStepIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="12"
+            />
+            <text
+              className="MuiStepIcon-text"
+              textAnchor="middle"
+              x="12"
+              y="16"
+            >
+              3
+            </text>
+          </svg>
+        </span>
+        <span
+          className="MuiStepLabel-labelContainer"
+        >
+          <span
+            className="MuiTypography-root MuiTypography-body1 MuiStepLabel-label"
+          >
+            Create an ad
+          </span>
+        </span>
+      </span>
+    </div>
+  </div>
+  <div
+    className="c0"
+  />
+  <div
+    className=""
+  >
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat "
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex="0"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Back
+      </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary "
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex="0"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Next
+      </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Stepper/JSX Content default 1`] = `
+.c0 {
+  margin: 1em;
+}
+
+<div
+  className=""
+>
+  <div
+    className="MuiPaper-root MuiPaper-elevation0 MuiStepper-root MuiStepper-horizontal"
+  >
+    <div
+      className="MuiStep-root MuiStep-horizontal"
+    >
+      <span
+        className="MuiStepLabel-root MuiStepLabel-horizontal"
+      >
+        <span
+          className="MuiStepLabel-iconContainer"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root MuiStepIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="12"
+            />
+            <text
+              className="MuiStepIcon-text"
+              textAnchor="middle"
+              x="12"
+              y="16"
+            >
+              1
+            </text>
+          </svg>
+        </span>
+        <span
+          className="MuiStepLabel-labelContainer"
+        >
+          <span
+            className="MuiTypography-root MuiTypography-body1 MuiStepLabel-label"
+          >
+            Select a campaign settings
+          </span>
+        </span>
+      </span>
+    </div>
+    <div
+      className="MuiStepConnector-root MuiStepConnector-horizontal"
+    >
+      <span
+        className="MuiStepConnector-line MuiStepConnector-lineHorizontal"
+      />
+    </div>
+    <div
+      className="MuiStep-root MuiStep-horizontal"
+    >
+      <span
+        className="MuiStepLabel-root MuiStepLabel-horizontal"
+      >
+        <span
+          className="MuiStepLabel-iconContainer"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root MuiStepIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="12"
+            />
+            <text
+              className="MuiStepIcon-text"
+              textAnchor="middle"
+              x="12"
+              y="16"
+            >
+              2
+            </text>
+          </svg>
+        </span>
+        <span
+          className="MuiStepLabel-labelContainer"
+        >
+          <span
+            className="MuiTypography-root MuiTypography-body1 MuiStepLabel-label"
+          >
+            Create an ad group
+          </span>
+        </span>
+      </span>
+    </div>
+    <div
+      className="MuiStepConnector-root MuiStepConnector-horizontal"
+    >
+      <span
+        className="MuiStepConnector-line MuiStepConnector-lineHorizontal"
+      />
+    </div>
+    <div
+      className="MuiStep-root MuiStep-horizontal"
+    >
+      <span
+        className="MuiStepLabel-root MuiStepLabel-horizontal"
+      >
+        <span
+          className="MuiStepLabel-iconContainer"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root MuiStepIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="12"
+            />
+            <text
+              className="MuiStepIcon-text"
+              textAnchor="middle"
+              x="12"
+              y="16"
+            >
+              3
+            </text>
+          </svg>
+        </span>
+        <span
+          className="MuiStepLabel-labelContainer"
+        >
+          <span
+            className="MuiTypography-root MuiTypography-body1 MuiStepLabel-label"
+          >
+            Create an ad
+          </span>
+        </span>
+      </span>
+    </div>
+    <div
+      className="MuiStepConnector-root MuiStepConnector-horizontal"
+    >
+      <span
+        className="MuiStepConnector-line MuiStepConnector-lineHorizontal"
+      />
+    </div>
+    <div
+      className="MuiStep-root MuiStep-horizontal"
+    >
+      <span
+        className="MuiStepLabel-root MuiStepLabel-horizontal"
+      >
+        <span
+          className="MuiStepLabel-iconContainer"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root MuiStepIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="12"
+            />
+            <text
+              className="MuiStepIcon-text"
+              textAnchor="middle"
+              x="12"
+              y="16"
+            >
+              4
+            </text>
+          </svg>
+        </span>
+        <span
+          className="MuiStepLabel-labelContainer"
+        >
+          <span
+            className="MuiTypography-root MuiTypography-body1 MuiStepLabel-label"
+          >
+            I have a JSX Content
+          </span>
+        </span>
+      </span>
+    </div>
+  </div>
+  <div
+    className="c0"
+  />
+  <div
+    className=""
+  >
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat "
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex="0"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Back
+      </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary "
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex="0"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Next
+      </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Stepper/Optional default 1`] = `
+.c0 {
+  margin: 1em;
+}
+
+<div
+  className=""
+>
+  <div
+    className="MuiPaper-root MuiPaper-elevation0 MuiStepper-root MuiStepper-horizontal"
+  >
+    <div
+      className="MuiStep-root MuiStep-horizontal"
+    >
+      <span
+        className="MuiStepLabel-root MuiStepLabel-horizontal"
+      >
+        <span
+          className="MuiStepLabel-iconContainer"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root MuiStepIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="12"
+            />
+            <text
+              className="MuiStepIcon-text"
+              textAnchor="middle"
+              x="12"
+              y="16"
+            >
+              1
+            </text>
+          </svg>
+        </span>
+        <span
+          className="MuiStepLabel-labelContainer"
+        >
+          <span
+            className="MuiTypography-root MuiTypography-body1 MuiStepLabel-label"
+          >
+            Select a campaign settings
+          </span>
+        </span>
+      </span>
+    </div>
+    <div
+      className="MuiStepConnector-root MuiStepConnector-horizontal"
+    >
+      <span
+        className="MuiStepConnector-line MuiStepConnector-lineHorizontal"
+      />
+    </div>
+    <div
+      className="MuiStep-root MuiStep-horizontal"
+    >
+      <span
+        className="MuiStepLabel-root MuiStepLabel-horizontal"
+      >
+        <span
+          className="MuiStepLabel-iconContainer"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root MuiStepIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="12"
+            />
+            <text
+              className="MuiStepIcon-text"
+              textAnchor="middle"
+              x="12"
+              y="16"
+            >
+              2
+            </text>
+          </svg>
+        </span>
+        <span
+          className="MuiStepLabel-labelContainer"
+        >
+          <span
+            className="MuiTypography-root MuiTypography-body1 MuiStepLabel-label"
+          >
+            Create an ad group
+          </span>
+        </span>
+      </span>
+    </div>
+    <div
+      className="MuiStepConnector-root MuiStepConnector-horizontal"
+    >
+      <span
+        className="MuiStepConnector-line MuiStepConnector-lineHorizontal"
+      />
+    </div>
+    <div
+      className="MuiStep-root MuiStep-horizontal"
+    >
+      <span
+        className="MuiStepLabel-root MuiStepLabel-horizontal"
+      >
+        <span
+          className="MuiStepLabel-iconContainer"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root MuiStepIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="12"
+            />
+            <text
+              className="MuiStepIcon-text"
+              textAnchor="middle"
+              x="12"
+              y="16"
+            >
+              3
+            </text>
+          </svg>
+        </span>
+        <span
+          className="MuiStepLabel-labelContainer"
+        >
+          <span
+            className="MuiTypography-root MuiTypography-body1 MuiStepLabel-label"
+          >
+            Create an ad
+          </span>
+        </span>
+      </span>
+    </div>
+    <div
+      className="MuiStepConnector-root MuiStepConnector-horizontal"
+    >
+      <span
+        className="MuiStepConnector-line MuiStepConnector-lineHorizontal"
+      />
+    </div>
+    <div
+      className="MuiStep-root MuiStep-horizontal"
+    >
+      <span
+        className="MuiStepLabel-root MuiStepLabel-horizontal"
+      >
+        <span
+          className="MuiStepLabel-iconContainer"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root MuiStepIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="12"
+            />
+            <text
+              className="MuiStepIcon-text"
+              textAnchor="middle"
+              x="12"
+              y="16"
+            >
+              4
+            </text>
+          </svg>
+        </span>
+        <span
+          className="MuiStepLabel-labelContainer"
+        >
+          <span
+            className="MuiTypography-root MuiTypography-body1 MuiStepLabel-label"
+          >
+            What is your name? - Optional
+          </span>
+        </span>
+      </span>
+    </div>
+  </div>
+  <div
+    className="c0"
+  />
+  <div
+    className=""
+  >
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat "
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex="0"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Back
+      </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary "
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex="0"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Next
+      </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Table default 1`] = `
+<table
+  className="MuiTable-root"
+>
+  <thead
+    className="MuiTableHead-root"
+  >
+    <tr
+      className="MuiTableRow-root MuiTableRow-head"
+    >
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head"
+        scope="col"
+      >
+        Dessert (100g serving)
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head MuiTableCell-numeric"
+        scope="col"
+      >
+        Calories
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="MuiTableBody-root"
+  >
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Frozen yoghurt
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        159
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Ice cream sandwich
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        237
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Eclair
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        262
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Cupcake
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        305
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Gingerbread
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        356
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Storyshots Table/Cell/Button contained 1`] = `
+<table
+  className="MuiTable-root"
+>
+  <thead
+    className="MuiTableHead-root"
+  >
+    <tr
+      className="MuiTableRow-root MuiTableRow-head"
+    >
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head"
+        scope="col"
+      >
+        Dessert (100g serving)
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head MuiTableCell-numeric"
+        scope="col"
+      >
+        Calories
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head MuiTableCell-numeric"
+        scope="col"
+      >
+        Action
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="MuiTableBody-root"
+  >
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Frozen yoghurt
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        159
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary "
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Click Me
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Ice cream sandwich
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        237
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary "
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Click Me
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Eclair
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        262
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary "
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Click Me
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Cupcake
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        305
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary "
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Click Me
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Gingerbread
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        356
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary "
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Click Me
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Storyshots Table/Cell/Button default 1`] = `
+<table
+  className="MuiTable-root"
+>
+  <thead
+    className="MuiTableHead-root"
+  >
+    <tr
+      className="MuiTableRow-root MuiTableRow-head"
+    >
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head"
+        scope="col"
+      >
+        Dessert (100g serving)
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head MuiTableCell-numeric"
+        scope="col"
+      >
+        Calories
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head MuiTableCell-numeric"
+        scope="col"
+      >
+        Action
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="MuiTableBody-root"
+  >
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Frozen yoghurt
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        159
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat "
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Click me
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Ice cream sandwich
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        237
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat "
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Click me
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Eclair
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        262
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat "
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Click me
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Cupcake
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        305
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat "
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Click me
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Gingerbread
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        356
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat "
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Click me
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Storyshots Table/Cell/Button disabled 1`] = `
+<table
+  className="MuiTable-root"
+>
+  <thead
+    className="MuiTableHead-root"
+  >
+    <tr
+      className="MuiTableRow-root MuiTableRow-head"
+    >
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head"
+        scope="col"
+      >
+        Dessert (100g serving)
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head MuiTableCell-numeric"
+        scope="col"
+      >
+        Calories
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head MuiTableCell-numeric"
+        scope="col"
+      >
+        Action
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="MuiTableBody-root"
+  >
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Frozen yoghurt
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        159
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        <button
+          className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-text MuiButton-flat MuiButton-disabled "
+          disabled={true}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="-1"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Click Me
+          </span>
+        </button>
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Ice cream sandwich
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        237
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        <button
+          className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-text MuiButton-flat MuiButton-disabled "
+          disabled={true}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="-1"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Click Me
+          </span>
+        </button>
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Eclair
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        262
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        <button
+          className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-text MuiButton-flat MuiButton-disabled "
+          disabled={true}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="-1"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Click Me
+          </span>
+        </button>
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Cupcake
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        305
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        <button
+          className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-text MuiButton-flat MuiButton-disabled "
+          disabled={true}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="-1"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Click Me
+          </span>
+        </button>
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Gingerbread
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        356
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        <button
+          className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-text MuiButton-flat MuiButton-disabled "
+          disabled={true}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="-1"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Click Me
+          </span>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Storyshots Table/Cell/Button primary 1`] = `
+<table
+  className="MuiTable-root"
+>
+  <thead
+    className="MuiTableHead-root"
+  >
+    <tr
+      className="MuiTableRow-root MuiTableRow-head"
+    >
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head"
+        scope="col"
+      >
+        Dessert (100g serving)
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head MuiTableCell-numeric"
+        scope="col"
+      >
+        Calories
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head MuiTableCell-numeric"
+        scope="col"
+      >
+        Action
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="MuiTableBody-root"
+  >
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Frozen yoghurt
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        159
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary "
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Click Me
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Ice cream sandwich
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        237
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary "
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Click Me
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Eclair
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        262
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary "
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Click Me
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Cupcake
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        305
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary "
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Click Me
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Gingerbread
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        356
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary "
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Click Me
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Storyshots Table/Cell/Button secondary 1`] = `
+<table
+  className="MuiTable-root"
+>
+  <thead
+    className="MuiTableHead-root"
+  >
+    <tr
+      className="MuiTableRow-root MuiTableRow-head"
+    >
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head"
+        scope="col"
+      >
+        Dessert (100g serving)
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head MuiTableCell-numeric"
+        scope="col"
+      >
+        Calories
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head MuiTableCell-numeric"
+        scope="col"
+      >
+        Action
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="MuiTableBody-root"
+  >
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Frozen yoghurt
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        159
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-flat MuiButton-flatSecondary "
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Click Me
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Ice cream sandwich
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        237
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-flat MuiButton-flatSecondary "
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Click Me
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Eclair
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        262
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-flat MuiButton-flatSecondary "
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Click Me
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Cupcake
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        305
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-flat MuiButton-flatSecondary "
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Click Me
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Gingerbread
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        356
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-flat MuiButton-flatSecondary "
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Click Me
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Storyshots Table/Cell/Date default 1`] = `
+<table
+  className="MuiTable-root"
+>
+  <thead
+    className="MuiTableHead-root"
+  >
+    <tr
+      className="MuiTableRow-root MuiTableRow-head"
+    >
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head"
+        scope="col"
+      >
+        Dessert (100g serving)
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head MuiTableCell-numeric"
+        scope="col"
+      >
+        Calories
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head MuiTableCell-numeric"
+        scope="col"
+      >
+        Created
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="MuiTableBody-root"
+  >
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Frozen yoghurt
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        159
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        2018-08-25T10:44:44Z
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Ice cream sandwich
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        237
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        2018-08-25T10:44:44Z
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Eclair
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        262
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        2018-08-25T10:44:44Z
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Cupcake
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        305
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        2018-08-25T10:44:44Z
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Gingerbread
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        356
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        2018-08-25T10:44:44Z
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Storyshots Table/Cell/Date format 1`] = `
+<table
+  className="MuiTable-root"
+>
+  <thead
+    className="MuiTableHead-root"
+  >
+    <tr
+      className="MuiTableRow-root MuiTableRow-head"
+    >
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head"
+        scope="col"
+      >
+        Dessert (100g serving)
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head MuiTableCell-numeric"
+        scope="col"
+      >
+        Calories
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head MuiTableCell-numeric"
+        scope="col"
+      >
+        Created
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="MuiTableBody-root"
+  >
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Frozen yoghurt
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        159
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        08/25/2018
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Ice cream sandwich
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        237
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        08/25/2018
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Eclair
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        262
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        08/25/2018
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Cupcake
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        305
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        08/25/2018
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Gingerbread
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        356
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        08/25/2018
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Storyshots Table/RowHover default 1`] = `
+<table
+  className="MuiTable-root"
+>
+  <thead
+    className="MuiTableHead-root"
+  >
+    <tr
+      className="MuiTableRow-root MuiTableRow-head"
+    >
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head"
+        scope="col"
+      >
+        Dessert (100g serving)
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head MuiTableCell-numeric"
+        scope="col"
+      >
+        Calories
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="MuiTableBody-root"
+  >
+    <tr
+      className="MuiTableRow-root MuiTableRow-hover"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Frozen yoghurt
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        159
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root MuiTableRow-hover"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Ice cream sandwich
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        237
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root MuiTableRow-hover"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Eclair
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        262
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root MuiTableRow-hover"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Cupcake
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        305
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root MuiTableRow-hover"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Gingerbread
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        356
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Storyshots Table/RowHover disabled 1`] = `
+<table
+  className="MuiTable-root"
+>
+  <thead
+    className="MuiTableHead-root"
+  >
+    <tr
+      className="MuiTableRow-root MuiTableRow-head"
+    >
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head"
+        scope="col"
+      >
+        Dessert (100g serving)
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head MuiTableCell-numeric"
+        scope="col"
+      >
+        Calories
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="MuiTableBody-root"
+  >
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Frozen yoghurt
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        159
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Ice cream sandwich
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        237
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Eclair
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        262
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Cupcake
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        305
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Gingerbread
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body MuiTableCell-numeric"
+      >
+        356
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Storyshots TextField default 1`] = `
+<div
+  className="MuiFormControl-root"
+>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots TextField/Error With Error 1`] = `
+<div
+  className="MuiFormControl-root"
+>
+  <div
+    className="MuiInput-root MuiInput-error MuiInput-formControl MuiInput-underline"
+  >
+    <input
+      aria-invalid={true}
+      className="MuiInput-input"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots TextField/Error With Error And Label 1`] = `
+<div
+  className="MuiFormControl-root"
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-error MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+    data-shrink={false}
+  >
+    Error
+  </label>
+  <div
+    className="MuiInput-root MuiInput-error MuiInput-formControl MuiInput-underline"
+  >
+    <input
+      aria-invalid={true}
+      className="MuiInput-input"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots TextField/HelperText With Helper Text 1`] = `
+<div
+  className="MuiFormControl-root"
+>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+      type="text"
+    />
+  </div>
+  <p
+    className="MuiFormHelperText-root"
+  >
+    Helper Text
+  </p>
+</div>
+`;
+
+exports[`Storyshots TextField/HelperText With Helper Text And Error 1`] = `
+<div
+  className="MuiFormControl-root"
+>
+  <div
+    className="MuiInput-root MuiInput-error MuiInput-formControl MuiInput-underline"
+  >
+    <input
+      aria-invalid={true}
+      className="MuiInput-input"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+      type="text"
+    />
+  </div>
+  <p
+    className="MuiFormHelperText-root MuiFormHelperText-error"
+  >
+    Helper Text
+  </p>
+</div>
+`;
+
+exports[`Storyshots TextField/HelperText With Helper Text And Label 1`] = `
+<div
+  className="MuiFormControl-root"
+>
+  <label
+    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+    data-shrink={false}
+  >
+    Label
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+      type="text"
+    />
+  </div>
+  <p
+    className="MuiFormHelperText-root"
+  >
+    Helper Text
+  </p>
+</div>
+`;
+
+exports[`Storyshots TextField/HelperText With Helper Text, Error And Label 1`] = `
+<div
+  className="MuiFormControl-root"
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-error MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+    data-shrink={false}
+  >
+    Label
+  </label>
+  <div
+    className="MuiInput-root MuiInput-error MuiInput-formControl MuiInput-underline"
+  >
+    <input
+      aria-invalid={true}
+      className="MuiInput-input"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+      type="text"
+    />
+  </div>
+  <p
+    className="MuiFormHelperText-root MuiFormHelperText-error"
+  >
+    Helper Text
+  </p>
+</div>
+`;
+
+exports[`Storyshots TextField/Label With Label 1`] = `
+<div
+  className="MuiFormControl-root"
+>
+  <label
+    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+    data-shrink={false}
+  >
+    Label
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots TextField/Number With Helper Text 1`] = `
+<div
+  className="MuiFormControl-root"
+>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input MuiInput-inputType"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+      type="number"
+    />
+  </div>
+  <p
+    className="MuiFormHelperText-root"
+  >
+    Helper Text
+  </p>
+</div>
+`;
+
+exports[`Storyshots TextField/Number With Helper Text And Error 1`] = `
+<div
+  className="MuiFormControl-root"
+>
+  <div
+    className="MuiInput-root MuiInput-error MuiInput-formControl MuiInput-underline"
+  >
+    <input
+      aria-invalid={true}
+      className="MuiInput-input MuiInput-inputType"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+      type="number"
+    />
+  </div>
+  <p
+    className="MuiFormHelperText-root MuiFormHelperText-error"
+  >
+    Helper Text
+  </p>
+</div>
+`;
+
+exports[`Storyshots TextField/Number With Helper Text And Label 1`] = `
+<div
+  className="MuiFormControl-root"
+>
+  <label
+    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+    data-shrink={false}
+  >
+    Label
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input MuiInput-inputType"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+      type="number"
+    />
+  </div>
+  <p
+    className="MuiFormHelperText-root"
+  >
+    Helper Text
+  </p>
+</div>
+`;
+
+exports[`Storyshots TextField/Number With Helper Text, Error And Label 1`] = `
+<div
+  className="MuiFormControl-root"
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-error MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+    data-shrink={false}
+  >
+    Label
+  </label>
+  <div
+    className="MuiInput-root MuiInput-error MuiInput-formControl MuiInput-underline"
+  >
+    <input
+      aria-invalid={true}
+      className="MuiInput-input MuiInput-inputType"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+      type="number"
+    />
+  </div>
+  <p
+    className="MuiFormHelperText-root MuiFormHelperText-error"
+  >
+    Helper Text
+  </p>
+</div>
+`;
+
+exports[`Storyshots TextField/Password With Helper Text 1`] = `
+<div
+  className="MuiFormControl-root"
+>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input MuiInput-inputType"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+      type="password"
+    />
+  </div>
+  <p
+    className="MuiFormHelperText-root"
+  >
+    Helper Text
+  </p>
+</div>
+`;
+
+exports[`Storyshots TextField/Password With Helper Text And Error 1`] = `
+<div
+  className="MuiFormControl-root"
+>
+  <div
+    className="MuiInput-root MuiInput-error MuiInput-formControl MuiInput-underline"
+  >
+    <input
+      aria-invalid={true}
+      className="MuiInput-input MuiInput-inputType"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+      type="password"
+    />
+  </div>
+  <p
+    className="MuiFormHelperText-root MuiFormHelperText-error"
+  >
+    Helper Text
+  </p>
+</div>
+`;
+
+exports[`Storyshots TextField/Password With Helper Text And Label 1`] = `
+<div
+  className="MuiFormControl-root"
+>
+  <label
+    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+    data-shrink={false}
+  >
+    Label
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input MuiInput-inputType"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+      type="password"
+    />
+  </div>
+  <p
+    className="MuiFormHelperText-root"
+  >
+    Helper Text
+  </p>
+</div>
+`;
+
+exports[`Storyshots TextField/Password With Helper Text, Error And Label 1`] = `
+<div
+  className="MuiFormControl-root"
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-error MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+    data-shrink={false}
+  >
+    Label
+  </label>
+  <div
+    className="MuiInput-root MuiInput-error MuiInput-formControl MuiInput-underline"
+  >
+    <input
+      aria-invalid={true}
+      className="MuiInput-input MuiInput-inputType"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+      type="password"
+    />
+  </div>
+  <p
+    className="MuiFormHelperText-root MuiFormHelperText-error"
+  >
+    Helper Text
+  </p>
+</div>
+`;
+
+exports[`Storyshots TimePicker Turn off AM PM 1`] = `
+<div
+  className="MuiFormControl-root"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+  >
+    AM PM
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      mask={null}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      required={false}
+      type="text"
+      value="08:00"
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`Storyshots TimePicker autoOk 1`] = `
+<div
+  className="MuiFormControl-root"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+  >
+    Auto Ok
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      mask={null}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      required={false}
+      type="text"
+      value="08:00 AM"
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`Storyshots TimePicker clearable 1`] = `
+<div
+  className="MuiFormControl-root"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+  >
+    Clearable
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      mask={null}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      required={false}
+      type="text"
+      value="08:00 AM"
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`Storyshots TimePicker default 1`] = `
+<div
+  className="MuiFormControl-root"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+  >
+    Default
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      mask={null}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      required={false}
+      type="text"
+      value="08:00 AM"
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`Storyshots TimePicker showTodayButton 1`] = `
+<div
+  className="MuiFormControl-root"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <label
+    className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+  >
+    Show Today Button
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+  >
+    <input
+      aria-invalid={false}
+      className="MuiInput-input"
+      disabled={false}
+      mask={null}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      required={false}
+      type="text"
+      value="08:00 AM"
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`Storyshots Typography body 1 1`] = `
+<p
+  className="MuiTypography-root MuiTypography-body1"
+>
+  Typography
+</p>
+`;
+
+exports[`Storyshots Typography body 2 1`] = `
+<aside
+  className="MuiTypography-root MuiTypography-body2"
+>
+  Typography
+</aside>
+`;
+
+exports[`Storyshots Typography caption 1`] = `
+<span
+  className="MuiTypography-root MuiTypography-caption"
+>
+  Typography
+</span>
+`;
+
+exports[`Storyshots Typography display 1 1`] = `
+<h1
+  className="MuiTypography-root MuiTypography-display1"
+>
+  Typography
+</h1>
+`;
+
+exports[`Storyshots Typography display 2 1`] = `
+<h1
+  className="MuiTypography-root MuiTypography-display2"
+>
+  Typography
+</h1>
+`;
+
+exports[`Storyshots Typography display 3 1`] = `
+<h1
+  className="MuiTypography-root MuiTypography-display3"
+>
+  Typography
+</h1>
+`;
+
+exports[`Storyshots Typography display 4 1`] = `
+<h1
+  className="MuiTypography-root MuiTypography-display4"
+>
+  Typography
+</h1>
+`;
+
+exports[`Storyshots Typography headline 1`] = `
+<h1
+  className="MuiTypography-root MuiTypography-headline"
+>
+  Typography
+</h1>
+`;
+
+exports[`Storyshots Typography nowrap 1`] = `
+<p
+  className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap MuiTypography-gutterBottom"
+>
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</p>
+`;
+
+exports[`Storyshots Typography subheading 1`] = `
+<h3
+  className="MuiTypography-root MuiTypography-subheading"
+>
+  Typography
+</h3>
+`;
+
+exports[`Storyshots Typography title 1`] = `
+<h2
+  className="MuiTypography-root MuiTypography-title"
+>
+  Typography
+</h2>
 `;

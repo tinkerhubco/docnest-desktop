@@ -42,7 +42,9 @@
       "error",
       { "extensions": [".js", ".jsx"] }
     ],
-    "react/prefer-stateless-function": "off"
+    "react/prefer-stateless-function": "off",
+    "react/forbid-prop-types": "off",
+    "react/require-default-props": "off"
   },
   "plugins": ["flowtype", "import", "promise", "compat", "react"],
   "settings": {
