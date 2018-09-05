@@ -2,7 +2,7 @@
 
 exports[`Storyshots Avatar icon 1`] = `
 <div
-  className="MuiAvatar-root MuiAvatar-colorDefault "
+  className="MuiAvatar-root MuiAvatar-colorDefault"
 >
   <svg
     aria-hidden="true"
@@ -23,7 +23,7 @@ exports[`Storyshots Avatar icon 1`] = `
 
 exports[`Storyshots Avatar image 1`] = `
 <div
-  className="MuiAvatar-root "
+  className="MuiAvatar-root"
 >
   <img
     alt="avatar"
@@ -35,7 +35,7 @@ exports[`Storyshots Avatar image 1`] = `
 
 exports[`Storyshots Avatar letter 1`] = `
 <div
-  className="MuiAvatar-root MuiAvatar-colorDefault "
+  className="MuiAvatar-root MuiAvatar-colorDefault"
 >
   J
 </div>
@@ -775,13 +775,13 @@ exports[`Storyshots Card complex 1`] = `
   className="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded MuiCard-root c0"
 >
   <div
-    className="MuiCardHeader-root "
+    className="MuiCardHeader-root"
   >
     <div
       className="MuiCardHeader-avatar"
     >
       <div
-        className="MuiAvatar-root MuiAvatar-colorDefault "
+        className="MuiAvatar-root MuiAvatar-colorDefault"
       >
         J
       </div>
@@ -804,7 +804,7 @@ exports[`Storyshots Card complex 1`] = `
       className="MuiCardHeader-action"
     >
       <button
-        className="MuiButtonBase-root MuiIconButton-root "
+        className="MuiButtonBase-root MuiIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onFocus={[Function]}
@@ -844,7 +844,7 @@ exports[`Storyshots Card complex 1`] = `
     </div>
   </div>
   <div
-    className="MuiCardMedia-root true "
+    className="MuiCardMedia-root"
     style={
       Object {
         "backgroundImage": "url(\\"https://burst.shopifycdn.com/photos/horseshoe-bend-grand-canyon_373x.progressive.jpg\\")",
@@ -853,10 +853,10 @@ exports[`Storyshots Card complex 1`] = `
     title="Image caption"
   />
   <div
-    className="MuiCardContent-root "
+    className="MuiCardContent-root"
   >
     <p
-      className="MuiTypography-root MuiTypography-body1 "
+      className="MuiTypography-root MuiTypography-body1"
     >
       This impressive paella is a perfect party dish and a fun meal to cook
 together with your guests. Add 1 cup of frozen peas along with the
@@ -864,10 +864,10 @@ mussels, if you like.
     </p>
   </div>
   <div
-    className="MuiCardActions-root "
+    className="MuiCardActions-root"
   >
     <button
-      className="MuiButtonBase-root MuiIconButton-root "
+      className="MuiButtonBase-root MuiIconButton-root"
       disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -905,7 +905,7 @@ mussels, if you like.
       />
     </button>
     <button
-      className="MuiButtonBase-root MuiIconButton-root "
+      className="MuiButtonBase-root MuiIconButton-root"
       disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -969,7 +969,7 @@ exports[`Storyshots Card media 1`] = `
     title="Image caption"
   />
   <div
-    className="MuiCardActions-root "
+    className="MuiCardActions-root"
   >
     <button
       className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat MuiCardActions-action "
@@ -1009,12 +1009,12 @@ exports[`Storyshots Card simple 1`] = `
   className="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded MuiCard-root c0"
 >
   <div
-    className="MuiCardContent-root "
+    className="MuiCardContent-root"
   >
     Lorem Ipsum
   </div>
   <div
-    className="MuiCardActions-root "
+    className="MuiCardActions-root"
   >
     <button
       className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat MuiButton-sizeSmall MuiCardActions-action "
@@ -1047,7 +1047,7 @@ exports[`Storyshots Card simple 1`] = `
 
 exports[`Storyshots Checkbox default 1`] = `
 <span
-  className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary "
+  className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
   onBlur={[Function]}
   onFocus={[Function]}
   onKeyDown={[Function]}
@@ -1088,7 +1088,7 @@ exports[`Storyshots Checkbox default 1`] = `
 
 exports[`Storyshots Checkbox disabled 1`] = `
 <span
-  className="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root MuiIconButton-disabled MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-disabled MuiCheckbox-disabled "
+  className="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root MuiIconButton-disabled MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-disabled MuiCheckbox-disabled"
   onBlur={[Function]}
   onFocus={[Function]}
   onKeyDown={[Function]}
@@ -1127,7 +1127,7 @@ exports[`Storyshots Checkbox disabled 1`] = `
 
 exports[`Storyshots Checkbox primary 1`] = `
 <span
-  className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary "
+  className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
   onBlur={[Function]}
   onFocus={[Function]}
   onKeyDown={[Function]}
@@ -1168,7 +1168,7 @@ exports[`Storyshots Checkbox primary 1`] = `
 
 exports[`Storyshots Checkbox secondary 1`] = `
 <span
-  className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorSecondary "
+  className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorSecondary"
   onBlur={[Function]}
   onFocus={[Function]}
   onKeyDown={[Function]}
@@ -1209,7 +1209,7 @@ exports[`Storyshots Checkbox secondary 1`] = `
 
 exports[`Storyshots CircularProgress default 1`] = `
 <div
-  className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate "
+  className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
   role="progressbar"
   style={
     Object {
@@ -1237,7 +1237,7 @@ exports[`Storyshots CircularProgress default 1`] = `
 
 exports[`Storyshots CircularProgress primary 1`] = `
 <div
-  className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate "
+  className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
   role="progressbar"
   style={
     Object {
@@ -1265,7 +1265,7 @@ exports[`Storyshots CircularProgress primary 1`] = `
 
 exports[`Storyshots CircularProgress secondary 1`] = `
 <div
-  className="MuiCircularProgress-root MuiCircularProgress-colorSecondary MuiCircularProgress-indeterminate "
+  className="MuiCircularProgress-root MuiCircularProgress-colorSecondary MuiCircularProgress-indeterminate"
   role="progressbar"
   style={
     Object {
@@ -1294,7 +1294,7 @@ exports[`Storyshots CircularProgress secondary 1`] = `
 exports[`Storyshots CircularProgress static 1`] = `
 <div
   aria-valuenow={25}
-  className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-static "
+  className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-static"
   role="progressbar"
   style={
     Object {
@@ -1586,19 +1586,19 @@ exports[`Storyshots DateTimePicker showTodayButton 1`] = `
 
 exports[`Storyshots Divider default 1`] = `
 <hr
-  className="MuiDivider-root "
+  className="MuiDivider-root"
 />
 `;
 
 exports[`Storyshots Divider inset 1`] = `
 <hr
-  className="MuiDivider-root MuiDivider-inset "
+  className="MuiDivider-root MuiDivider-inset"
 />
 `;
 
 exports[`Storyshots Divider light 1`] = `
 <hr
-  className="MuiDivider-root MuiDivider-light "
+  className="MuiDivider-root MuiDivider-light"
 />
 `;
 
@@ -1715,7 +1715,7 @@ exports[`Storyshots Grid/Tile default 1`] = `
         className="MuiGridListTileBar-actionIcon"
       >
         <button
-          className="MuiButtonBase-root MuiIconButton-root "
+          className="MuiButtonBase-root MuiIconButton-root"
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
@@ -1797,7 +1797,7 @@ exports[`Storyshots Grid/Tile default 1`] = `
         className="MuiGridListTileBar-actionIcon"
       >
         <button
-          className="MuiButtonBase-root MuiIconButton-root "
+          className="MuiButtonBase-root MuiIconButton-root"
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
@@ -1922,7 +1922,7 @@ exports[`Storyshots Grid/Title default 1`] = `
 
 exports[`Storyshots IconButton default 1`] = `
 <button
-  className="MuiButtonBase-root MuiIconButton-root "
+  className="MuiButtonBase-root MuiIconButton-root"
   disabled={false}
   onBlur={[Function]}
   onFocus={[Function]}
@@ -1963,7 +1963,7 @@ exports[`Storyshots IconButton default 1`] = `
 
 exports[`Storyshots LinearProgress default 1`] = `
 <div
-  className="MuiLinearProgress-root MuiLinearProgress-colorPrimary "
+  className="MuiLinearProgress-root MuiLinearProgress-colorPrimary"
   role="progressbar"
 >
   <div
@@ -1979,7 +1979,7 @@ exports[`Storyshots LinearProgress default 1`] = `
 
 exports[`Storyshots LinearProgress primary 1`] = `
 <div
-  className="MuiLinearProgress-root MuiLinearProgress-colorPrimary "
+  className="MuiLinearProgress-root MuiLinearProgress-colorPrimary"
   role="progressbar"
 >
   <div
@@ -1995,7 +1995,7 @@ exports[`Storyshots LinearProgress primary 1`] = `
 
 exports[`Storyshots LinearProgress secondary 1`] = `
 <div
-  className="MuiLinearProgress-root MuiLinearProgress-colorSecondary "
+  className="MuiLinearProgress-root MuiLinearProgress-colorSecondary"
   role="progressbar"
 >
   <div
@@ -2011,7 +2011,7 @@ exports[`Storyshots LinearProgress secondary 1`] = `
 
 exports[`Storyshots MenuItem simple 1`] = `
 <li
-  className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root "
+  className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
   onBlur={[Function]}
   onFocus={[Function]}
   onKeyDown={[Function]}
@@ -2034,7 +2034,7 @@ exports[`Storyshots MenuItem simple 1`] = `
 
 exports[`Storyshots Paper default 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation2 MuiPaper-rounded "
+  className="MuiPaper-root MuiPaper-elevation2 MuiPaper-rounded"
 >
   <h1>
     I am inside a Paper
@@ -2044,17 +2044,17 @@ exports[`Storyshots Paper default 1`] = `
 
 exports[`Storyshots Paper/Elevation elevation0 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation0 MuiPaper-rounded "
+  className="MuiPaper-root MuiPaper-elevation0 MuiPaper-rounded"
 >
   <h3
-    className="MuiTypography-root MuiTypography-headline "
+    className="MuiTypography-root MuiTypography-headline"
   >
     This is a sheet of paper with Elevation Value: \`elevation
     0
     \`
   </h3>
   <p
-    className="MuiTypography-root MuiTypography-body1 "
+    className="MuiTypography-root MuiTypography-body1"
   >
     Paper can be used to build surface or other elements for your application.
   </p>
@@ -2063,17 +2063,17 @@ exports[`Storyshots Paper/Elevation elevation0 1`] = `
 
 exports[`Storyshots Paper/Elevation elevation1 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded "
+  className="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
 >
   <h3
-    className="MuiTypography-root MuiTypography-headline "
+    className="MuiTypography-root MuiTypography-headline"
   >
     This is a sheet of paper with Elevation Value: \`elevation
     1
     \`
   </h3>
   <p
-    className="MuiTypography-root MuiTypography-body1 "
+    className="MuiTypography-root MuiTypography-body1"
   >
     Paper can be used to build surface or other elements for your application.
   </p>
@@ -2082,17 +2082,17 @@ exports[`Storyshots Paper/Elevation elevation1 1`] = `
 
 exports[`Storyshots Paper/Elevation elevation2 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation2 MuiPaper-rounded "
+  className="MuiPaper-root MuiPaper-elevation2 MuiPaper-rounded"
 >
   <h3
-    className="MuiTypography-root MuiTypography-headline "
+    className="MuiTypography-root MuiTypography-headline"
   >
     This is a sheet of paper with Elevation Value: \`elevation
     2
     \`
   </h3>
   <p
-    className="MuiTypography-root MuiTypography-body1 "
+    className="MuiTypography-root MuiTypography-body1"
   >
     Paper can be used to build surface or other elements for your application.
   </p>
@@ -2101,17 +2101,17 @@ exports[`Storyshots Paper/Elevation elevation2 1`] = `
 
 exports[`Storyshots Paper/Elevation elevation3 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation3 MuiPaper-rounded "
+  className="MuiPaper-root MuiPaper-elevation3 MuiPaper-rounded"
 >
   <h3
-    className="MuiTypography-root MuiTypography-headline "
+    className="MuiTypography-root MuiTypography-headline"
   >
     This is a sheet of paper with Elevation Value: \`elevation
     3
     \`
   </h3>
   <p
-    className="MuiTypography-root MuiTypography-body1 "
+    className="MuiTypography-root MuiTypography-body1"
   >
     Paper can be used to build surface or other elements for your application.
   </p>
@@ -2120,17 +2120,17 @@ exports[`Storyshots Paper/Elevation elevation3 1`] = `
 
 exports[`Storyshots Paper/Elevation elevation4 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation4 MuiPaper-rounded "
+  className="MuiPaper-root MuiPaper-elevation4 MuiPaper-rounded"
 >
   <h3
-    className="MuiTypography-root MuiTypography-headline "
+    className="MuiTypography-root MuiTypography-headline"
   >
     This is a sheet of paper with Elevation Value: \`elevation
     4
     \`
   </h3>
   <p
-    className="MuiTypography-root MuiTypography-body1 "
+    className="MuiTypography-root MuiTypography-body1"
   >
     Paper can be used to build surface or other elements for your application.
   </p>
@@ -2139,17 +2139,17 @@ exports[`Storyshots Paper/Elevation elevation4 1`] = `
 
 exports[`Storyshots Paper/Elevation elevation5 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation5 MuiPaper-rounded "
+  className="MuiPaper-root MuiPaper-elevation5 MuiPaper-rounded"
 >
   <h3
-    className="MuiTypography-root MuiTypography-headline "
+    className="MuiTypography-root MuiTypography-headline"
   >
     This is a sheet of paper with Elevation Value: \`elevation
     5
     \`
   </h3>
   <p
-    className="MuiTypography-root MuiTypography-body1 "
+    className="MuiTypography-root MuiTypography-body1"
   >
     Paper can be used to build surface or other elements for your application.
   </p>
@@ -2158,17 +2158,17 @@ exports[`Storyshots Paper/Elevation elevation5 1`] = `
 
 exports[`Storyshots Paper/Elevation elevation6 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded "
+  className="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded"
 >
   <h3
-    className="MuiTypography-root MuiTypography-headline "
+    className="MuiTypography-root MuiTypography-headline"
   >
     This is a sheet of paper with Elevation Value: \`elevation
     6
     \`
   </h3>
   <p
-    className="MuiTypography-root MuiTypography-body1 "
+    className="MuiTypography-root MuiTypography-body1"
   >
     Paper can be used to build surface or other elements for your application.
   </p>
@@ -2177,17 +2177,17 @@ exports[`Storyshots Paper/Elevation elevation6 1`] = `
 
 exports[`Storyshots Paper/Elevation elevation7 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation7 MuiPaper-rounded "
+  className="MuiPaper-root MuiPaper-elevation7 MuiPaper-rounded"
 >
   <h3
-    className="MuiTypography-root MuiTypography-headline "
+    className="MuiTypography-root MuiTypography-headline"
   >
     This is a sheet of paper with Elevation Value: \`elevation
     7
     \`
   </h3>
   <p
-    className="MuiTypography-root MuiTypography-body1 "
+    className="MuiTypography-root MuiTypography-body1"
   >
     Paper can be used to build surface or other elements for your application.
   </p>
@@ -2196,17 +2196,17 @@ exports[`Storyshots Paper/Elevation elevation7 1`] = `
 
 exports[`Storyshots Paper/Elevation elevation8 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation8 MuiPaper-rounded "
+  className="MuiPaper-root MuiPaper-elevation8 MuiPaper-rounded"
 >
   <h3
-    className="MuiTypography-root MuiTypography-headline "
+    className="MuiTypography-root MuiTypography-headline"
   >
     This is a sheet of paper with Elevation Value: \`elevation
     8
     \`
   </h3>
   <p
-    className="MuiTypography-root MuiTypography-body1 "
+    className="MuiTypography-root MuiTypography-body1"
   >
     Paper can be used to build surface or other elements for your application.
   </p>
@@ -2215,17 +2215,17 @@ exports[`Storyshots Paper/Elevation elevation8 1`] = `
 
 exports[`Storyshots Paper/Elevation elevation9 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation9 MuiPaper-rounded "
+  className="MuiPaper-root MuiPaper-elevation9 MuiPaper-rounded"
 >
   <h3
-    className="MuiTypography-root MuiTypography-headline "
+    className="MuiTypography-root MuiTypography-headline"
   >
     This is a sheet of paper with Elevation Value: \`elevation
     9
     \`
   </h3>
   <p
-    className="MuiTypography-root MuiTypography-body1 "
+    className="MuiTypography-root MuiTypography-body1"
   >
     Paper can be used to build surface or other elements for your application.
   </p>
@@ -2234,17 +2234,17 @@ exports[`Storyshots Paper/Elevation elevation9 1`] = `
 
 exports[`Storyshots Paper/Elevation elevation10 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation10 MuiPaper-rounded "
+  className="MuiPaper-root MuiPaper-elevation10 MuiPaper-rounded"
 >
   <h3
-    className="MuiTypography-root MuiTypography-headline "
+    className="MuiTypography-root MuiTypography-headline"
   >
     This is a sheet of paper with Elevation Value: \`elevation
     10
     \`
   </h3>
   <p
-    className="MuiTypography-root MuiTypography-body1 "
+    className="MuiTypography-root MuiTypography-body1"
   >
     Paper can be used to build surface or other elements for your application.
   </p>
@@ -2253,17 +2253,17 @@ exports[`Storyshots Paper/Elevation elevation10 1`] = `
 
 exports[`Storyshots Paper/Elevation elevation11 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation11 MuiPaper-rounded "
+  className="MuiPaper-root MuiPaper-elevation11 MuiPaper-rounded"
 >
   <h3
-    className="MuiTypography-root MuiTypography-headline "
+    className="MuiTypography-root MuiTypography-headline"
   >
     This is a sheet of paper with Elevation Value: \`elevation
     11
     \`
   </h3>
   <p
-    className="MuiTypography-root MuiTypography-body1 "
+    className="MuiTypography-root MuiTypography-body1"
   >
     Paper can be used to build surface or other elements for your application.
   </p>
@@ -2272,17 +2272,17 @@ exports[`Storyshots Paper/Elevation elevation11 1`] = `
 
 exports[`Storyshots Paper/Elevation elevation12 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation12 MuiPaper-rounded "
+  className="MuiPaper-root MuiPaper-elevation12 MuiPaper-rounded"
 >
   <h3
-    className="MuiTypography-root MuiTypography-headline "
+    className="MuiTypography-root MuiTypography-headline"
   >
     This is a sheet of paper with Elevation Value: \`elevation
     12
     \`
   </h3>
   <p
-    className="MuiTypography-root MuiTypography-body1 "
+    className="MuiTypography-root MuiTypography-body1"
   >
     Paper can be used to build surface or other elements for your application.
   </p>
@@ -2291,17 +2291,17 @@ exports[`Storyshots Paper/Elevation elevation12 1`] = `
 
 exports[`Storyshots Paper/Elevation elevation13 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation13 MuiPaper-rounded "
+  className="MuiPaper-root MuiPaper-elevation13 MuiPaper-rounded"
 >
   <h3
-    className="MuiTypography-root MuiTypography-headline "
+    className="MuiTypography-root MuiTypography-headline"
   >
     This is a sheet of paper with Elevation Value: \`elevation
     13
     \`
   </h3>
   <p
-    className="MuiTypography-root MuiTypography-body1 "
+    className="MuiTypography-root MuiTypography-body1"
   >
     Paper can be used to build surface or other elements for your application.
   </p>
@@ -2310,17 +2310,17 @@ exports[`Storyshots Paper/Elevation elevation13 1`] = `
 
 exports[`Storyshots Paper/Elevation elevation14 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation14 MuiPaper-rounded "
+  className="MuiPaper-root MuiPaper-elevation14 MuiPaper-rounded"
 >
   <h3
-    className="MuiTypography-root MuiTypography-headline "
+    className="MuiTypography-root MuiTypography-headline"
   >
     This is a sheet of paper with Elevation Value: \`elevation
     14
     \`
   </h3>
   <p
-    className="MuiTypography-root MuiTypography-body1 "
+    className="MuiTypography-root MuiTypography-body1"
   >
     Paper can be used to build surface or other elements for your application.
   </p>
@@ -2329,17 +2329,17 @@ exports[`Storyshots Paper/Elevation elevation14 1`] = `
 
 exports[`Storyshots Paper/Elevation elevation15 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation15 MuiPaper-rounded "
+  className="MuiPaper-root MuiPaper-elevation15 MuiPaper-rounded"
 >
   <h3
-    className="MuiTypography-root MuiTypography-headline "
+    className="MuiTypography-root MuiTypography-headline"
   >
     This is a sheet of paper with Elevation Value: \`elevation
     15
     \`
   </h3>
   <p
-    className="MuiTypography-root MuiTypography-body1 "
+    className="MuiTypography-root MuiTypography-body1"
   >
     Paper can be used to build surface or other elements for your application.
   </p>
@@ -2348,17 +2348,17 @@ exports[`Storyshots Paper/Elevation elevation15 1`] = `
 
 exports[`Storyshots Paper/Elevation elevation16 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation16 MuiPaper-rounded "
+  className="MuiPaper-root MuiPaper-elevation16 MuiPaper-rounded"
 >
   <h3
-    className="MuiTypography-root MuiTypography-headline "
+    className="MuiTypography-root MuiTypography-headline"
   >
     This is a sheet of paper with Elevation Value: \`elevation
     16
     \`
   </h3>
   <p
-    className="MuiTypography-root MuiTypography-body1 "
+    className="MuiTypography-root MuiTypography-body1"
   >
     Paper can be used to build surface or other elements for your application.
   </p>
@@ -2367,17 +2367,17 @@ exports[`Storyshots Paper/Elevation elevation16 1`] = `
 
 exports[`Storyshots Paper/Elevation elevation17 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation17 MuiPaper-rounded "
+  className="MuiPaper-root MuiPaper-elevation17 MuiPaper-rounded"
 >
   <h3
-    className="MuiTypography-root MuiTypography-headline "
+    className="MuiTypography-root MuiTypography-headline"
   >
     This is a sheet of paper with Elevation Value: \`elevation
     17
     \`
   </h3>
   <p
-    className="MuiTypography-root MuiTypography-body1 "
+    className="MuiTypography-root MuiTypography-body1"
   >
     Paper can be used to build surface or other elements for your application.
   </p>
@@ -2386,17 +2386,17 @@ exports[`Storyshots Paper/Elevation elevation17 1`] = `
 
 exports[`Storyshots Paper/Elevation elevation18 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation18 MuiPaper-rounded "
+  className="MuiPaper-root MuiPaper-elevation18 MuiPaper-rounded"
 >
   <h3
-    className="MuiTypography-root MuiTypography-headline "
+    className="MuiTypography-root MuiTypography-headline"
   >
     This is a sheet of paper with Elevation Value: \`elevation
     18
     \`
   </h3>
   <p
-    className="MuiTypography-root MuiTypography-body1 "
+    className="MuiTypography-root MuiTypography-body1"
   >
     Paper can be used to build surface or other elements for your application.
   </p>
@@ -2405,17 +2405,17 @@ exports[`Storyshots Paper/Elevation elevation18 1`] = `
 
 exports[`Storyshots Paper/Elevation elevation19 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation19 MuiPaper-rounded "
+  className="MuiPaper-root MuiPaper-elevation19 MuiPaper-rounded"
 >
   <h3
-    className="MuiTypography-root MuiTypography-headline "
+    className="MuiTypography-root MuiTypography-headline"
   >
     This is a sheet of paper with Elevation Value: \`elevation
     19
     \`
   </h3>
   <p
-    className="MuiTypography-root MuiTypography-body1 "
+    className="MuiTypography-root MuiTypography-body1"
   >
     Paper can be used to build surface or other elements for your application.
   </p>
@@ -2424,17 +2424,17 @@ exports[`Storyshots Paper/Elevation elevation19 1`] = `
 
 exports[`Storyshots Paper/Elevation elevation20 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation20 MuiPaper-rounded "
+  className="MuiPaper-root MuiPaper-elevation20 MuiPaper-rounded"
 >
   <h3
-    className="MuiTypography-root MuiTypography-headline "
+    className="MuiTypography-root MuiTypography-headline"
   >
     This is a sheet of paper with Elevation Value: \`elevation
     20
     \`
   </h3>
   <p
-    className="MuiTypography-root MuiTypography-body1 "
+    className="MuiTypography-root MuiTypography-body1"
   >
     Paper can be used to build surface or other elements for your application.
   </p>
@@ -2443,17 +2443,17 @@ exports[`Storyshots Paper/Elevation elevation20 1`] = `
 
 exports[`Storyshots Paper/Elevation elevation21 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation21 MuiPaper-rounded "
+  className="MuiPaper-root MuiPaper-elevation21 MuiPaper-rounded"
 >
   <h3
-    className="MuiTypography-root MuiTypography-headline "
+    className="MuiTypography-root MuiTypography-headline"
   >
     This is a sheet of paper with Elevation Value: \`elevation
     21
     \`
   </h3>
   <p
-    className="MuiTypography-root MuiTypography-body1 "
+    className="MuiTypography-root MuiTypography-body1"
   >
     Paper can be used to build surface or other elements for your application.
   </p>
@@ -2462,17 +2462,17 @@ exports[`Storyshots Paper/Elevation elevation21 1`] = `
 
 exports[`Storyshots Paper/Elevation elevation22 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation22 MuiPaper-rounded "
+  className="MuiPaper-root MuiPaper-elevation22 MuiPaper-rounded"
 >
   <h3
-    className="MuiTypography-root MuiTypography-headline "
+    className="MuiTypography-root MuiTypography-headline"
   >
     This is a sheet of paper with Elevation Value: \`elevation
     22
     \`
   </h3>
   <p
-    className="MuiTypography-root MuiTypography-body1 "
+    className="MuiTypography-root MuiTypography-body1"
   >
     Paper can be used to build surface or other elements for your application.
   </p>
@@ -2481,17 +2481,17 @@ exports[`Storyshots Paper/Elevation elevation22 1`] = `
 
 exports[`Storyshots Paper/Elevation elevation23 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation23 MuiPaper-rounded "
+  className="MuiPaper-root MuiPaper-elevation23 MuiPaper-rounded"
 >
   <h3
-    className="MuiTypography-root MuiTypography-headline "
+    className="MuiTypography-root MuiTypography-headline"
   >
     This is a sheet of paper with Elevation Value: \`elevation
     23
     \`
   </h3>
   <p
-    className="MuiTypography-root MuiTypography-body1 "
+    className="MuiTypography-root MuiTypography-body1"
   >
     Paper can be used to build surface or other elements for your application.
   </p>
@@ -2500,17 +2500,17 @@ exports[`Storyshots Paper/Elevation elevation23 1`] = `
 
 exports[`Storyshots Paper/Elevation elevation24 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation24 MuiPaper-rounded "
+  className="MuiPaper-root MuiPaper-elevation24 MuiPaper-rounded"
 >
   <h3
-    className="MuiTypography-root MuiTypography-headline "
+    className="MuiTypography-root MuiTypography-headline"
   >
     This is a sheet of paper with Elevation Value: \`elevation
     24
     \`
   </h3>
   <p
-    className="MuiTypography-root MuiTypography-body1 "
+    className="MuiTypography-root MuiTypography-body1"
   >
     Paper can be used to build surface or other elements for your application.
   </p>
@@ -2536,7 +2536,7 @@ exports[`Storyshots Select default 1`] = `
     htmlFor="select-id"
   />
   <div
-    className="MuiInput-root MuiInput-formControl MuiInput-underline "
+    className="MuiInput-root MuiInput-formControl MuiInput-underline"
     items={
       Array [
         Object {
@@ -2617,7 +2617,7 @@ exports[`Storyshots Select disabled 1`] = `
     htmlFor="select-id"
   />
   <div
-    className="MuiInput-root MuiInput-disabled MuiInput-formControl MuiInput-underline "
+    className="MuiInput-root MuiInput-disabled MuiInput-formControl MuiInput-underline"
     items={
       Array [
         Object {
@@ -2705,7 +2705,7 @@ exports[`Storyshots Select required 1`] = `
     </span>
   </label>
   <div
-    className="MuiInput-root MuiInput-formControl MuiInput-underline "
+    className="MuiInput-root MuiInput-formControl MuiInput-underline"
     items={
       Array [
         Object {
@@ -2790,7 +2790,7 @@ exports[`Storyshots Select/HelperText With Label 1`] = `
     Items
   </label>
   <div
-    className="MuiInput-root MuiInput-formControl MuiInput-underline "
+    className="MuiInput-root MuiInput-formControl MuiInput-underline"
     helperText="Helper Text"
     items={
       Array [
@@ -2875,7 +2875,7 @@ exports[`Storyshots Select/HelperText default 1`] = `
     htmlFor="select-id"
   />
   <div
-    className="MuiInput-root MuiInput-formControl MuiInput-underline "
+    className="MuiInput-root MuiInput-formControl MuiInput-underline"
     helperText="Helper Text"
     items={
       Array [
@@ -2961,7 +2961,7 @@ exports[`Storyshots Select/Label default 1`] = `
     Items
   </label>
   <div
-    className="MuiInput-root MuiInput-formControl MuiInput-underline "
+    className="MuiInput-root MuiInput-formControl MuiInput-underline"
     items={
       Array [
         Object {
@@ -5729,7 +5729,7 @@ exports[`Storyshots Table/RowHover disabled 1`] = `
 
 exports[`Storyshots TextField default 1`] = `
 <div
-  className="MuiFormControl-root "
+  className="MuiFormControl-root"
 >
   <div
     className="MuiInput-root MuiInput-formControl MuiInput-underline"
@@ -5750,7 +5750,7 @@ exports[`Storyshots TextField default 1`] = `
 
 exports[`Storyshots TextField/Error With Error 1`] = `
 <div
-  className="MuiFormControl-root "
+  className="MuiFormControl-root"
 >
   <div
     className="MuiInput-root MuiInput-error MuiInput-formControl MuiInput-underline"
@@ -5771,7 +5771,7 @@ exports[`Storyshots TextField/Error With Error 1`] = `
 
 exports[`Storyshots TextField/Error With Error And Label 1`] = `
 <div
-  className="MuiFormControl-root "
+  className="MuiFormControl-root"
 >
   <label
     className="MuiFormLabel-root MuiFormLabel-error MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -5798,7 +5798,7 @@ exports[`Storyshots TextField/Error With Error And Label 1`] = `
 
 exports[`Storyshots TextField/HelperText With Helper Text 1`] = `
 <div
-  className="MuiFormControl-root "
+  className="MuiFormControl-root"
 >
   <div
     className="MuiInput-root MuiInput-formControl MuiInput-underline"
@@ -5824,7 +5824,7 @@ exports[`Storyshots TextField/HelperText With Helper Text 1`] = `
 
 exports[`Storyshots TextField/HelperText With Helper Text And Error 1`] = `
 <div
-  className="MuiFormControl-root "
+  className="MuiFormControl-root"
 >
   <div
     className="MuiInput-root MuiInput-error MuiInput-formControl MuiInput-underline"
@@ -5850,7 +5850,7 @@ exports[`Storyshots TextField/HelperText With Helper Text And Error 1`] = `
 
 exports[`Storyshots TextField/HelperText With Helper Text And Label 1`] = `
 <div
-  className="MuiFormControl-root "
+  className="MuiFormControl-root"
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -5882,7 +5882,7 @@ exports[`Storyshots TextField/HelperText With Helper Text And Label 1`] = `
 
 exports[`Storyshots TextField/HelperText With Helper Text, Error And Label 1`] = `
 <div
-  className="MuiFormControl-root "
+  className="MuiFormControl-root"
 >
   <label
     className="MuiFormLabel-root MuiFormLabel-error MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -5914,7 +5914,7 @@ exports[`Storyshots TextField/HelperText With Helper Text, Error And Label 1`] =
 
 exports[`Storyshots TextField/Label With Label 1`] = `
 <div
-  className="MuiFormControl-root "
+  className="MuiFormControl-root"
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -5941,7 +5941,7 @@ exports[`Storyshots TextField/Label With Label 1`] = `
 
 exports[`Storyshots TextField/Number With Helper Text 1`] = `
 <div
-  className="MuiFormControl-root "
+  className="MuiFormControl-root"
 >
   <div
     className="MuiInput-root MuiInput-formControl MuiInput-underline"
@@ -5967,7 +5967,7 @@ exports[`Storyshots TextField/Number With Helper Text 1`] = `
 
 exports[`Storyshots TextField/Number With Helper Text And Error 1`] = `
 <div
-  className="MuiFormControl-root "
+  className="MuiFormControl-root"
 >
   <div
     className="MuiInput-root MuiInput-error MuiInput-formControl MuiInput-underline"
@@ -5993,7 +5993,7 @@ exports[`Storyshots TextField/Number With Helper Text And Error 1`] = `
 
 exports[`Storyshots TextField/Number With Helper Text And Label 1`] = `
 <div
-  className="MuiFormControl-root "
+  className="MuiFormControl-root"
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -6025,7 +6025,7 @@ exports[`Storyshots TextField/Number With Helper Text And Label 1`] = `
 
 exports[`Storyshots TextField/Number With Helper Text, Error And Label 1`] = `
 <div
-  className="MuiFormControl-root "
+  className="MuiFormControl-root"
 >
   <label
     className="MuiFormLabel-root MuiFormLabel-error MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -6057,7 +6057,7 @@ exports[`Storyshots TextField/Number With Helper Text, Error And Label 1`] = `
 
 exports[`Storyshots TextField/Password With Helper Text 1`] = `
 <div
-  className="MuiFormControl-root "
+  className="MuiFormControl-root"
 >
   <div
     className="MuiInput-root MuiInput-formControl MuiInput-underline"
@@ -6083,7 +6083,7 @@ exports[`Storyshots TextField/Password With Helper Text 1`] = `
 
 exports[`Storyshots TextField/Password With Helper Text And Error 1`] = `
 <div
-  className="MuiFormControl-root "
+  className="MuiFormControl-root"
 >
   <div
     className="MuiInput-root MuiInput-error MuiInput-formControl MuiInput-underline"
@@ -6109,7 +6109,7 @@ exports[`Storyshots TextField/Password With Helper Text And Error 1`] = `
 
 exports[`Storyshots TextField/Password With Helper Text And Label 1`] = `
 <div
-  className="MuiFormControl-root "
+  className="MuiFormControl-root"
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -6141,7 +6141,7 @@ exports[`Storyshots TextField/Password With Helper Text And Label 1`] = `
 
 exports[`Storyshots TextField/Password With Helper Text, Error And Label 1`] = `
 <div
-  className="MuiFormControl-root "
+  className="MuiFormControl-root"
 >
   <label
     className="MuiFormLabel-root MuiFormLabel-error MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -6338,7 +6338,7 @@ exports[`Storyshots TimePicker showTodayButton 1`] = `
 
 exports[`Storyshots Typography body 1 1`] = `
 <p
-  className="MuiTypography-root MuiTypography-body1 "
+  className="MuiTypography-root MuiTypography-body1"
 >
   Typography
 </p>
@@ -6346,7 +6346,7 @@ exports[`Storyshots Typography body 1 1`] = `
 
 exports[`Storyshots Typography body 2 1`] = `
 <aside
-  className="MuiTypography-root MuiTypography-body2 "
+  className="MuiTypography-root MuiTypography-body2"
 >
   Typography
 </aside>
@@ -6354,7 +6354,7 @@ exports[`Storyshots Typography body 2 1`] = `
 
 exports[`Storyshots Typography caption 1`] = `
 <span
-  className="MuiTypography-root MuiTypography-caption "
+  className="MuiTypography-root MuiTypography-caption"
 >
   Typography
 </span>
@@ -6362,7 +6362,7 @@ exports[`Storyshots Typography caption 1`] = `
 
 exports[`Storyshots Typography display 1 1`] = `
 <h1
-  className="MuiTypography-root MuiTypography-display1 "
+  className="MuiTypography-root MuiTypography-display1"
 >
   Typography
 </h1>
@@ -6370,7 +6370,7 @@ exports[`Storyshots Typography display 1 1`] = `
 
 exports[`Storyshots Typography display 2 1`] = `
 <h1
-  className="MuiTypography-root MuiTypography-display2 "
+  className="MuiTypography-root MuiTypography-display2"
 >
   Typography
 </h1>
@@ -6378,7 +6378,7 @@ exports[`Storyshots Typography display 2 1`] = `
 
 exports[`Storyshots Typography display 3 1`] = `
 <h1
-  className="MuiTypography-root MuiTypography-display3 "
+  className="MuiTypography-root MuiTypography-display3"
 >
   Typography
 </h1>
@@ -6386,7 +6386,7 @@ exports[`Storyshots Typography display 3 1`] = `
 
 exports[`Storyshots Typography display 4 1`] = `
 <h1
-  className="MuiTypography-root MuiTypography-display4 "
+  className="MuiTypography-root MuiTypography-display4"
 >
   Typography
 </h1>
@@ -6394,7 +6394,7 @@ exports[`Storyshots Typography display 4 1`] = `
 
 exports[`Storyshots Typography headline 1`] = `
 <h1
-  className="MuiTypography-root MuiTypography-headline "
+  className="MuiTypography-root MuiTypography-headline"
 >
   Typography
 </h1>
@@ -6402,7 +6402,7 @@ exports[`Storyshots Typography headline 1`] = `
 
 exports[`Storyshots Typography nowrap 1`] = `
 <p
-  className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap MuiTypography-gutterBottom "
+  className="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap MuiTypography-gutterBottom"
 >
    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -6411,7 +6411,7 @@ sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 exports[`Storyshots Typography subheading 1`] = `
 <h3
-  className="MuiTypography-root MuiTypography-subheading "
+  className="MuiTypography-root MuiTypography-subheading"
 >
   Typography
 </h3>
@@ -6419,7 +6419,7 @@ exports[`Storyshots Typography subheading 1`] = `
 
 exports[`Storyshots Typography title 1`] = `
 <h2
-  className="MuiTypography-root MuiTypography-title "
+  className="MuiTypography-root MuiTypography-title"
 >
   Typography
 </h2>
