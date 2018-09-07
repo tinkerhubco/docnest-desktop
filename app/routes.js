@@ -2,11 +2,12 @@
 import React from 'react';
 import { Switch, Route } from 'react-router';
 import App from './screens/App';
+import Login from './screens/Login';
 
 export default () => (
   <App>
     <Switch>
-      <Route path="/" render={() => <div>DocNest Desktop</div>} />
+      <Route path="/" render={() => <Login />} />
     </Switch>
   </App>
 );
