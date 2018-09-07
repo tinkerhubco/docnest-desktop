@@ -30,7 +30,11 @@ Table.defaultProps = {
     )),
   renderBodyRow: (columns, rows, rowOptions, renderBodyRowCell) =>
     rows.map(row => (
-      <MUITableRow key={row.id} {...rowOptions}>
+      <MUITableRow
+        key={row.id}
+        {...rowOptions}
+        onClick={onRowSelect(row, rowOptions.onClick)}
+      >
         {renderBodyRowCell(columns, row)}
       </MUITableRow>
     )),
@@ -41,6 +45,10 @@ Table.defaultProps = {
       </TableCell>
     ))
 };
+
+function onRowSelect(row, onClickHandler = () => {}) {
+  return () => onClickHandler(row);
+}
 
 /**
  * Todos:
