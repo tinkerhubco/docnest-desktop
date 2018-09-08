@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import Root from './screens/Root';
+import Root from './Root';
 import { configureStore, history } from './store/configureStore';
 import './app.global.css';
 
@@ -15,8 +15,8 @@ render(
 );
 
 if (module.hot) {
-  module.hot.accept('./screens/Root', () => {
-    const NextRoot = require('./screens/Root'); // eslint-disable-line global-require
+  module.hot.accept('./Root', () => {
+    const NextRoot = require(`./Root`); // eslint-disable-line global-require
     render(
       <AppContainer>
         <NextRoot store={store} history={history} />
