@@ -1,4 +1,5 @@
 import { configure, addDecorator } from '@storybook/react';
+import { withConsole } from '@storybook/addon-console';
 import React from 'react';
 import JssProvider from 'react-jss/lib/JssProvider';
 import 'material-design-icons/iconfont/material-icons.css';
@@ -10,10 +11,19 @@ addDecorator(story => (
   <JssProvider generateClassName={generateClassName}>{story()}</JssProvider>
 ));
 
-const req = require.context('../app/components', true, /\.stories\.js$/);
+addDecorator((story, context) => withConsole()(story)(context));
+
+const componentsReq = require.context(
+  '../app/components',
+  true,
+  /\.stories\.js$/
+);
+
+const screensReq = require.context('../app/screens', true, /\.stories\.js$/);
 
 function loadStories() {
-  req.keys().forEach(filename => req(filename));
+  componentsReq.keys().forEach(filename => componentsReq(filename));
+  screensReq.keys().forEach(filename => screensReq(filename));
 }
 
 configure(loadStories, module);
