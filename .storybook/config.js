@@ -10,10 +10,17 @@ addDecorator(story => (
   <JssProvider generateClassName={generateClassName}>{story()}</JssProvider>
 ));
 
-const req = require.context('../app/screens', true, /\.stories\.js$/);
+const componentsReq = require.context(
+  '../app/components',
+  true,
+  /\.stories\.js$/
+);
+
+const screensReq = require.context('../app/screens', true, /\.stories\.js$/);
 
 function loadStories() {
-  req.keys().forEach(filename => req(filename));
+  componentsReq.keys().forEach(filename => componentsReq(filename));
+  screensReq.keys().forEach(filename => screensReq(filename));
 }
 
 configure(loadStories, module);
