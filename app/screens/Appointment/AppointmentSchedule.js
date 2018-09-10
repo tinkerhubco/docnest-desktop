@@ -63,19 +63,19 @@ export default class AppointmentSchedule extends React.Component {
     };
   }
 
-  appointmentAddHandler() {
-    return () => {
-      const tableData = [...this.state.tableData];
-      const dateNow = new Date();
-      tableData.push({
-        id: dateNow.getMilliseconds(),
-        name: 'Test',
-        date: dateNow,
-        time: dateNow
-      });
-      this.setState({ tableData, open: false });
-    };
-  }
+  handleAppointmentAdd = () => {
+    const tableData = [...this.state.tableData];
+    const dateNow = new Date();
+
+    tableData.push({
+      id: dateNow.getMilliseconds(),
+      name: 'Test',
+      date: dateNow,
+      time: dateNow
+    });
+
+    this.setState({ tableData, open: false });
+  };
 
   handleClose = () => {
     return this.setState({ open: false });
@@ -95,7 +95,7 @@ export default class AppointmentSchedule extends React.Component {
     return (
       <MainContent
         title="Appointment Schedule"
-        onActionClick={this.handleActionClick()}
+        onActionClick={this.handleActionClick}
       >
         <StyledSearchTextField
           id="appointment-search-field"
@@ -128,11 +128,11 @@ export default class AppointmentSchedule extends React.Component {
           }
           dialogActionNodeChildren={
             <div>
-              <Button onClick={this.handleClose()} variant="contained">
+              <Button onClick={this.handleClose} variant="contained">
                 Cancel
               </Button>
               <Button
-                onClick={this.appointmentAddHandler()}
+                onClick={this.appointmentAddHandler}
                 color="primary"
                 variant="contained"
               >
