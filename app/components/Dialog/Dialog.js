@@ -24,11 +24,11 @@ export function Dialog(props) {
     dialogContentNodeChildren,
     title,
     subtitle,
-    ...coreProps
+    ...dialogProps
   } = props;
   return (
     <div>
-      <MUIDialog {...coreProps}>
+      <MUIDialog {...dialogProps}>
         <DialogTitle id="dialog-title">{title}</DialogTitle>
         <DialogContent>
           <DialogContentText>{subtitle}</DialogContentText>
