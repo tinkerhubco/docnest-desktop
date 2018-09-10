@@ -128,9 +128,7 @@ export default class AppointmentSchedule extends React.Component {
           }
           dialogActionNodeChildren={
             <div>
-              <Button onClick={this.handleClose} variant="contained">
-                Cancel
-              </Button>
+              <Button onClick={this.handleClose}>Cancel</Button>
               <Button
                 onClick={this.appointmentAddHandler}
                 color="primary"
