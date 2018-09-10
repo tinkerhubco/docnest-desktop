@@ -121,7 +121,11 @@
   },
   "devDependencies": {
     "@sambego/storybook-state": "^1.2.0",
+    "@storybook/addon-actions": "^4.0.0-alpha.16",
+    "@storybook/addon-console": "^1.0.4",
     "@storybook/addon-storyshots": "^4.0.0-alpha.16",
+    "@storybook/addon-viewport": "^4.0.0-alpha.16",
+    "@storybook/addons": "^4.0.0-alpha.16",
     "@storybook/react": "^4.0.0-alpha.16",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",

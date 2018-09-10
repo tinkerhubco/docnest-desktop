@@ -1,4 +1,5 @@
 import { configure, addDecorator } from '@storybook/react';
+import { withConsole } from '@storybook/addon-console';
 import React from 'react';
 import JssProvider from 'react-jss/lib/JssProvider';
 import 'material-design-icons/iconfont/material-icons.css';
@@ -9,6 +10,8 @@ const generateClassName = (rule, styleSheet) =>
 addDecorator(story => (
   <JssProvider generateClassName={generateClassName}>{story()}</JssProvider>
 ));
+
+addDecorator((story, context) => withConsole()(story)(context));
 
 const componentsReq = require.context(
   '../app/components',
