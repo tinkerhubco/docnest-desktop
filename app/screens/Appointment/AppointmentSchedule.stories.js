@@ -3,6 +3,6 @@ import { storiesOf } from '@storybook/react';
 
 import AppointmentSchedule from './AppointmentSchedule';
 
-storiesOf('AppointmentSchedule', module).add('default', () => (
+storiesOf('Screens/AppointmentSchedule', module).add('default', () => (
   <AppointmentSchedule />
 ));
