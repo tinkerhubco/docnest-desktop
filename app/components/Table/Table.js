@@ -33,7 +33,7 @@ Table.defaultProps = {
       <MUITableRow
         key={row.id}
         {...rowOptions}
-        onClick={onRowSelect(row, rowOptions.onClick)}
+        onClick={() => rowOptions.onClick(row)}
       >
         {renderBodyRowCell(columns, row)}
       </MUITableRow>
@@ -46,17 +46,13 @@ Table.defaultProps = {
     ))
 };
 
-function onRowSelect(row, onClickHandler = () => {}) {
-  return () => onClickHandler(row);
-}
-
 /**
  * Todos:
  * Support for schema based data x
  * Enhance schema based table (wip) x
  * Support for customize TableCell (can be a button) x
  * Support for ordering/sorting
- * Support for events?
+ * Support for events? x
  * Support for Table colors
  */
 

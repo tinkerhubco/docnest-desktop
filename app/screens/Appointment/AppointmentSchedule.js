@@ -7,7 +7,7 @@ import Dialog from '../../components/Dialog/Dialog';
 import TextField from '../../components/FormField/TextField';
 import Table from '../../components/Table/Table';
 
-import BaseScreen from '../BaseScreen';
+import MainContent from '../MainContent';
 
 const StyledSearchTextField = styled(TextField)`
   &&& {
@@ -63,12 +63,6 @@ export default class AppointmentSchedule extends React.Component {
     };
   }
 
-  actionHandler() {
-    return () => {
-      this.setState({ open: true });
-    };
-  }
-
   appointmentAddHandler() {
     return () => {
       const tableData = [...this.state.tableData];
@@ -83,30 +77,34 @@ export default class AppointmentSchedule extends React.Component {
     };
   }
 
-  handleClose() {
-    return () => {
-      this.setState({ open: false });
-    };
-  }
+  handleClose = () => {
+    return this.setState({ open: false });
+  };
+
+  handleActionClick = () => {
+    return this.setState({ open: true });
+  };
 
   render() {
+    const {
+      tableOptions: { rowOptions, columns },
+      appointment: { schedule },
+      tableData,
+      open
+    } = this.state;
     return (
-      <BaseScreen
+      <MainContent
         title="Appointment Schedule"
-        actionHandler={this.actionHandler()}
+        onActionClick={this.handleActionClick()}
       >
         <StyledSearchTextField
           id="appointment-search-field"
           fullWidth
           placeholder="Search Appointment"
         />
-        <Table
-          rowOptions={this.state.tableOptions.rowOptions}
-          columns={this.state.tableOptions.columns}
-          rows={this.state.tableData}
-        />
+        <Table rowOptions={rowOptions} columns={columns} rows={tableData} />
         <Dialog
-          open={this.state.open}
+          open={open}
           onClose={this.handleClose}
           title="Add Appointment"
           subtitle="Patient appointment schedule"
@@ -123,7 +121,7 @@ export default class AppointmentSchedule extends React.Component {
                 label="Appointment Schedule"
                 showTodayButton
                 todayLabel="Now"
-                value={this.state.appointment.schedule}
+                value={schedule}
                 onChange={() => {}}
               />
             </div>
@@ -143,7 +141,7 @@ export default class AppointmentSchedule extends React.Component {
             </div>
           }
         />
-      </BaseScreen>
+      </MainContent>
     );
   }
 }
