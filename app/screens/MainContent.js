@@ -34,20 +34,20 @@ const StyledActionContainer = styled.div`
   padding: 2px;
 `;
 
-BaseScreen.propTypes = {
-  actionHandler: PropTypes.func,
+MainContent.propTypes = {
+  onActionClick: PropTypes.func,
   buttonIcon: PropTypes.element,
   children: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired
 };
 
-BaseScreen.defaultProps = {
-  actionHandler: () => {},
+MainContent.defaultProps = {
+  onActionClick: () => {},
   buttonIcon: <AddIcon />
 };
 
-export function BaseScreen(props) {
-  const { actionHandler, buttonIcon, children, title } = props;
+export function MainContent(props) {
+  const { onActionClick, buttonIcon, children, title } = props;
 
   return (
     <StyledScreenContainer>
@@ -56,7 +56,7 @@ export function BaseScreen(props) {
       </StyledScreenTitle>
       <StyledScreenContent>{children}</StyledScreenContent>
       <StyledActionContainer>
-        <StyledFab variant="fab" color="primary" onClick={actionHandler}>
+        <StyledFab variant="fab" color="primary" onClick={onActionClick}>
           {buttonIcon}
         </StyledFab>
       </StyledActionContainer>
@@ -64,4 +64,4 @@ export function BaseScreen(props) {
   );
 }
 
-export default BaseScreen;
+export default MainContent;
