@@ -30,7 +30,11 @@ Table.defaultProps = {
     )),
   renderBodyRow: (columns, rows, rowOptions, renderBodyRowCell) =>
     rows.map(row => (
-      <MUITableRow key={row.id} {...rowOptions}>
+      <MUITableRow
+        key={row.id}
+        {...rowOptions}
+        onClick={() => rowOptions.onClick(row)}
+      >
         {renderBodyRowCell(columns, row)}
       </MUITableRow>
     )),
@@ -48,7 +52,7 @@ Table.defaultProps = {
  * Enhance schema based table (wip) x
  * Support for customize TableCell (can be a button) x
  * Support for ordering/sorting
- * Support for events?
+ * Support for events? x
  * Support for Table colors
  */
 
