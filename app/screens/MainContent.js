@@ -53,6 +53,7 @@ export function MainContent(props) {
     <StyledScreenContainer>
       <StyledScreenTitle>
         <Typography variant="display2">{title}</Typography>
+        <hr />
       </StyledScreenTitle>
       <StyledScreenContent>{children}</StyledScreenContent>
       <StyledActionContainer>
