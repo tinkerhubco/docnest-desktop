@@ -5,10 +5,10 @@ import styled from 'styled-components';
 import SearchIcon from '@material-ui/icons/Search';
 import DateIcon from '@material-ui/icons/DateRange';
 
-import Button from '../../../components/Button/Button';
-import DatePicker from '../../../components/DatePicker/DatePicker';
-import InputAdornment from '../../../components/Input/InputAdornment';
-import TextField from '../../../components/FormField/TextField';
+import Button from '../../components/Button/Button';
+import DatePicker from '../../components/DatePicker/DatePicker';
+import InputAdornment from '../../components/Input/InputAdornment';
+import TextField from '../../components/FormField/TextField';
 
 const StyledSearchTextField = styled(TextField)``;
 

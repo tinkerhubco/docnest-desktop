@@ -1,14 +1,13 @@
 import React from 'react';
 
-import Button from '../../components/Button/Button';
-import DateTimePicker from '../../components/DateTimePicker/DateTimePicker';
-import Dialog from '../../components/Dialog/Dialog';
-import TextField from '../../components/FormField/TextField';
-import Table from '../../components/Table/Table';
+import Button from '../components/Button/Button';
+import DateTimePicker from '../components/DateTimePicker/DateTimePicker';
+import Dialog from '../components/Dialog/Dialog';
+import TextField from '../components/FormField/TextField';
+import Table from '../components/Table/Table';
 
-import AppointmentScheduleSearch from './AppointmentScheduleSearch/AppointmentScheduleSearch';
-
-import MainContent from '../MainContent';
+import AppointmentScheduleSearch from './appointmentSchedule/AppointmentScheduleSearch';
+import MainContent from './MainContent';
 
 export default class AppointmentSchedule extends React.Component {
   constructor(props) {
