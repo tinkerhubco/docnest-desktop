@@ -69,7 +69,6 @@ export function AppointmentScheduleSearch(props) {
       <StyledSearchFilterContainer>
         <StyledDatePicker
           autoOk
-          disableFuture
           value={fromDate}
           onChange={onFromDateChange}
           InputProps={{
@@ -84,7 +83,6 @@ export function AppointmentScheduleSearch(props) {
       <StyledSearchFilterContainer>
         <StyledDatePicker
           autoOk
-          disableFuture
           value={toDate}
           onChange={onToDateChange}
           InputProps={{
