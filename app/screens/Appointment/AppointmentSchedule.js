@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 
 import Button from '../../components/Button/Button';
 import DateTimePicker from '../../components/DateTimePicker/DateTimePicker';
@@ -7,13 +6,9 @@ import Dialog from '../../components/Dialog/Dialog';
 import TextField from '../../components/FormField/TextField';
 import Table from '../../components/Table/Table';
 
-import MainContent from '../MainContent';
+import AppointmentScheduleSearch from './AppointmentScheduleSearch/AppointmentScheduleSearch';
 
-const StyledSearchTextField = styled(TextField)`
-  &&& {
-    margin: 1em 0;
-  }
-`;
+import MainContent from '../MainContent';
 
 export default class AppointmentSchedule extends React.Component {
   constructor(props) {
@@ -59,7 +54,9 @@ export default class AppointmentSchedule extends React.Component {
           date: '2018-08-25T02:44:44Z',
           time: '2018-08-25T02:44:44Z'
         }
-      ]
+      ],
+      fromDate: new Date(),
+      toDate: new Date()
     };
   }
 
@@ -85,6 +82,16 @@ export default class AppointmentSchedule extends React.Component {
     return this.setState({ open: true });
   };
 
+  handleFromDateChange = newDate => {
+    this.setState({ fromDate: newDate });
+  };
+
+  handleToDateChange = newDate => {
+    this.setState({ toDate: newDate });
+  };
+
+  handleSearchAppointment = () => {};
+
   render() {
     const {
       tableOptions: { rowOptions, columns },
@@ -97,10 +104,12 @@ export default class AppointmentSchedule extends React.Component {
         title="Appointment Schedule"
         onActionClick={this.handleActionClick}
       >
-        <StyledSearchTextField
-          id="appointment-search-field"
-          fullWidth
-          placeholder="Search Appointment"
+        <AppointmentScheduleSearch
+          fromDate={this.state.fromDate}
+          toDate={this.state.toDate}
+          onFromDateChange={this.handleFromDateChange}
+          onToDateChange={this.handleToDateChange}
+          onSearchAppointment={this.handleSearchAppointment}
         />
         <Table rowOptions={rowOptions} columns={columns} rows={tableData} />
         <Dialog
