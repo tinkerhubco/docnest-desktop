@@ -4,10 +4,10 @@ import Button from '../components/Button/Button';
 import DateTimePicker from '../components/DateTimePicker/DateTimePicker';
 import Dialog from '../components/Dialog/Dialog';
 import TextField from '../components/FormField/TextField';
+import MainContent from '../components/MainContent/MainContent';
 import Table from '../components/Table/Table';
 
 import AppointmentScheduleSearch from './appointmentSchedule/AppointmentScheduleSearch';
-import MainContent from './MainContent';
 
 export default class AppointmentSchedule extends React.Component {
   constructor(props) {

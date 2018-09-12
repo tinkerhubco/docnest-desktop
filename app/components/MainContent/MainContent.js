@@ -4,9 +4,9 @@ import styled from 'styled-components';
 
 import AddIcon from '@material-ui/icons/Add';
 
-import Button from '../components/Button/Button';
-import Paper from '../components/Paper/Paper';
-import Typography from '../components/Typography/Typography';
+import Button from '../Button/Button';
+import Paper from '../Paper/Paper';
+import Typography from '../Typography/Typography';
 
 const StyledScreenTitle = styled.div`
   margin: 0 25px 25px 25px;
