@@ -29,7 +29,7 @@ const StyledSearchFilterContainer = styled.div`
 `;
 
 const StyledDatePicker = styled(DatePicker)`
-  &&& > .MuiInput-root {
+  .MuiInput-root {
     align-items: unset;
   }
 `;
