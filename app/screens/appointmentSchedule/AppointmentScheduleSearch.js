@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { Field, Formik } from 'formik';
 import styled from 'styled-components';
 
 import SearchIcon from '@material-ui/icons/Search';
@@ -7,6 +7,7 @@ import DateIcon from '@material-ui/icons/DateRange';
 
 import Button from '../../components/Button/Button';
 import DatePicker from '../../components/DatePicker/DatePicker';
+import Form from '../../components/Form/Form';
 import InputAdornment from '../../components/Input/InputAdornment';
 import TextField from '../../components/FormField/TextField';
 
@@ -15,6 +16,12 @@ const StyledSearchTextField = styled(TextField)``;
 const StyledFilterContainer = styled.div`
   display: flex;
   margin: 3em 0;
+`;
+
+const StyledForm = styled(Form)`
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
 `;
 
 const StyledSearchFilterContainer = styled.div`
@@ -27,82 +34,87 @@ const StyledDatePicker = styled(DatePicker)`
   }
 `;
 
-AppointmentScheduleSearch.propTypes = {
-  fromDate: PropTypes.instanceOf(Date),
-  toDate: PropTypes.instanceOf(Date),
-  onFromDateChange: PropTypes.func,
-  onToDateChange: PropTypes.func,
-  onSearchAppointment: PropTypes.func
-};
-
-AppointmentScheduleSearch.defaultProps = {
-  fromDate: undefined,
-  toDate: undefined,
-  onFromDateChange: () => {},
-  onToDateChange: () => {},
-  onSearchAppointment: () => {}
-};
-
-export function AppointmentScheduleSearch(props) {
-  const {
-    fromDate,
-    toDate,
-    onFromDateChange,
-    onToDateChange,
-    onSearchAppointment
-  } = props;
+export function AppointmentScheduleSearch() {
   return (
     <StyledFilterContainer>
-      <StyledSearchFilterContainer>
-        <StyledSearchTextField
-          id="appointment-search-field"
-          placeholder="Search Appointment"
-          InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
-                <SearchIcon />
-              </InputAdornment>
-            )
-          }}
-        />
-      </StyledSearchFilterContainer>
-      <StyledSearchFilterContainer>
-        <StyledDatePicker
-          autoOk
-          value={fromDate}
-          onChange={onFromDateChange}
-          InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
-                <DateIcon />
-              </InputAdornment>
-            )
-          }}
-        />
-      </StyledSearchFilterContainer>
-      <StyledSearchFilterContainer>
-        <StyledDatePicker
-          autoOk
-          value={toDate}
-          onChange={onToDateChange}
-          InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
-                <DateIcon />
-              </InputAdornment>
-            )
-          }}
-        />
-      </StyledSearchFilterContainer>
-      <StyledSearchFilterContainer>
-        <Button
-          variant="contained"
-          color="primary"
-          onClick={onSearchAppointment}
-        >
-          Search Appointment
-        </Button>
-      </StyledSearchFilterContainer>
+      <Formik
+        initialValues={{
+          search: '',
+          fromDate: new Date(),
+          toDate: new Date()
+        }}
+        onSubmit={values => console.log(values)}
+        render={({ handleSubmit, setFieldValue }) => (
+          <StyledForm>
+            <StyledSearchFilterContainer>
+              <Field
+                name="search"
+                render={({ field }) => (
+                  <StyledSearchTextField
+                    {...field}
+                    id="appointment-search-field"
+                    placeholder="Search Appointment"
+                    InputProps={{
+                      startAdornment: (
+                        <InputAdornment position="start">
+                          <SearchIcon />
+                        </InputAdornment>
+                      )
+                    }}
+                  />
+                )}
+              />
+            </StyledSearchFilterContainer>
+            <StyledSearchFilterContainer>
+              <Field
+                name="fromDate"
+                render={({ field }) => (
+                  <StyledDatePicker
+                    {...field}
+                    onChange={date => setFieldValue('fromDate', date)}
+                    autoOk
+                    InputProps={{
+                      startAdornment: (
+                        <InputAdornment position="start">
+                          <DateIcon />
+                        </InputAdornment>
+                      )
+                    }}
+                  />
+                )}
+              />
+            </StyledSearchFilterContainer>
+            <StyledSearchFilterContainer>
+              <Field
+                name="toDate"
+                render={({ field }) => (
+                  <StyledDatePicker
+                    {...field}
+                    onChange={date => setFieldValue('toDate', date)}
+                    autoOk
+                    InputProps={{
+                      startAdornment: (
+                        <InputAdornment position="start">
+                          <DateIcon />
+                        </InputAdornment>
+                      )
+                    }}
+                  />
+                )}
+              />
+            </StyledSearchFilterContainer>
+            <StyledSearchFilterContainer>
+              <Button
+                variant="contained"
+                color="primary"
+                onClick={handleSubmit}
+              >
+                Search Appointment
+              </Button>
+            </StyledSearchFilterContainer>
+          </StyledForm>
+        )}
+      />
     </StyledFilterContainer>
   );
 }
