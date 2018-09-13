@@ -3386,6 +3386,40 @@ exports[`Storyshots PasswordField show password 1`] = `
 `;
 
 exports[`Storyshots Screens/AppointmentSchedule default 1`] = `
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3em 0;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c6 .MuiInput-root {
+  -webkit-align-items: unset;
+  -webkit-box-align: unset;
+  -ms-flex-align: unset;
+  align-items: unset;
+}
+
 .c1 {
   margin: 0 25px 25px 25px;
 }
@@ -3398,7 +3432,7 @@ exports[`Storyshots Screens/AppointmentSchedule default 1`] = `
   margin: 0 25px;
 }
 
-.c5.c5.c5 {
+.c8.c8.c8 {
   margin: 0;
   top: auto;
   right: 20px;
@@ -3407,12 +3441,8 @@ exports[`Storyshots Screens/AppointmentSchedule default 1`] = `
   position: fixed;
 }
 
-.c4 {
+.c7 {
   padding: 2px;
-}
-
-.c3.c3.c3 {
-  margin: 1em 0;
 }
 
 <div
@@ -3426,29 +3456,187 @@ exports[`Storyshots Screens/AppointmentSchedule default 1`] = `
     >
       Appointment Schedule
     </h1>
+    <hr />
   </div>
   <div
     className="c2"
   >
     <div
-      className="MuiFormControl-root MuiFormControl-fullWidth c3"
+      className="c3"
     >
-      <div
-        className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+      <form
+        className="c4"
+        onSubmit={[Function]}
       >
-        <input
-          aria-invalid={false}
-          className="MuiInput-input"
-          disabled={false}
-          id="appointment-search-field"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="Search Appointment"
-          required={false}
-          type="text"
-        />
-      </div>
+        <div
+          className="c5"
+        >
+          <div
+            className="MuiFormControl-root "
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-underline"
+            >
+              <div
+                className="MuiInputAdornment-root MuiInputAdornment-positionStart"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </div>
+              <input
+                aria-invalid={false}
+                className="MuiInput-input"
+                disabled={false}
+                id="appointment-search-field"
+                name="search"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                placeholder="Search Appointment"
+                required={false}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="c5"
+        >
+          <div
+            className="MuiFormControl-root c6"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+            >
+              <div
+                className="MuiInputAdornment-root MuiInputAdornment-positionStart"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </div>
+              <input
+                aria-invalid={false}
+                className="MuiInput-input"
+                disabled={false}
+                mask={null}
+                name="fromDate"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                readOnly={true}
+                required={false}
+                type="text"
+                value="September 13th"
+              />
+            </div>
+            
+          </div>
+        </div>
+        <div
+          className="c5"
+        >
+          <div
+            className="MuiFormControl-root c6"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+            >
+              <div
+                className="MuiInputAdornment-root MuiInputAdornment-positionStart"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </div>
+              <input
+                aria-invalid={false}
+                className="MuiInput-input"
+                disabled={false}
+                mask={null}
+                name="toDate"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                readOnly={true}
+                required={false}
+                type="text"
+                value="September 13th"
+              />
+            </div>
+            
+          </div>
+        </div>
+        <div
+          className="c5"
+        >
+          <button
+            className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary "
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            <span
+              className="MuiButton-label"
+            >
+              Search Appointment
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </form>
     </div>
     <table
       className="MuiTable-root"
@@ -3513,10 +3701,10 @@ exports[`Storyshots Screens/AppointmentSchedule default 1`] = `
     <div />
   </div>
   <div
-    className="c4"
+    className="c7"
   >
     <button
-      className="MuiButtonBase-root MuiButton-root MuiButton-fab MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary c5 "
+      className="MuiButtonBase-root MuiButton-root MuiButton-fab MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary c8 "
       disabled={false}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3555,6 +3743,220 @@ exports[`Storyshots Screens/AppointmentSchedule default 1`] = `
       />
     </button>
   </div>
+</div>
+`;
+
+exports[`Storyshots Screens/AppointmentSchedule/AppointmentScheduleSearch default 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3em 0;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c2 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 .MuiInput-root {
+  -webkit-align-items: unset;
+  -webkit-box-align: unset;
+  -ms-flex-align: unset;
+  align-items: unset;
+}
+
+<div
+  className="c0"
+>
+  <form
+    className="c1"
+    onSubmit={[Function]}
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="MuiFormControl-root "
+      >
+        <div
+          className="MuiInput-root MuiInput-formControl MuiInput-underline"
+        >
+          <div
+            className="MuiInputAdornment-root MuiInputAdornment-positionStart"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </div>
+          <input
+            aria-invalid={false}
+            className="MuiInput-input"
+            disabled={false}
+            id="appointment-search-field"
+            name="search"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="Search Appointment"
+            required={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="c2"
+    >
+      <div
+        className="MuiFormControl-root c3"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+      >
+        <div
+          className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+        >
+          <div
+            className="MuiInputAdornment-root MuiInputAdornment-positionStart"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </div>
+          <input
+            aria-invalid={false}
+            className="MuiInput-input"
+            disabled={false}
+            mask={null}
+            name="fromDate"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            readOnly={true}
+            required={false}
+            type="text"
+            value="September 13th"
+          />
+        </div>
+        
+      </div>
+    </div>
+    <div
+      className="c2"
+    >
+      <div
+        className="MuiFormControl-root c3"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+      >
+        <div
+          className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+        >
+          <div
+            className="MuiInputAdornment-root MuiInputAdornment-positionStart"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </div>
+          <input
+            aria-invalid={false}
+            className="MuiInput-input"
+            disabled={false}
+            mask={null}
+            name="toDate"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            readOnly={true}
+            required={false}
+            type="text"
+            value="September 13th"
+          />
+        </div>
+        
+      </div>
+    </div>
+    <div
+      className="c2"
+    >
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary "
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          Search Appointment
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </form>
 </div>
 `;
 
