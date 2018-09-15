@@ -1,6 +1,10 @@
 /* eslint flowtype-errors/show-errors: 0 */
 import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import {
+  Switch,
+  Route,
+  Redirect as ReactRouterRedirect
+} from 'react-router-dom';
 
 import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
@@ -90,6 +94,10 @@ export const ROUTES = [
     icon: <ScheduleIcon />
   }
 ];
+
+export function Redirect(props) {
+  return props.to ? <ReactRouterRedirect {...props} /> : null;
+}
 
 export function Routes() {
   return (
