@@ -8,16 +8,13 @@ import Button from '../Button/Button';
 import Paper from '../Paper/Paper';
 import Typography from '../Typography/Typography';
 
-const StyledScreenTitle = styled.div`
-  margin: 0 25px 25px 25px;
-`;
+const StyledScreenTitle = styled.div``;
 const StyledScreenContainer = styled(Paper)`
-  padding: 25px;
+  padding: 24px;
+  margin: 24px;
 `;
 
-const StyledScreenContent = styled.div`
-  margin: 0 25px;
-`;
+const StyledScreenContent = styled.div``;
 
 const StyledFab = styled(Button)`
   &&& {
