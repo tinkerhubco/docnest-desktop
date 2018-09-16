@@ -10,10 +10,15 @@ export class ListItemLink extends React.Component {
   renderLink = itemProps => <Link to={this.props.path} {...itemProps} />;
 
   render() {
-    const { icon, title } = this.props;
+    const { active, icon, title } = this.props;
 
     return (
-      <ListItem key={title} button component={this.renderLink}>
+      <ListItem
+        button
+        key={title}
+        component={this.renderLink}
+        selected={active}
+      >
         {icon && <ListItemIcon>{icon}</ListItemIcon>}
         <ListItemText primary={title} />
       </ListItem>
@@ -22,9 +27,14 @@ export class ListItemLink extends React.Component {
 }
 
 ListItemLink.propTypes = {
+  active: PropTypes.bool,
   title: PropTypes.string.isRequired,
   path: PropTypes.string.isRequired,
   icon: PropTypes.node
+};
+
+ListItemLink.defaultProps = {
+  active: false
 };
 
 export default ListItemLink;
