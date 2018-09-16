@@ -13,22 +13,14 @@ import ListItem from '../List/ListItem';
 import ListItemIcon from '../List/ListItemIcon';
 import ListItemText from '../List/ListItemText';
 
-const drawerWidth = 240;
-
-const StyledRootDiv = styled.div`
-  position: relative;
-  display: flex;
-  flex-grow: 1;
-  height: 440px;
-  z-index: 1;
-  overflow: hidden;
-`;
+export const drawerWidth = 240;
 
 const StyledDrawer = styled(Drawer)`
   > div {
     position: relative;
     white-space: nowrap;
     width: ${drawerWidth}px;
+    overflow-x: hidden;
     ${props =>
       props.open
         ? `transition: ${props.theme.transitions.create('width', {
@@ -39,7 +31,6 @@ const StyledDrawer = styled(Drawer)`
             easing: props.theme.transitions.easing.sharp,
             duration: props.theme.transitions.duration.leavingScreen
           })};
-        overflow-x: hidden;
         width: ${props.theme.spacing.unit * 7}px;
         ${props.theme.breakpoints.up('sm')} {
           width: ${props.theme.spacing.unit * 9}px;
@@ -70,19 +61,17 @@ export function LeftSidebar(props) {
   const { menuItems, open, renderMenuItems, onCollapseClick } = props;
 
   return (
-    <StyledRootDiv>
-      <StyledDrawerWithTheme variant="permanent" open={open}>
-        <StyledToolbarDivWithTheme>
-          {open && (
-            <IconButton onClick={event => onCollapseClick(event, open)}>
-              <ChevronLeftIcon />
-            </IconButton>
-          )}
-        </StyledToolbarDivWithTheme>
-        <Divider />
-        <List>{renderMenuItems(menuItems)}</List>
-      </StyledDrawerWithTheme>
-    </StyledRootDiv>
+    <StyledDrawerWithTheme variant="permanent" open={open}>
+      <StyledToolbarDivWithTheme>
+        {open && (
+          <IconButton onClick={event => onCollapseClick(event, open)}>
+            <ChevronLeftIcon />
+          </IconButton>
+        )}
+      </StyledToolbarDivWithTheme>
+      <Divider />
+      <List component="nav">{renderMenuItems(menuItems)}</List>
+    </StyledDrawerWithTheme>
   );
 }
 

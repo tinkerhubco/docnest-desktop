@@ -4,19 +4,14 @@ import styled from 'styled-components';
 
 import AddIcon from '@material-ui/icons/Add';
 
+import Divider from '../Divider/Divider';
 import Button from '../Button/Button';
 import Paper from '../Paper/Paper';
 import Typography from '../Typography/Typography';
 
-const StyledScreenTitle = styled.div`
-  margin: 0 25px 25px 25px;
-`;
 const StyledScreenContainer = styled(Paper)`
-  padding: 25px;
-`;
-
-const StyledScreenContent = styled.div`
-  margin: 0 25px;
+  padding: 24px;
+  margin: 24px;
 `;
 
 const StyledFab = styled(Button)`
@@ -51,11 +46,9 @@ export function MainContent(props) {
 
   return (
     <StyledScreenContainer>
-      <StyledScreenTitle>
-        <Typography variant="display2">{title}</Typography>
-        <hr />
-      </StyledScreenTitle>
-      <StyledScreenContent>{children}</StyledScreenContent>
+      <Typography variant="headline">{title}</Typography>
+      <Divider />
+      {children}
       <StyledActionContainer>
         <StyledFab variant="fab" color="primary" onClick={onActionClick}>
           {buttonIcon}

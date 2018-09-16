@@ -2,6 +2,7 @@ import React from 'react';
 import { Field, Formik } from 'formik';
 import styled from 'styled-components';
 
+import { Redirect } from '../../Routes';
 import Button from '../../components/Button/Button';
 import Form from '../../components/Form/Form';
 import PasswordField from '../../components/FormField/PasswordField';
@@ -39,11 +40,12 @@ export function LoginForm() {
           email: '',
           password: ''
         }}
-        onSubmit={values => {
-          console.log(values);
+        onSubmit={(values, { setFieldValue }) => {
+          setFieldValue('redirectTo', '/');
         }}
-        render={() => (
+        render={({ values }) => (
           <StyledForm>
+            <Redirect to={values.redirectTo} />
             <Field
               name="email"
               render={({ field }) => (

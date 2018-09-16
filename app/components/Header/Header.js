@@ -1,18 +1,45 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
+import { withTheme } from '@material-ui/core/styles';
+
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import MenuIcon from '@material-ui/icons/Menu';
 
 import IconButton from '../IconButton/IconButton';
+import { drawerWidth } from '../LeftSidebar/LeftSidebar';
 import Menu from '../Menu/Menu';
 import MenuItem from '../Menu/MenuItem';
 import Typography from '../Typography/Typography';
 
+const StyledAppBar = styled(AppBar)`
+  && {
+    z-index: ${props => props.theme.zIndex.drawer + 1};
+    transition: ${props =>
+      props.theme.transitions.create(['width', 'margin'], {
+        easing: props.theme.transitions.easing.sharp,
+        duration: props.theme.transitions.duration.leavingScreen
+      })};
+    ${props =>
+      props.open
+        ? `margin-left: ${drawerWidth}px;
+           width: calc(100% - ${drawerWidth}px);
+           transition: ${props.theme.transitions.create(['width', 'margin'], {
+             easing: props.theme.transitions.easing.sharp,
+             duration: props.theme.transitions.duration.enteringScreen
+           })}`
+        : ''};
+  }
+`;
+
+const StyledAppBarWithTheme = withTheme()(StyledAppBar);
+
 const StyledIconButtonMenu = styled(IconButton)`
   && {
+    margin-left: -12px;
     margin-right: 20px;
   }
 `;
@@ -36,25 +63,26 @@ export class Header extends Component {
 
   render() {
     const { anchorEl } = this.state;
-    const { title, onLeftMenuIconClicked } = this.props;
-    const open = Boolean(anchorEl);
+    const { title, onLeftMenuIconClicked, open } = this.props;
+    const openAccountMenu = Boolean(anchorEl);
 
     return (
-      <AppBar position="static">
+      <StyledAppBarWithTheme open={open} position="absolute">
         <Toolbar>
-          <StyledIconButtonMenu
-            color="inherit"
-            aria-label="Menu"
-            onClick={onLeftMenuIconClicked}
-          >
-            <MenuIcon />
-          </StyledIconButtonMenu>
+          {!open && (
+            <StyledIconButtonMenu
+              color="inherit"
+              aria-label="Menu"
+              onClick={onLeftMenuIconClicked}
+            >
+              <MenuIcon />
+            </StyledIconButtonMenu>
+          )}
           <StyledTypography variant="title" color="inherit">
             {title}
           </StyledTypography>
-
           <IconButton
-            aria-owns={open ? 'menu-appbar' : null}
+            aria-owns={openAccountMenu ? 'menu-appbar' : null}
             aria-haspopup="true"
             onClick={this.handleMenuClick}
             color="inherit"
@@ -72,7 +100,7 @@ export class Header extends Component {
               vertical: 'top',
               horizontal: 'right'
             }}
-            open={open}
+            open={openAccountMenu}
             onClose={this.handleMenuClose}
           >
             <MenuItem onClick={this.handleMenuClose}>Profile</MenuItem>
@@ -80,16 +108,19 @@ export class Header extends Component {
             <MenuItem onClick={this.handleMenuClose}>Logout</MenuItem>
           </Menu>
         </Toolbar>
-      </AppBar>
+      </StyledAppBarWithTheme>
     );
   }
 }
 
 Header.propTypes = {
   title: PropTypes.string.isRequired,
-  onLeftMenuIconClicked: PropTypes.func.isRequired
+  onLeftMenuIconClicked: PropTypes.func.isRequired,
+  open: PropTypes.bool
 };
 
-Header.defaultProps = {};
+Header.defaultProps = {
+  open: false
+};
 
 export default Header;

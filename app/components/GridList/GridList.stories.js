@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import InfoIcon from '@material-ui/icons/Info';
 
-import Grid from './Grid';
+import GridList from './GridList';
 
 const items = [
   {
@@ -43,12 +43,12 @@ const itemsWithGridTile = [
 
 const gridTitle = 'Grid Title Sample';
 
-storiesOf('Grid', module).add('default', () => <Grid items={items} />);
+storiesOf('Grid', module).add('default', () => <GridList items={items} />);
 
 storiesOf('Grid/Title', module).add('default', () => (
-  <Grid title={gridTitle} items={items} />
+  <GridList title={gridTitle} items={items} />
 ));
 
 storiesOf('Grid/Tile', module).add('default', () => (
-  <Grid items={itemsWithGridTile} />
+  <GridList items={itemsWithGridTile} />
 ));
