@@ -30,7 +30,7 @@ function ProtectedRoute({ component: Component, ...rest }) {
       render={props =>
         authenticated ? (
           <React.Fragment>
-            <DefaultLayout>
+            <DefaultLayout {...props}>
               <Component {...props} />
             </DefaultLayout>
           </React.Fragment>

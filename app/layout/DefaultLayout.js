@@ -43,6 +43,7 @@ export class DefaultLayout extends React.Component {
 
   render() {
     const { openSidebar } = this.state;
+    const { location } = this.props;
 
     return (
       <StyledRootDiv>
@@ -55,7 +56,13 @@ export class DefaultLayout extends React.Component {
           menuItems={ROUTES}
           renderMenuItems={menuItems =>
             menuItems.map(({ icon, title, path }) => (
-              <ListItemLink key={path} path={path} title={title} icon={icon} />
+              <ListItemLink
+                key={path}
+                path={path}
+                title={title}
+                icon={icon}
+                active={location.pathname === path}
+              />
             ))
           }
           onCollapseClick={this.handleCollapseClick}
@@ -68,7 +75,8 @@ export class DefaultLayout extends React.Component {
 }
 
 DefaultLayout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
+  location: PropTypes.object
 };
 
 export default DefaultLayout;
