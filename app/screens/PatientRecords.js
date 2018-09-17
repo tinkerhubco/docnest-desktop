@@ -5,7 +5,7 @@ import Table from '../components/Table/Table';
 
 import PatientRecordsSearch from './patientRecords/PatientRecordsSearch';
 
-export default class PatientRecords extends React.Component {
+export class PatientRecords extends React.Component {
   state = {
     tableOptions: {
       rowOptions: {
@@ -62,3 +62,5 @@ export default class PatientRecords extends React.Component {
     );
   }
 }
+
+export default PatientRecords;

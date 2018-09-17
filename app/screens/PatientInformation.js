@@ -8,7 +8,7 @@ import MainContent from '../components/MainContent/MainContent';
 
 const StyledSectionContainer = styled.div``;
 
-export default class PatientInformation extends React.Component {
+export class PatientInformation extends React.Component {
   state = {};
 
   handleActionClick = () => {};
@@ -29,3 +29,5 @@ export default class PatientInformation extends React.Component {
     );
   }
 }
+
+export default PatientInformation;

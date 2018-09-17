@@ -9,7 +9,7 @@ import Table from '../components/Table/Table';
 
 import AppointmentScheduleSearch from './appointmentSchedule/AppointmentScheduleSearch';
 
-export default class AppointmentSchedule extends React.Component {
+export class AppointmentSchedule extends React.Component {
   state = {
     appointment: {
       schedule: new Date()
@@ -130,3 +130,5 @@ export default class AppointmentSchedule extends React.Component {
     );
   }
 }
+
+export default AppointmentSchedule;
