@@ -4309,6 +4309,327 @@ exports[`Storyshots Screens/Login default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Screens/PatientRecords default 1`] = `
+.c0 {
+  padding: 24px;
+  margin: 24px;
+}
+
+.c3.c3.c3 {
+  margin: 0;
+  top: auto;
+  right: 20px;
+  bottom: 20px;
+  left: auto;
+  position: fixed;
+}
+
+.c2 {
+  padding: 2px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2.5em 0 1.5em;
+}
+
+<div
+  className="MuiPaper-root MuiPaper-elevation2 MuiPaper-rounded c0"
+>
+  <h1
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    Patient Records
+  </h1>
+  <hr
+    className="MuiDivider-root"
+  />
+  <form
+    className="c1"
+    onSubmit={[Function]}
+  >
+    <div
+      className="MuiGrid-container MuiGrid-spacing-xs-24"
+    >
+      <div
+        className="MuiGrid-item"
+      >
+        <div
+          className="MuiFormControl-root "
+        >
+          <div
+            className="MuiInput-root MuiInput-formControl MuiInput-underline"
+          >
+            <div
+              className="MuiInputAdornment-root MuiInputAdornment-positionStart"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </div>
+            <input
+              aria-invalid={false}
+              className="MuiInput-input"
+              disabled={false}
+              id="patient-search-field"
+              name="search"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="Search Patient"
+              required={false}
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-item"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary "
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Search
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </form>
+  <table
+    className="MuiTable-root"
+  >
+    <thead
+      className="MuiTableHead-root"
+    >
+      <tr
+        className="MuiTableRow-root MuiTableRow-head"
+      >
+        <th
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-head"
+          scope="col"
+        >
+          First name
+        </th>
+        <th
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-head"
+          scope="col"
+        >
+          Last name
+        </th>
+        <th
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-head"
+          scope="col"
+        >
+          Created
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="MuiTableBody-root"
+    >
+      <tr
+        className="MuiTableRow-root MuiTableRow-hover"
+        onClick={[Function]}
+      >
+        <td
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-body"
+        >
+          Juan
+        </td>
+        <td
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-body"
+        >
+          Dela Cruz
+        </td>
+        <td
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-body"
+        >
+          08/25/2018
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div
+    className="c2"
+  >
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-fab MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary c3 "
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex="0"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        <svg
+          aria-hidden="true"
+          className="MuiSvgIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+          />
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+        </svg>
+      </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Screens/PatientRecords/PatientRecordsSearch default 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2.5em 0 1.5em;
+}
+
+<form
+  className="c0"
+  onSubmit={[Function]}
+>
+  <div
+    className="MuiGrid-container MuiGrid-spacing-xs-24"
+  >
+    <div
+      className="MuiGrid-item"
+    >
+      <div
+        className="MuiFormControl-root "
+      >
+        <div
+          className="MuiInput-root MuiInput-formControl MuiInput-underline"
+        >
+          <div
+            className="MuiInputAdornment-root MuiInputAdornment-positionStart"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </div>
+          <input
+            aria-invalid={false}
+            className="MuiInput-input"
+            disabled={false}
+            id="patient-search-field"
+            name="search"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="Search Patient"
+            required={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-item"
+    >
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary "
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          Search
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </div>
+</form>
+`;
+
 exports[`Storyshots Select default 1`] = `
 .c0 {
   display: block;
