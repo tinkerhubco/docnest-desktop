@@ -1,9 +1,9 @@
 // @flow
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import { ConnectedRouter } from 'react-router-redux';
+import { Router } from 'react-router-dom';
 
-import Routes from './routes';
+import Routes from './Routes';
 
 type Props = {
   store: {},
@@ -12,11 +12,13 @@ type Props = {
 
 export default class Root extends Component<Props> {
   render() {
+    const { history, store } = this.props;
+
     return (
-      <Provider store={this.props.store}>
-        <ConnectedRouter history={this.props.history}>
+      <Provider store={store}>
+        <Router history={history}>
           <Routes />
-        </ConnectedRouter>
+        </Router>
       </Provider>
     );
   }
