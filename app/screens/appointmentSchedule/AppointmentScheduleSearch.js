@@ -8,45 +8,36 @@ import DateIcon from '@material-ui/icons/DateRange';
 import Button from '../../components/Button/Button';
 import DatePicker from '../../components/DatePicker/DatePicker';
 import Form from '../../components/Form/Form';
+import Grid from '../../components/Grid/Grid';
 import InputAdornment from '../../components/Input/InputAdornment';
 import TextField from '../../components/FormField/TextField';
 
 const StyledSearchTextField = styled(TextField)``;
 
-const StyledFilterContainer = styled.div`
-  display: flex;
-  margin: 3em 0;
-`;
-
 const StyledForm = styled(Form)`
   display: flex;
-  flex-wrap: wrap;
-  flex: 1;
-`;
-
-const StyledSearchFilterContainer = styled.div`
-  flex: 1;
+  margin: 2.5em 0 1.5em;
 `;
 
 const StyledDatePicker = styled(DatePicker)`
-  .MuiInput-root {
+  > div {
     align-items: unset;
   }
 `;
 
 export function AppointmentScheduleSearch() {
   return (
-    <StyledFilterContainer>
-      <Formik
-        initialValues={{
-          search: '',
-          fromDate: new Date(),
-          toDate: new Date()
-        }}
-        onSubmit={values => console.log(values)}
-        render={({ handleSubmit, setFieldValue }) => (
-          <StyledForm>
-            <StyledSearchFilterContainer>
+    <Formik
+      initialValues={{
+        search: '',
+        fromDate: new Date(),
+        toDate: new Date()
+      }}
+      onSubmit={values => console.log(values)}
+      render={({ handleSubmit, setFieldValue }) => (
+        <StyledForm>
+          <Grid container spacing={24}>
+            <Grid item>
               <Field
                 name="search"
                 render={({ field }) => (
@@ -64,8 +55,8 @@ export function AppointmentScheduleSearch() {
                   />
                 )}
               />
-            </StyledSearchFilterContainer>
-            <StyledSearchFilterContainer>
+            </Grid>
+            <Grid item>
               <Field
                 name="fromDate"
                 render={({ field }) => (
@@ -83,8 +74,8 @@ export function AppointmentScheduleSearch() {
                   />
                 )}
               />
-            </StyledSearchFilterContainer>
-            <StyledSearchFilterContainer>
+            </Grid>
+            <Grid item>
               <Field
                 name="toDate"
                 render={({ field }) => (
@@ -102,20 +93,21 @@ export function AppointmentScheduleSearch() {
                   />
                 )}
               />
-            </StyledSearchFilterContainer>
-            <StyledSearchFilterContainer>
+            </Grid>
+            <Grid item>
               <Button
-                variant="contained"
                 color="primary"
+                variant="contained"
+                type="submit"
                 onClick={handleSubmit}
               >
-                Search Appointment
+                Search
               </Button>
-            </StyledSearchFilterContainer>
-          </StyledForm>
-        )}
-      />
-    </StyledFilterContainer>
+            </Grid>
+          </Grid>
+        </StyledForm>
+      )}
+    />
   );
 }
 

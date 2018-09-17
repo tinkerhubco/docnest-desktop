@@ -1922,10 +1922,17 @@ exports[`Storyshots Grid/Title default 1`] = `
 
 exports[`Storyshots Header default 1`] = `
 .c0.c0 {
+  z-index: 1201;
+  -webkit-transition: width 195ms cubic-bezier(0.4,0,0.6,1) 0ms,margin 195ms cubic-bezier(0.4,0,0.6,1) 0ms;
+  transition: width 195ms cubic-bezier(0.4,0,0.6,1) 0ms,margin 195ms cubic-bezier(0.4,0,0.6,1) 0ms;
+}
+
+.c1.c1 {
+  margin-left: -12px;
   margin-right: 20px;
 }
 
-.c1 {
+.c2 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -1933,14 +1940,270 @@ exports[`Storyshots Header default 1`] = `
 }
 
 <header
-  className="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary"
+  className="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionAbsolute MuiAppBar-colorPrimary c0"
+  open={false}
+  theme={
+    Object {
+      "breakpoints": Object {
+        "between": [Function],
+        "down": [Function],
+        "keys": Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ],
+        "only": [Function],
+        "up": [Function],
+        "values": Object {
+          "lg": 1280,
+          "md": 960,
+          "sm": 600,
+          "xl": 1920,
+          "xs": 0,
+        },
+        "width": [Function],
+      },
+      "direction": "ltr",
+      "mixins": Object {
+        "gutters": [Function],
+        "toolbar": Object {
+          "@media (min-width:0px) and (orientation: landscape)": Object {
+            "minHeight": 48,
+          },
+          "@media (min-width:600px)": Object {
+            "minHeight": 64,
+          },
+          "minHeight": 56,
+        },
+      },
+      "overrides": Object {},
+      "palette": Object {
+        "action": Object {
+          "active": "rgba(0, 0, 0, 0.54)",
+          "disabled": "rgba(0, 0, 0, 0.26)",
+          "disabledBackground": "rgba(0, 0, 0, 0.12)",
+          "hover": "rgba(0, 0, 0, 0.08)",
+          "hoverOpacity": 0.08,
+          "selected": "rgba(0, 0, 0, 0.14)",
+        },
+        "augmentColor": [Function],
+        "background": Object {
+          "default": "#fafafa",
+          "paper": "#fff",
+        },
+        "common": Object {
+          "black": "#000",
+          "white": "#fff",
+        },
+        "contrastThreshold": 3,
+        "divider": "rgba(0, 0, 0, 0.12)",
+        "error": Object {
+          "contrastText": "#fff",
+          "dark": "#d32f2f",
+          "light": "#e57373",
+          "main": "#f44336",
+        },
+        "getContrastText": [Function],
+        "grey": Object {
+          "100": "#f5f5f5",
+          "200": "#eeeeee",
+          "300": "#e0e0e0",
+          "400": "#bdbdbd",
+          "50": "#fafafa",
+          "500": "#9e9e9e",
+          "600": "#757575",
+          "700": "#616161",
+          "800": "#424242",
+          "900": "#212121",
+          "A100": "#d5d5d5",
+          "A200": "#aaaaaa",
+          "A400": "#303030",
+          "A700": "#616161",
+        },
+        "primary": Object {
+          "contrastText": "#fff",
+          "dark": "#303f9f",
+          "light": "#7986cb",
+          "main": "#3f51b5",
+        },
+        "secondary": Object {
+          "contrastText": "#fff",
+          "dark": "#c51162",
+          "light": "#ff4081",
+          "main": "#f50057",
+        },
+        "text": Object {
+          "disabled": "rgba(0, 0, 0, 0.38)",
+          "hint": "rgba(0, 0, 0, 0.38)",
+          "primary": "rgba(0, 0, 0, 0.87)",
+          "secondary": "rgba(0, 0, 0, 0.54)",
+        },
+        "tonalOffset": 0.2,
+        "type": "light",
+      },
+      "props": Object {},
+      "shadows": Array [
+        "none",
+        "0px 1px 3px 0px rgba(0, 0, 0, 0.2),0px 1px 1px 0px rgba(0, 0, 0, 0.14),0px 2px 1px -1px rgba(0, 0, 0, 0.12)",
+        "0px 1px 5px 0px rgba(0, 0, 0, 0.2),0px 2px 2px 0px rgba(0, 0, 0, 0.14),0px 3px 1px -2px rgba(0, 0, 0, 0.12)",
+        "0px 1px 8px 0px rgba(0, 0, 0, 0.2),0px 3px 4px 0px rgba(0, 0, 0, 0.14),0px 3px 3px -2px rgba(0, 0, 0, 0.12)",
+        "0px 2px 4px -1px rgba(0, 0, 0, 0.2),0px 4px 5px 0px rgba(0, 0, 0, 0.14),0px 1px 10px 0px rgba(0, 0, 0, 0.12)",
+        "0px 3px 5px -1px rgba(0, 0, 0, 0.2),0px 5px 8px 0px rgba(0, 0, 0, 0.14),0px 1px 14px 0px rgba(0, 0, 0, 0.12)",
+        "0px 3px 5px -1px rgba(0, 0, 0, 0.2),0px 6px 10px 0px rgba(0, 0, 0, 0.14),0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
+        "0px 4px 5px -2px rgba(0, 0, 0, 0.2),0px 7px 10px 1px rgba(0, 0, 0, 0.14),0px 2px 16px 1px rgba(0, 0, 0, 0.12)",
+        "0px 5px 5px -3px rgba(0, 0, 0, 0.2),0px 8px 10px 1px rgba(0, 0, 0, 0.14),0px 3px 14px 2px rgba(0, 0, 0, 0.12)",
+        "0px 5px 6px -3px rgba(0, 0, 0, 0.2),0px 9px 12px 1px rgba(0, 0, 0, 0.14),0px 3px 16px 2px rgba(0, 0, 0, 0.12)",
+        "0px 6px 6px -3px rgba(0, 0, 0, 0.2),0px 10px 14px 1px rgba(0, 0, 0, 0.14),0px 4px 18px 3px rgba(0, 0, 0, 0.12)",
+        "0px 6px 7px -4px rgba(0, 0, 0, 0.2),0px 11px 15px 1px rgba(0, 0, 0, 0.14),0px 4px 20px 3px rgba(0, 0, 0, 0.12)",
+        "0px 7px 8px -4px rgba(0, 0, 0, 0.2),0px 12px 17px 2px rgba(0, 0, 0, 0.14),0px 5px 22px 4px rgba(0, 0, 0, 0.12)",
+        "0px 7px 8px -4px rgba(0, 0, 0, 0.2),0px 13px 19px 2px rgba(0, 0, 0, 0.14),0px 5px 24px 4px rgba(0, 0, 0, 0.12)",
+        "0px 7px 9px -4px rgba(0, 0, 0, 0.2),0px 14px 21px 2px rgba(0, 0, 0, 0.14),0px 5px 26px 4px rgba(0, 0, 0, 0.12)",
+        "0px 8px 9px -5px rgba(0, 0, 0, 0.2),0px 15px 22px 2px rgba(0, 0, 0, 0.14),0px 6px 28px 5px rgba(0, 0, 0, 0.12)",
+        "0px 8px 10px -5px rgba(0, 0, 0, 0.2),0px 16px 24px 2px rgba(0, 0, 0, 0.14),0px 6px 30px 5px rgba(0, 0, 0, 0.12)",
+        "0px 8px 11px -5px rgba(0, 0, 0, 0.2),0px 17px 26px 2px rgba(0, 0, 0, 0.14),0px 6px 32px 5px rgba(0, 0, 0, 0.12)",
+        "0px 9px 11px -5px rgba(0, 0, 0, 0.2),0px 18px 28px 2px rgba(0, 0, 0, 0.14),0px 7px 34px 6px rgba(0, 0, 0, 0.12)",
+        "0px 9px 12px -6px rgba(0, 0, 0, 0.2),0px 19px 29px 2px rgba(0, 0, 0, 0.14),0px 7px 36px 6px rgba(0, 0, 0, 0.12)",
+        "0px 10px 13px -6px rgba(0, 0, 0, 0.2),0px 20px 31px 3px rgba(0, 0, 0, 0.14),0px 8px 38px 7px rgba(0, 0, 0, 0.12)",
+        "0px 10px 13px -6px rgba(0, 0, 0, 0.2),0px 21px 33px 3px rgba(0, 0, 0, 0.14),0px 8px 40px 7px rgba(0, 0, 0, 0.12)",
+        "0px 10px 14px -6px rgba(0, 0, 0, 0.2),0px 22px 35px 3px rgba(0, 0, 0, 0.14),0px 8px 42px 7px rgba(0, 0, 0, 0.12)",
+        "0px 11px 14px -7px rgba(0, 0, 0, 0.2),0px 23px 36px 3px rgba(0, 0, 0, 0.14),0px 9px 44px 8px rgba(0, 0, 0, 0.12)",
+        "0px 11px 15px -7px rgba(0, 0, 0, 0.2),0px 24px 38px 3px rgba(0, 0, 0, 0.14),0px 9px 46px 8px rgba(0, 0, 0, 0.12)",
+      ],
+      "shape": Object {
+        "borderRadius": 4,
+      },
+      "spacing": Object {
+        "unit": 8,
+      },
+      "transitions": Object {
+        "create": [Function],
+        "duration": Object {
+          "complex": 375,
+          "enteringScreen": 225,
+          "leavingScreen": 195,
+          "short": 250,
+          "shorter": 200,
+          "shortest": 150,
+          "standard": 300,
+        },
+        "easing": Object {
+          "easeIn": "cubic-bezier(0.4, 0, 1, 1)",
+          "easeInOut": "cubic-bezier(0.4, 0, 0.2, 1)",
+          "easeOut": "cubic-bezier(0.0, 0, 0.2, 1)",
+          "sharp": "cubic-bezier(0.4, 0, 0.6, 1)",
+        },
+        "getAutoHeightDuration": [Function],
+      },
+      "typography": Object {
+        "body1": Object {
+          "color": "rgba(0, 0, 0, 0.87)",
+          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+          "fontSize": "0.875rem",
+          "fontWeight": 400,
+          "lineHeight": "1.46429em",
+        },
+        "body2": Object {
+          "color": "rgba(0, 0, 0, 0.87)",
+          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+          "fontSize": "0.875rem",
+          "fontWeight": 500,
+          "lineHeight": "1.71429em",
+        },
+        "button": Object {
+          "color": "rgba(0, 0, 0, 0.87)",
+          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+          "fontSize": "0.875rem",
+          "fontWeight": 500,
+          "textTransform": "uppercase",
+        },
+        "caption": Object {
+          "color": "rgba(0, 0, 0, 0.54)",
+          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+          "fontSize": "0.75rem",
+          "fontWeight": 400,
+          "lineHeight": "1.375em",
+        },
+        "display1": Object {
+          "color": "rgba(0, 0, 0, 0.54)",
+          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+          "fontSize": "2.125rem",
+          "fontWeight": 400,
+          "lineHeight": "1.20588em",
+        },
+        "display2": Object {
+          "color": "rgba(0, 0, 0, 0.54)",
+          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+          "fontSize": "2.8125rem",
+          "fontWeight": 400,
+          "lineHeight": "1.13333em",
+          "marginLeft": "-.02em",
+        },
+        "display3": Object {
+          "color": "rgba(0, 0, 0, 0.54)",
+          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+          "fontSize": "3.5rem",
+          "fontWeight": 400,
+          "letterSpacing": "-.02em",
+          "lineHeight": "1.30357em",
+          "marginLeft": "-.02em",
+        },
+        "display4": Object {
+          "color": "rgba(0, 0, 0, 0.54)",
+          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+          "fontSize": "7rem",
+          "fontWeight": 300,
+          "letterSpacing": "-.04em",
+          "lineHeight": "1.14286em",
+          "marginLeft": "-.04em",
+        },
+        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+        "fontSize": 14,
+        "fontWeightLight": 300,
+        "fontWeightMedium": 500,
+        "fontWeightRegular": 400,
+        "headline": Object {
+          "color": "rgba(0, 0, 0, 0.87)",
+          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+          "fontSize": "1.5rem",
+          "fontWeight": 400,
+          "lineHeight": "1.35417em",
+        },
+        "pxToRem": [Function],
+        "round": [Function],
+        "subheading": Object {
+          "color": "rgba(0, 0, 0, 0.87)",
+          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+          "fontSize": "1rem",
+          "fontWeight": 400,
+          "lineHeight": "1.5em",
+        },
+        "title": Object {
+          "color": "rgba(0, 0, 0, 0.87)",
+          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+          "fontSize": "1.3125rem",
+          "fontWeight": 500,
+          "lineHeight": "1.16667em",
+        },
+      },
+      "zIndex": Object {
+        "appBar": 1100,
+        "drawer": 1200,
+        "mobileStepper": 1000,
+        "modal": 1300,
+        "snackbar": 1400,
+        "tooltip": 1500,
+      },
+    }
+  }
 >
   <div
     className="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
   >
     <button
       aria-label="Menu"
-      className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit c0"
+      className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit c1"
       disabled={false}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1979,7 +2242,7 @@ exports[`Storyshots Header default 1`] = `
       />
     </button>
     <h2
-      className="MuiTypography-root MuiTypography-title MuiTypography-colorInherit c1"
+      className="MuiTypography-root MuiTypography-title MuiTypography-colorInherit c2"
     >
       DocNest
     </h2>
@@ -2070,32 +2333,17 @@ exports[`Storyshots IconButton default 1`] = `
 `;
 
 exports[`Storyshots LeftSidebar default - close 1`] = `
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  height: 440px;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.c1 > div {
+.c0 > div {
   position: relative;
   white-space: nowrap;
   width: 240px;
+  overflow-x: hidden;
   -webkit-transition: width 195ms cubic-bezier(0.4,0,0.6,1) 0ms;
   transition: width 195ms cubic-bezier(0.4,0,0.6,1) 0ms;
-  overflow-x: hidden;
   width: 56px;
 }
 
-.c2 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2113,286 +2361,268 @@ exports[`Storyshots LeftSidebar default - close 1`] = `
 }
 
 @media (min-width:600px) {
-  .c1 > div {
+  .c0 > div {
     width: 72px;
   }
 }
 
 @media (min-width:0px) and (orientation:landscape) {
-  .c2 {
+  .c1 {
     min-height: 48px;
   }
 }
 
 @media (min-width:600px) {
-  .c2 {
+  .c1 {
     min-height: 64px;
   }
 }
 
 <div
-  className="c0"
+  className="MuiDrawer-docked c0"
 >
   <div
-    className="MuiDrawer-docked c1"
+    className="MuiPaper-root MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft"
   >
     <div
-      className="MuiPaper-root MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft"
+      className="c1"
+    />
+    <hr
+      className="MuiDivider-root"
+    />
+    <nav
+      className="MuiList-root MuiList-padding"
     >
       <div
-        className="c2"
-      />
-      <hr
-        className="MuiDivider-root"
-      />
-      <ul
-        className="MuiList-root MuiList-padding"
+        className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex="0"
       >
-        <div
-          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          tabIndex="0"
+        <svg
+          aria-hidden="true"
+          className="MuiSvgIcon-root MuiListItemIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
         >
-          <svg
-            aria-hidden="true"
-            className="MuiSvgIcon-root MuiListItemIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-            />
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-          </svg>
-          <div
-            className="MuiListItemText-root"
-          >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
-            >
-              Menu 1
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root"
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
           />
-        </div>
+          <path
+            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+          />
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+        </svg>
         <div
-          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          tabIndex="0"
+          className="MuiListItemText-root"
         >
-          <svg
-            aria-hidden="true"
-            className="MuiSvgIcon-root MuiListItemIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"
-            />
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-          </svg>
-          <div
-            className="MuiListItemText-root"
-          >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
-            >
-              Menu 2
-            </span>
-          </div>
           <span
-            className="MuiTouchRipple-root"
-          />
+            className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+          >
+            Menu 1
+          </span>
         </div>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </div>
+      <div
+        className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex="0"
+      >
+        <svg
+          aria-hidden="true"
+          className="MuiSvgIcon-root MuiListItemIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"
+          />
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+        </svg>
         <div
-          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          tabIndex="0"
+          className="MuiListItemText-root"
         >
-          <svg
-            aria-hidden="true"
-            className="MuiSvgIcon-root MuiListItemIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-            />
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-          </svg>
-          <div
-            className="MuiListItemText-root"
-          >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
-            >
-              Menu 3
-            </span>
-          </div>
           <span
-            className="MuiTouchRipple-root"
-          />
+            className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+          >
+            Menu 2
+          </span>
         </div>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </div>
+      <div
+        className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex="0"
+      >
+        <svg
+          aria-hidden="true"
+          className="MuiSvgIcon-root MuiListItemIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+          />
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+        </svg>
         <div
-          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          tabIndex="0"
+          className="MuiListItemText-root"
         >
-          <svg
-            aria-hidden="true"
-            className="MuiSvgIcon-root MuiListItemIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-            />
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-          </svg>
-          <div
-            className="MuiListItemText-root"
-          >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
-            >
-              Menu 4
-            </span>
-          </div>
           <span
-            className="MuiTouchRipple-root"
-          />
+            className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+          >
+            Menu 3
+          </span>
         </div>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </div>
+      <div
+        className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex="0"
+      >
+        <svg
+          aria-hidden="true"
+          className="MuiSvgIcon-root MuiListItemIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+          />
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+        </svg>
         <div
-          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          tabIndex="0"
+          className="MuiListItemText-root"
         >
-          <svg
-            aria-hidden="true"
-            className="MuiSvgIcon-root MuiListItemIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M15.73 3H8.27L3 8.27v7.46L8.27 21h7.46L21 15.73V8.27L15.73 3zM12 17.3c-.72 0-1.3-.58-1.3-1.3 0-.72.58-1.3 1.3-1.3.72 0 1.3.58 1.3 1.3 0 .72-.58 1.3-1.3 1.3zm1-4.3h-2V7h2v6z"
-            />
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-          </svg>
-          <div
-            className="MuiListItemText-root"
-          >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
-            >
-              Menu 5
-            </span>
-          </div>
           <span
-            className="MuiTouchRipple-root"
-          />
+            className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+          >
+            Menu 4
+          </span>
         </div>
-      </ul>
-    </div>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </div>
+      <div
+        className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex="0"
+      >
+        <svg
+          aria-hidden="true"
+          className="MuiSvgIcon-root MuiListItemIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M15.73 3H8.27L3 8.27v7.46L8.27 21h7.46L21 15.73V8.27L15.73 3zM12 17.3c-.72 0-1.3-.58-1.3-1.3 0-.72.58-1.3 1.3-1.3.72 0 1.3.58 1.3 1.3 0 .72-.58 1.3-1.3 1.3zm1-4.3h-2V7h2v6z"
+          />
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+        </svg>
+        <div
+          className="MuiListItemText-root"
+        >
+          <span
+            className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+          >
+            Menu 5
+          </span>
+        </div>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </div>
+    </nav>
   </div>
 </div>
 `;
 
 exports[`Storyshots LeftSidebar default - open 1`] = `
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  height: 440px;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.c1 > div {
+.c0 > div {
   position: relative;
   white-space: nowrap;
   width: 240px;
+  overflow-x: hidden;
   -webkit-transition: width 225ms cubic-bezier(0.4,0,0.6,1) 0ms;
   transition: width 225ms cubic-bezier(0.4,0,0.6,1) 0ms;
 }
 
-.c2 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2410,291 +2640,287 @@ exports[`Storyshots LeftSidebar default - open 1`] = `
 }
 
 @media (min-width:0px) and (orientation:landscape) {
-  .c2 {
+  .c1 {
     min-height: 48px;
   }
 }
 
 @media (min-width:600px) {
-  .c2 {
+  .c1 {
     min-height: 64px;
   }
 }
 
 <div
-  className="c0"
+  className="MuiDrawer-docked c0"
 >
   <div
-    className="MuiDrawer-docked c1"
+    className="MuiPaper-root MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft"
   >
     <div
-      className="MuiPaper-root MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft"
+      className="c1"
+    >
+      <button
+        className="MuiButtonBase-root MuiIconButton-root"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+    <hr
+      className="MuiDivider-root"
+    />
+    <nav
+      className="MuiList-root MuiList-padding"
     >
       <div
-        className="c2"
+        className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex="0"
       >
-        <button
-          className="MuiButtonBase-root MuiIconButton-root"
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex="0"
-          type="button"
+        <svg
+          aria-hidden="true"
+          className="MuiSvgIcon-root MuiListItemIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+          />
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+        </svg>
+        <div
+          className="MuiListItemText-root"
         >
           <span
-            className="MuiIconButton-label"
+            className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
           >
-            <svg
-              aria-hidden="true"
-              className="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
-              />
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-            </svg>
+            Menu 1
           </span>
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </button>
+        </div>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </div>
-      <hr
-        className="MuiDivider-root"
-      />
-      <ul
-        className="MuiList-root MuiList-padding"
+      <div
+        className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex="0"
       >
-        <div
-          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          tabIndex="0"
+        <svg
+          aria-hidden="true"
+          className="MuiSvgIcon-root MuiListItemIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
         >
-          <svg
-            aria-hidden="true"
-            className="MuiSvgIcon-root MuiListItemIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-            />
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-          </svg>
-          <div
-            className="MuiListItemText-root"
-          >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
-            >
-              Menu 1
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root"
+          <path
+            d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"
           />
-        </div>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+        </svg>
         <div
-          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          tabIndex="0"
+          className="MuiListItemText-root"
         >
-          <svg
-            aria-hidden="true"
-            className="MuiSvgIcon-root MuiListItemIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"
-            />
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-          </svg>
-          <div
-            className="MuiListItemText-root"
-          >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
-            >
-              Menu 2
-            </span>
-          </div>
           <span
-            className="MuiTouchRipple-root"
-          />
+            className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+          >
+            Menu 2
+          </span>
         </div>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </div>
+      <div
+        className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex="0"
+      >
+        <svg
+          aria-hidden="true"
+          className="MuiSvgIcon-root MuiListItemIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+          />
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+        </svg>
         <div
-          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          tabIndex="0"
+          className="MuiListItemText-root"
         >
-          <svg
-            aria-hidden="true"
-            className="MuiSvgIcon-root MuiListItemIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-            />
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-          </svg>
-          <div
-            className="MuiListItemText-root"
-          >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
-            >
-              Menu 3
-            </span>
-          </div>
           <span
-            className="MuiTouchRipple-root"
-          />
+            className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+          >
+            Menu 3
+          </span>
         </div>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </div>
+      <div
+        className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex="0"
+      >
+        <svg
+          aria-hidden="true"
+          className="MuiSvgIcon-root MuiListItemIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+          />
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+        </svg>
         <div
-          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          tabIndex="0"
+          className="MuiListItemText-root"
         >
-          <svg
-            aria-hidden="true"
-            className="MuiSvgIcon-root MuiListItemIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-            />
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-          </svg>
-          <div
-            className="MuiListItemText-root"
-          >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
-            >
-              Menu 4
-            </span>
-          </div>
           <span
-            className="MuiTouchRipple-root"
-          />
+            className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+          >
+            Menu 4
+          </span>
         </div>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </div>
+      <div
+        className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex="0"
+      >
+        <svg
+          aria-hidden="true"
+          className="MuiSvgIcon-root MuiListItemIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M15.73 3H8.27L3 8.27v7.46L8.27 21h7.46L21 15.73V8.27L15.73 3zM12 17.3c-.72 0-1.3-.58-1.3-1.3 0-.72.58-1.3 1.3-1.3.72 0 1.3.58 1.3 1.3 0 .72-.58 1.3-1.3 1.3zm1-4.3h-2V7h2v6z"
+          />
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+        </svg>
         <div
-          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          tabIndex="0"
+          className="MuiListItemText-root"
         >
-          <svg
-            aria-hidden="true"
-            className="MuiSvgIcon-root MuiListItemIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M15.73 3H8.27L3 8.27v7.46L8.27 21h7.46L21 15.73V8.27L15.73 3zM12 17.3c-.72 0-1.3-.58-1.3-1.3 0-.72.58-1.3 1.3-1.3.72 0 1.3.58 1.3 1.3 0 .72-.58 1.3-1.3 1.3zm1-4.3h-2V7h2v6z"
-            />
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-          </svg>
-          <div
-            className="MuiListItemText-root"
-          >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
-            >
-              Menu 5
-            </span>
-          </div>
           <span
-            className="MuiTouchRipple-root"
-          />
+            className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+          >
+            Menu 5
+          </span>
         </div>
-      </ul>
-    </div>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </div>
+    </nav>
   </div>
 </div>
 `;
@@ -3386,53 +3612,27 @@ exports[`Storyshots PasswordField show password 1`] = `
 `;
 
 exports[`Storyshots Screens/AppointmentSchedule default 1`] = `
-.c3 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 3em 0;
+  margin: 2.5em 0 1.5em;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c5 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c6 .MuiInput-root {
+.c2 > div {
   -webkit-align-items: unset;
   -webkit-box-align: unset;
   -ms-flex-align: unset;
   align-items: unset;
 }
 
-.c1 {
-  margin: 0 25px 25px 25px;
-}
-
 .c0 {
-  padding: 25px;
+  padding: 24px;
+  margin: 24px;
 }
 
-.c2 {
-  margin: 0 25px;
-}
-
-.c8.c8.c8 {
+.c4.c4.c4 {
   margin: 0;
   top: auto;
   right: 20px;
@@ -3441,7 +3641,7 @@ exports[`Storyshots Screens/AppointmentSchedule default 1`] = `
   position: fixed;
 }
 
-.c7 {
+.c3 {
   padding: 2px;
 }
 
@@ -3449,7 +3649,7 @@ exports[`Storyshots Screens/AppointmentSchedule default 1`] = `
   className="MuiPaper-root MuiPaper-elevation2 MuiPaper-rounded c0"
 >
   <div
-    className="c1"
+    className=""
   >
     <h1
       className="MuiTypography-root MuiTypography-display2"
@@ -3459,17 +3659,17 @@ exports[`Storyshots Screens/AppointmentSchedule default 1`] = `
     <hr />
   </div>
   <div
-    className="c2"
+    className=""
   >
-    <div
-      className="c3"
+    <form
+      className="c1"
+      onSubmit={[Function]}
     >
-      <form
-        className="c4"
-        onSubmit={[Function]}
+      <div
+        className="MuiGrid-container MuiGrid-spacing-xs-24"
       >
         <div
-          className="c5"
+          className="MuiGrid-item"
         >
           <div
             className="MuiFormControl-root "
@@ -3513,10 +3713,10 @@ exports[`Storyshots Screens/AppointmentSchedule default 1`] = `
           </div>
         </div>
         <div
-          className="c5"
+          className="MuiGrid-item"
         >
           <div
-            className="MuiFormControl-root c6"
+            className="MuiFormControl-root c2"
             onClick={[Function]}
             onKeyPress={[Function]}
           >
@@ -3553,17 +3753,17 @@ exports[`Storyshots Screens/AppointmentSchedule default 1`] = `
                 readOnly={true}
                 required={false}
                 type="text"
-                value="September 13th"
+                value="September 15th"
               />
             </div>
             
           </div>
         </div>
         <div
-          className="c5"
+          className="MuiGrid-item"
         >
           <div
-            className="MuiFormControl-root c6"
+            className="MuiFormControl-root c2"
             onClick={[Function]}
             onKeyPress={[Function]}
           >
@@ -3600,14 +3800,14 @@ exports[`Storyshots Screens/AppointmentSchedule default 1`] = `
                 readOnly={true}
                 required={false}
                 type="text"
-                value="September 13th"
+                value="September 15th"
               />
             </div>
             
           </div>
         </div>
         <div
-          className="c5"
+          className="MuiGrid-item"
         >
           <button
             className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary "
@@ -3624,20 +3824,20 @@ exports[`Storyshots Screens/AppointmentSchedule default 1`] = `
             onTouchMove={[Function]}
             onTouchStart={[Function]}
             tabIndex="0"
-            type="button"
+            type="submit"
           >
             <span
               className="MuiButton-label"
             >
-              Search Appointment
+              Search
             </span>
             <span
               className="MuiTouchRipple-root"
             />
           </button>
         </div>
-      </form>
-    </div>
+      </div>
+    </form>
     <table
       className="MuiTable-root"
     >
@@ -3701,10 +3901,10 @@ exports[`Storyshots Screens/AppointmentSchedule default 1`] = `
     <div />
   </div>
   <div
-    className="c7"
+    className="c3"
   >
     <button
-      className="MuiButtonBase-root MuiButton-root MuiButton-fab MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary c8 "
+      className="MuiButtonBase-root MuiButton-root MuiButton-fab MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary c4 "
       disabled={false}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3752,44 +3952,25 @@ exports[`Storyshots Screens/AppointmentSchedule/AppointmentScheduleSearch defaul
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 3em 0;
+  margin: 2.5em 0 1.5em;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c2 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c3 .MuiInput-root {
+.c1 > div {
   -webkit-align-items: unset;
   -webkit-box-align: unset;
   -ms-flex-align: unset;
   align-items: unset;
 }
 
-<div
+<form
   className="c0"
+  onSubmit={[Function]}
 >
-  <form
-    className="c1"
-    onSubmit={[Function]}
+  <div
+    className="MuiGrid-container MuiGrid-spacing-xs-24"
   >
     <div
-      className="c2"
+      className="MuiGrid-item"
     >
       <div
         className="MuiFormControl-root "
@@ -3833,10 +4014,10 @@ exports[`Storyshots Screens/AppointmentSchedule/AppointmentScheduleSearch defaul
       </div>
     </div>
     <div
-      className="c2"
+      className="MuiGrid-item"
     >
       <div
-        className="MuiFormControl-root c3"
+        className="MuiFormControl-root c1"
         onClick={[Function]}
         onKeyPress={[Function]}
       >
@@ -3873,17 +4054,17 @@ exports[`Storyshots Screens/AppointmentSchedule/AppointmentScheduleSearch defaul
             readOnly={true}
             required={false}
             type="text"
-            value="September 13th"
+            value="September 15th"
           />
         </div>
         
       </div>
     </div>
     <div
-      className="c2"
+      className="MuiGrid-item"
     >
       <div
-        className="MuiFormControl-root c3"
+        className="MuiFormControl-root c1"
         onClick={[Function]}
         onKeyPress={[Function]}
       >
@@ -3920,14 +4101,14 @@ exports[`Storyshots Screens/AppointmentSchedule/AppointmentScheduleSearch defaul
             readOnly={true}
             required={false}
             type="text"
-            value="September 13th"
+            value="September 15th"
           />
         </div>
         
       </div>
     </div>
     <div
-      className="c2"
+      className="MuiGrid-item"
     >
       <button
         className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary "
@@ -3944,20 +4125,20 @@ exports[`Storyshots Screens/AppointmentSchedule/AppointmentScheduleSearch defaul
         onTouchMove={[Function]}
         onTouchStart={[Function]}
         tabIndex="0"
-        type="button"
+        type="submit"
       >
         <span
           className="MuiButton-label"
         >
-          Search Appointment
+          Search
         </span>
         <span
           className="MuiTouchRipple-root"
         />
       </button>
     </div>
-  </form>
-</div>
+  </div>
+</form>
 `;
 
 exports[`Storyshots Screens/Login default 1`] = `
@@ -4126,6 +4307,327 @@ exports[`Storyshots Screens/Login default 1`] = `
     </button>
   </form>
 </div>
+`;
+
+exports[`Storyshots Screens/PatientRecords default 1`] = `
+.c0 {
+  padding: 24px;
+  margin: 24px;
+}
+
+.c3.c3.c3 {
+  margin: 0;
+  top: auto;
+  right: 20px;
+  bottom: 20px;
+  left: auto;
+  position: fixed;
+}
+
+.c2 {
+  padding: 2px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2.5em 0 1.5em;
+}
+
+<div
+  className="MuiPaper-root MuiPaper-elevation2 MuiPaper-rounded c0"
+>
+  <h1
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    Patient Records
+  </h1>
+  <hr
+    className="MuiDivider-root"
+  />
+  <form
+    className="c1"
+    onSubmit={[Function]}
+  >
+    <div
+      className="MuiGrid-container MuiGrid-spacing-xs-24"
+    >
+      <div
+        className="MuiGrid-item"
+      >
+        <div
+          className="MuiFormControl-root "
+        >
+          <div
+            className="MuiInput-root MuiInput-formControl MuiInput-underline"
+          >
+            <div
+              className="MuiInputAdornment-root MuiInputAdornment-positionStart"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </div>
+            <input
+              aria-invalid={false}
+              className="MuiInput-input"
+              disabled={false}
+              id="patient-search-field"
+              name="search"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="Search Patient"
+              required={false}
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-item"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary "
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Search
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </form>
+  <table
+    className="MuiTable-root"
+  >
+    <thead
+      className="MuiTableHead-root"
+    >
+      <tr
+        className="MuiTableRow-root MuiTableRow-head"
+      >
+        <th
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-head"
+          scope="col"
+        >
+          First name
+        </th>
+        <th
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-head"
+          scope="col"
+        >
+          Last name
+        </th>
+        <th
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-head"
+          scope="col"
+        >
+          Created
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="MuiTableBody-root"
+    >
+      <tr
+        className="MuiTableRow-root MuiTableRow-hover"
+        onClick={[Function]}
+      >
+        <td
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-body"
+        >
+          Juan
+        </td>
+        <td
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-body"
+        >
+          Dela Cruz
+        </td>
+        <td
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-body"
+        >
+          08/25/2018
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div
+    className="c2"
+  >
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-fab MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary c3 "
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex="0"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        <svg
+          aria-hidden="true"
+          className="MuiSvgIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+          />
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+        </svg>
+      </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Screens/PatientRecords/PatientRecordsSearch default 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2.5em 0 1.5em;
+}
+
+<form
+  className="c0"
+  onSubmit={[Function]}
+>
+  <div
+    className="MuiGrid-container MuiGrid-spacing-xs-24"
+  >
+    <div
+      className="MuiGrid-item"
+    >
+      <div
+        className="MuiFormControl-root "
+      >
+        <div
+          className="MuiInput-root MuiInput-formControl MuiInput-underline"
+        >
+          <div
+            className="MuiInputAdornment-root MuiInputAdornment-positionStart"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </div>
+          <input
+            aria-invalid={false}
+            className="MuiInput-input"
+            disabled={false}
+            id="patient-search-field"
+            name="search"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="Search Patient"
+            required={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-item"
+    >
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary "
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          Search
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </div>
+</form>
 `;
 
 exports[`Storyshots Select default 1`] = `
