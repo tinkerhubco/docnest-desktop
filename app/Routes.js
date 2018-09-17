@@ -18,7 +18,7 @@ import App from './App';
 import DefaultLayout from './layout/DefaultLayout';
 import Login from './screens/Login';
 import AppointmentSchedule from './screens/AppointmentSchedule';
-import PatientList from './screens/PatientList';
+import PatientRecords from './screens/PatientRecords';
 
 function ProtectedRoute({ component: Component, ...rest }) {
   // This will supplied by `AuthService`
@@ -84,7 +84,7 @@ export const ROUTES = [
   {
     path: '/patients',
     title: 'Patient Records',
-    component: PatientList,
+    component: PatientRecords,
     icon: <AssignmentIndIcon />
   },
   {
