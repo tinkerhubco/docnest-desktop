@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import PatientDemographicsForm from './patientInformation/PatientDemogprahicsForm';
+import SaveIcon from '@material-ui/icons/Save';
+
+import PatientDemographicsForm from './patientInformation/PatientDemographicsForm';
 import PatientMedicalForm from './patientInformation/PatientMedicalForm';
 
 import MainContent from '../components/MainContent/MainContent';
@@ -17,6 +19,7 @@ export class PatientInformation extends React.Component {
     return (
       <MainContent
         title="Patient Information"
+        buttonIcon={<SaveIcon />}
         onActionClick={this.handleActionClick}
       >
         <StyledSectionContainer>
