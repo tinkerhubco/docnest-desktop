@@ -210,6 +210,7 @@
     "formik": "^1.1.1",
     "history": "^4.7.2",
     "material-design-icons": "^3.0.1",
+    "material-ui-chip-input": "^1.0.0-beta.7",
     "material-ui-pickers": "^1.0.0-rc.14",
     "prop-types": "^15.6.2",
     "react": "^16.4.0",
