@@ -24,6 +24,7 @@ const StyledMain = styled.main`
   }
   flex: 1;
   margin-top: 56px;
+  overflow: auto;
 `;
 
 export class DefaultLayout extends React.Component {
