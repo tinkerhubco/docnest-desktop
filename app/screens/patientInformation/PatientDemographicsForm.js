@@ -1,3 +1,7 @@
+/**
+ * TODO: Reusable stand alone form with formik
+ */
+
 import React from 'react';
 import { Field, Formik } from 'formik';
 import styled from 'styled-components';
@@ -42,7 +46,14 @@ export function PatientDemographicsForm() {
           middleName: '',
           lastName: '',
           birthDate: new Date(),
-          gender: ''
+          gender: '',
+          weight: '',
+          height: '',
+          healthCard: '',
+          emergencyContact: '',
+          address: '',
+          phone: '',
+          bloodType: ''
         }}
         onSubmit={values => {
           console.log(values);
@@ -56,10 +67,10 @@ export function PatientDemographicsForm() {
                   render={({ field }) => (
                     <TextField
                       {...field}
+                      fullWidth
                       id="firstName"
                       label="First name"
                       margin="normal"
-                      fullWidth
                     />
                   )}
                 />
@@ -70,10 +81,10 @@ export function PatientDemographicsForm() {
                   render={({ field }) => (
                     <TextField
                       {...field}
+                      fullWidth
                       id="middleName"
                       label="Middle name"
                       margin="normal"
-                      fullWidth
                     />
                   )}
                 />
@@ -84,10 +95,10 @@ export function PatientDemographicsForm() {
                   render={({ field }) => (
                     <TextField
                       {...field}
+                      fullWidth
                       id="lastName"
                       label="Last name"
                       margin="normal"
-                      fullWidth
                     />
                   )}
                 />
@@ -103,7 +114,7 @@ export function PatientDemographicsForm() {
                         aria-label="Gender"
                         value={values.gender}
                         onChange={event =>
-                          setFieldValue('gender', event.target.value)
+                          setFieldValue(field.name, event.target.value)
                         }
                       >
                         <FormControlLabel
@@ -131,7 +142,7 @@ export function PatientDemographicsForm() {
                       id="birthdate"
                       label="Date of Birth"
                       margin="normal"
-                      onChange={date => setFieldValue('birthdate', date)}
+                      onChange={date => setFieldValue(field.name, date)}
                       InputProps={{
                         startAdornment: (
                           <InputAdornment position="start">
@@ -149,10 +160,10 @@ export function PatientDemographicsForm() {
                   render={({ field }) => (
                     <TextField
                       {...field}
+                      fullWidth
                       id="weight"
                       label="Weight"
                       margin="normal"
-                      fullWidth
                     />
                   )}
                 />
@@ -163,10 +174,10 @@ export function PatientDemographicsForm() {
                   render={({ field }) => (
                     <TextField
                       {...field}
+                      fullWidth
                       id="height"
                       label="Height"
                       margin="normal"
-                      fullWidth
                     />
                   )}
                 />
@@ -177,10 +188,10 @@ export function PatientDemographicsForm() {
                   render={({ field }) => (
                     <TextField
                       {...field}
+                      fullWidth
                       id="healthCard"
                       label="Health Card"
                       margin="normal"
-                      fullWidth
                     />
                   )}
                 />
@@ -191,10 +202,10 @@ export function PatientDemographicsForm() {
                   render={({ field }) => (
                     <TextField
                       {...field}
+                      fullWidth
                       id="emergencyContact"
                       label="Emergency Contact"
                       margin="normal"
-                      fullWidth
                     />
                   )}
                 />
@@ -205,10 +216,10 @@ export function PatientDemographicsForm() {
                   render={({ field }) => (
                     <TextField
                       {...field}
+                      fullWidth
                       id="address"
                       label="Address"
                       margin="normal"
-                      fullWidth
                     />
                   )}
                 />
@@ -219,10 +230,10 @@ export function PatientDemographicsForm() {
                   render={({ field }) => (
                     <TextField
                       {...field}
+                      fullWidth
                       id="phone"
                       label="Phone"
                       margin="normal"
-                      fullWidth
                     />
                   )}
                 />
@@ -233,10 +244,10 @@ export function PatientDemographicsForm() {
                   render={({ field }) => (
                     <TextField
                       {...field}
+                      fullWidth
                       id="bloodType"
                       label="Blood Type"
                       margin="normal"
-                      fullWidth
                     />
                   )}
                 />
