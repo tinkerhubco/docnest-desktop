@@ -8,12 +8,14 @@ import PatientMedicalForm from './patientInformation/PatientMedicalForm';
 
 import MainContent from '../components/MainContent/MainContent';
 
-const StyledSectionContainer = styled.div``;
+const StyledFormSectionContainer = styled.div`
+  margin: 24px 0 12px;
+`;
 
 export class PatientInformation extends React.Component {
-  state = {};
-
-  handleActionClick = () => {};
+  handleActionClick = () => {
+    console.log('save');
+  };
 
   render() {
     return (
@@ -22,12 +24,12 @@ export class PatientInformation extends React.Component {
         buttonIcon={<SaveIcon />}
         onActionClick={this.handleActionClick}
       >
-        <StyledSectionContainer>
+        <StyledFormSectionContainer>
           <PatientDemographicsForm />
-        </StyledSectionContainer>
-        <StyledSectionContainer>
+        </StyledFormSectionContainer>
+        <StyledFormSectionContainer>
           <PatientMedicalForm />
-        </StyledSectionContainer>
+        </StyledFormSectionContainer>
       </MainContent>
     );
   }
