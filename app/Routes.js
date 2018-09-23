@@ -18,6 +18,7 @@ import App from './App';
 import DefaultLayout from './layout/DefaultLayout';
 import Login from './screens/Login';
 import AppointmentSchedule from './screens/AppointmentSchedule';
+import PatientInformation from './screens/PatientInformation';
 import PatientRecords from './screens/PatientRecords';
 
 function ProtectedRoute({ component: Component, ...rest }) {
@@ -29,11 +30,9 @@ function ProtectedRoute({ component: Component, ...rest }) {
       {...rest}
       render={props =>
         authenticated ? (
-          <React.Fragment>
-            <DefaultLayout {...props}>
-              <Component {...props} />
-            </DefaultLayout>
-          </React.Fragment>
+          <DefaultLayout {...props}>
+            <Component {...props} />
+          </DefaultLayout>
         ) : (
           <Redirect
             to={{
@@ -84,7 +83,7 @@ export const ROUTES = [
   {
     path: '/patients',
     title: 'Patient Records',
-    component: PatientRecords,
+    component: PatientRoutes,
     icon: <AssignmentIndIcon />
   },
   {
@@ -92,6 +91,18 @@ export const ROUTES = [
     title: 'Appointments',
     component: AppointmentSchedule,
     icon: <ScheduleIcon />
+  }
+];
+
+const PATIENT_ROUTES = [
+  {
+    path: '/patients',
+    component: PatientRecords,
+    exact: true
+  },
+  {
+    path: '/patients/:id',
+    component: PatientInformation
   }
 ];
 
@@ -114,6 +125,16 @@ export function Routes() {
         ))}
       </Switch>
     </App>
+  );
+}
+
+export function PatientRoutes() {
+  return (
+    <Switch>
+      {PATIENT_ROUTES.map(({ path, component, exact }) => (
+        <Route key="path" path={path} component={component} exact={exact} />
+      ))}
+    </Switch>
   );
 }
 
