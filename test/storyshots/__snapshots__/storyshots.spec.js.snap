@@ -3876,258 +3876,252 @@ exports[`Storyshots Screens/AppointmentSchedule default 1`] = `
 <div
   className="MuiPaper-root MuiPaper-elevation2 MuiPaper-rounded c0"
 >
-  <div
-    className=""
+  <h1
+    className="MuiTypography-root MuiTypography-headline"
   >
-    <h1
-      className="MuiTypography-root MuiTypography-display2"
-    >
-      Appointment Schedule
-    </h1>
-    <hr />
-  </div>
-  <div
-    className=""
+    Appointment Schedule
+  </h1>
+  <hr
+    className="MuiDivider-root"
+  />
+  <form
+    className="c1"
+    onSubmit={[Function]}
   >
-    <form
-      className="c1"
-      onSubmit={[Function]}
+    <div
+      className="MuiGrid-container MuiGrid-spacing-xs-24"
     >
       <div
-        className="MuiGrid-container MuiGrid-spacing-xs-24"
+        className="MuiGrid-item"
       >
         <div
-          className="MuiGrid-item"
+          className="MuiFormControl-root "
         >
           <div
-            className="MuiFormControl-root "
+            className="MuiInput-root MuiInput-formControl MuiInput-underline"
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-underline"
+              className="MuiInputAdornment-root MuiInputAdornment-positionStart"
             >
-              <div
-                className="MuiInputAdornment-root MuiInputAdornment-positionStart"
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
               >
-                <svg
-                  aria-hidden="true"
-                  className="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-                  />
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                </svg>
-              </div>
-              <input
-                aria-invalid={false}
-                className="MuiInput-input"
-                disabled={false}
-                id="appointment-search-field"
-                name="search"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                placeholder="Search Appointment"
-                required={false}
-                type="text"
-                value=""
-              />
+                <path
+                  d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
             </div>
-          </div>
-        </div>
-        <div
-          className="MuiGrid-item"
-        >
-          <div
-            className="MuiFormControl-root c2"
-            onClick={[Function]}
-            onKeyPress={[Function]}
-          >
-            <div
-              className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
-            >
-              <div
-                className="MuiInputAdornment-root MuiInputAdornment-positionStart"
-              >
-                <svg
-                  aria-hidden="true"
-                  className="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
-                  />
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                </svg>
-              </div>
-              <input
-                aria-invalid={false}
-                className="MuiInput-input"
-                disabled={false}
-                mask={null}
-                name="fromDate"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                readOnly={true}
-                required={false}
-                type="text"
-                value="September 15th"
-              />
-            </div>
-            
-          </div>
-        </div>
-        <div
-          className="MuiGrid-item"
-        >
-          <div
-            className="MuiFormControl-root c2"
-            onClick={[Function]}
-            onKeyPress={[Function]}
-          >
-            <div
-              className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
-            >
-              <div
-                className="MuiInputAdornment-root MuiInputAdornment-positionStart"
-              >
-                <svg
-                  aria-hidden="true"
-                  className="MuiSvgIcon-root"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
-                  />
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                </svg>
-              </div>
-              <input
-                aria-invalid={false}
-                className="MuiInput-input"
-                disabled={false}
-                mask={null}
-                name="toDate"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                readOnly={true}
-                required={false}
-                type="text"
-                value="September 15th"
-              />
-            </div>
-            
-          </div>
-        </div>
-        <div
-          className="MuiGrid-item"
-        >
-          <button
-            className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary "
-            disabled={false}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            tabIndex="0"
-            type="submit"
-          >
-            <span
-              className="MuiButton-label"
-            >
-              Search
-            </span>
-            <span
-              className="MuiTouchRipple-root"
+            <input
+              aria-invalid={false}
+              className="MuiInput-input"
+              disabled={false}
+              id="appointment-search-field"
+              name="search"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="Search Appointment"
+              required={false}
+              type="text"
+              value=""
             />
-          </button>
+          </div>
         </div>
       </div>
-    </form>
-    <table
-      className="MuiTable-root"
-    >
-      <thead
-        className="MuiTableHead-root"
+      <div
+        className="MuiGrid-item"
       >
-        <tr
-          className="MuiTableRow-root MuiTableRow-head"
-        >
-          <th
-            aria-sort={null}
-            className="MuiTableCell-root MuiTableCell-head"
-            scope="col"
-          >
-            Appointment Schedule
-          </th>
-          <th
-            aria-sort={null}
-            className="MuiTableCell-root MuiTableCell-head"
-            scope="col"
-          >
-            Date
-          </th>
-          <th
-            aria-sort={null}
-            className="MuiTableCell-root MuiTableCell-head"
-            scope="col"
-          >
-            Time
-          </th>
-        </tr>
-      </thead>
-      <tbody
-        className="MuiTableBody-root"
-      >
-        <tr
-          className="MuiTableRow-root MuiTableRow-hover"
+        <div
+          className="MuiFormControl-root c2"
           onClick={[Function]}
+          onKeyPress={[Function]}
         >
-          <td
-            aria-sort={null}
-            className="MuiTableCell-root MuiTableCell-body"
+          <div
+            className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
           >
-            Test
-          </td>
-          <td
-            aria-sort={null}
-            className="MuiTableCell-root MuiTableCell-body"
+            <div
+              className="MuiInputAdornment-root MuiInputAdornment-positionStart"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </div>
+            <input
+              aria-invalid={false}
+              className="MuiInput-input"
+              disabled={false}
+              mask={null}
+              name="fromDate"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              readOnly={true}
+              required={false}
+              type="text"
+              value="September 26th"
+            />
+          </div>
+          
+        </div>
+      </div>
+      <div
+        className="MuiGrid-item"
+      >
+        <div
+          className="MuiFormControl-root c2"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+        >
+          <div
+            className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
           >
-            08/25/2018
-          </td>
-          <td
-            aria-sort={null}
-            className="MuiTableCell-root MuiTableCell-body"
+            <div
+              className="MuiInputAdornment-root MuiInputAdornment-positionStart"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </div>
+            <input
+              aria-invalid={false}
+              className="MuiInput-input"
+              disabled={false}
+              mask={null}
+              name="toDate"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              readOnly={true}
+              required={false}
+              type="text"
+              value="September 26th"
+            />
+          </div>
+          
+        </div>
+      </div>
+      <div
+        className="MuiGrid-item"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary "
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="submit"
+        >
+          <span
+            className="MuiButton-label"
           >
-            10:44 AM
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <div />
-  </div>
+            Search
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </form>
+  <table
+    className="MuiTable-root"
+  >
+    <thead
+      className="MuiTableHead-root"
+    >
+      <tr
+        className="MuiTableRow-root MuiTableRow-head"
+      >
+        <th
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-head"
+          scope="col"
+        >
+          Appointment Schedule
+        </th>
+        <th
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-head"
+          scope="col"
+        >
+          Date
+        </th>
+        <th
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-head"
+          scope="col"
+        >
+          Time
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="MuiTableBody-root"
+    >
+      <tr
+        className="MuiTableRow-root MuiTableRow-hover"
+        onClick={[Function]}
+      >
+        <td
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-body"
+        >
+          Test
+        </td>
+        <td
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-body"
+        >
+          08/25/2018
+        </td>
+        <td
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-body"
+        >
+          10:44 AM
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div />
   <div
     className="c3"
   >
@@ -4282,7 +4276,7 @@ exports[`Storyshots Screens/AppointmentSchedule/AppointmentScheduleSearch defaul
             readOnly={true}
             required={false}
             type="text"
-            value="September 15th"
+            value="September 26th"
           />
         </div>
         
@@ -4329,7 +4323,7 @@ exports[`Storyshots Screens/AppointmentSchedule/AppointmentScheduleSearch defaul
             readOnly={true}
             required={false}
             type="text"
-            value="September 15th"
+            value="September 26th"
           />
         </div>
         
