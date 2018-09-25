@@ -2332,6 +2332,234 @@ exports[`Storyshots IconButton default 1`] = `
 </button>
 `;
 
+exports[`Storyshots InputChip default 1`] = `
+<div
+  className="MuiFormControl-root ChipInput-root"
+  onClick={[Function]}
+>
+  <div
+    className="ChipInput-chipContainer ChipInput-inkbar ChipInput-underline"
+  >
+    <div
+      className="MuiInput-root ChipInput-inputRoot MuiInput-formControl"
+      onKeyPress={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        className="MuiInput-input ChipInput-input"
+        disabled={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        required={false}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots InputChip with default value 1`] = `
+<div
+  className="MuiFormControl-root ChipInput-root"
+  onClick={[Function]}
+>
+  <div
+    className="ChipInput-chipContainer ChipInput-inkbar ChipInput-underline"
+  >
+    <div
+      className="MuiChip-root MuiChip-clickable MuiChip-deletable ChipInput-chip"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      role="button"
+      style={
+        Object {
+          "backgroundColor": undefined,
+          "pointerEvents": undefined,
+        }
+      }
+      tabIndex={0}
+    >
+      <span
+        className="MuiChip-label"
+      >
+        foo
+      </span>
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root MuiChip-deleteIcon"
+        focusable="false"
+        onClick={[Function]}
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
+        />
+      </svg>
+    </div>
+    <div
+      className="MuiChip-root MuiChip-clickable MuiChip-deletable ChipInput-chip"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      role="button"
+      style={
+        Object {
+          "backgroundColor": undefined,
+          "pointerEvents": undefined,
+        }
+      }
+      tabIndex={0}
+    >
+      <span
+        className="MuiChip-label"
+      >
+        bar
+      </span>
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root MuiChip-deleteIcon"
+        focusable="false"
+        onClick={[Function]}
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
+        />
+      </svg>
+    </div>
+    <div
+      className="MuiInput-root ChipInput-inputRoot MuiInput-formControl"
+      onKeyPress={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        className="MuiInput-input ChipInput-input"
+        disabled={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        placeholder={null}
+        required={false}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots InputChip with floating label 1`] = `
+<div
+  className="MuiFormControl-root ChipInput-root"
+  onClick={[Function]}
+>
+  <label
+    className="MuiFormLabel-root MuiInputLabel-root ChipInput-label MuiInputLabel-formControl MuiInputLabel-animated"
+    data-shrink={false}
+  >
+    Label
+  </label>
+  <div
+    className="ChipInput-chipContainer ChipInput-inkbar ChipInput-underline ChipInput-labeled"
+  >
+    <div
+      className="MuiInput-root ChipInput-inputRoot MuiInput-formControl"
+      onKeyPress={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        className="MuiInput-input ChipInput-input"
+        disabled={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        placeholder={null}
+        required={false}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots InputChip with placeholder 1`] = `
+<div
+  className="MuiFormControl-root ChipInput-root"
+  onClick={[Function]}
+>
+  <div
+    className="ChipInput-chipContainer ChipInput-inkbar ChipInput-underline"
+  >
+    <div
+      className="MuiInput-root ChipInput-inputRoot MuiInput-formControl"
+      onKeyPress={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        className="MuiInput-input ChipInput-input"
+        disabled={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        placeholder="Placeholder"
+        required={false}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots InputChip with placeholder and label 1`] = `
+<div
+  className="MuiFormControl-root ChipInput-root"
+  onClick={[Function]}
+>
+  <label
+    className="MuiFormLabel-root MuiInputLabel-root ChipInput-label MuiInputLabel-formControl MuiInputLabel-animated"
+    data-shrink={false}
+  >
+    Label
+  </label>
+  <div
+    className="ChipInput-chipContainer ChipInput-inkbar ChipInput-underline ChipInput-labeled"
+  >
+    <div
+      className="MuiInput-root ChipInput-inputRoot MuiInput-formControl"
+      onKeyPress={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        className="MuiInput-input ChipInput-input"
+        disabled={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        placeholder={null}
+        required={false}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots LeftSidebar default - close 1`] = `
 .c0 > div {
   position: relative;
@@ -4307,6 +4535,1528 @@ exports[`Storyshots Screens/Login default 1`] = `
     </button>
   </form>
 </div>
+`;
+
+exports[`Storyshots Screens/PatientInformation default 1`] = `
+.c0 {
+  padding: 24px;
+  margin: 24px;
+}
+
+.c7.c7.c7 {
+  margin: 0;
+  top: auto;
+  right: 20px;
+  bottom: 20px;
+  left: auto;
+  position: fixed;
+}
+
+.c6 {
+  padding: 2px;
+}
+
+.c5 > div {
+  -webkit-align-items: unset;
+  -webkit-box-align: unset;
+  -ms-flex-align: unset;
+  align-items: unset;
+}
+
+.c3 {
+  margin-top: 12px;
+}
+
+.c4.c4 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c2 {
+  margin: 24px 0 12px;
+}
+
+.c1 {
+  margin: 8px 0 12px;
+}
+
+<div
+  className="MuiPaper-root MuiPaper-elevation2 MuiPaper-rounded c0"
+>
+  <h1
+    className="MuiTypography-root MuiTypography-headline"
+  >
+    Patient Information
+  </h1>
+  <hr
+    className="MuiDivider-root"
+  />
+  <div
+    className="c1"
+  >
+    <div
+      className="MuiTabs-root"
+    >
+      <div
+        className="MuiTabs-flexContainer"
+      >
+        <div
+          className="MuiTabs-scroller MuiTabs-fixed"
+          onScroll={[Function]}
+          role="tablist"
+          style={
+            Object {
+              "marginBottom": 0,
+            }
+          }
+        >
+          <div
+            className="MuiTabs-flexContainer"
+          >
+            <button
+              aria-selected={true}
+              className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-selected MuiTab-labelIcon"
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              role="tab"
+              tabIndex="0"
+              type="button"
+            >
+              <span
+                className="MuiTab-wrapper"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M3 5v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2H5c-1.11 0-2 .9-2 2zm12 4c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3zm-9 8c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1H6v-1z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+                <span
+                  className="MuiTab-labelContainer"
+                >
+                  <span
+                    className="MuiTab-label"
+                  >
+                    Demographics
+                  </span>
+                </span>
+              </span>
+              <span
+                className="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              aria-selected={false}
+              className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-labelIcon"
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              role="tab"
+              tabIndex="0"
+              type="button"
+            >
+              <span
+                className="MuiTab-wrapper"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 3H5c-1.1 0-1.99.9-1.99 2L3 19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"
+                  />
+                </svg>
+                <span
+                  className="MuiTab-labelContainer"
+                >
+                  <span
+                    className="MuiTab-label"
+                  >
+                    Medical History
+                  </span>
+                </span>
+              </span>
+              <span
+                className="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <span
+            className="TabIndicator-root TabIndicator-colorPrimary MuiTabs-indicator"
+            style={
+              Object {
+                "left": 0,
+                "width": 0,
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c2"
+  >
+    <h2
+      className="MuiTypography-root MuiTypography-title"
+    >
+      Demographics
+    </h2>
+    <form
+      onSubmit={[Function]}
+    >
+      <div
+        className="MuiGrid-container MuiGrid-spacing-xs-24"
+      >
+        <div
+          className="MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth"
+          >
+            <label
+              className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+              data-shrink={false}
+              htmlFor="firstName"
+            >
+              First name
+            </label>
+            <div
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+            >
+              <input
+                aria-invalid={false}
+                className="MuiInput-input"
+                disabled={false}
+                id="firstName"
+                name="firstName"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                required={false}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth"
+          >
+            <label
+              className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+              data-shrink={false}
+              htmlFor="middleName"
+            >
+              Middle name
+            </label>
+            <div
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+            >
+              <input
+                aria-invalid={false}
+                className="MuiInput-input"
+                disabled={false}
+                id="middleName"
+                name="middleName"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                required={false}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth"
+          >
+            <label
+              className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+              data-shrink={false}
+              htmlFor="lastName"
+            >
+              Last name
+            </label>
+            <div
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+            >
+              <input
+                aria-invalid={false}
+                className="MuiInput-input"
+                disabled={false}
+                id="lastName"
+                name="lastName"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                required={false}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiGrid-item"
+        >
+          <div
+            className="MuiFormControl-root"
+          >
+            <label
+              className="MuiFormLabel-root c3"
+            >
+              Gender
+            </label>
+            <div
+              aria-label="Gender"
+              className="MuiFormGroup-root c4"
+              onBlur={[Function]}
+              role="radiogroup"
+            >
+              <label
+                className="MuiFormControlLabel-root"
+              >
+                <span
+                  className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiRadio-root MuiRadio-colorPrimary"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchMove={[Function]}
+                  onTouchStart={[Function]}
+                  tabIndex={null}
+                >
+                  <span
+                    className="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                      />
+                    </svg>
+                    <input
+                      checked={false}
+                      className="MuiSwitchBase-input"
+                      disabled={false}
+                      name="gender"
+                      onChange={[Function]}
+                      type="radio"
+                      value="female"
+                    />
+                  </span>
+                  <span
+                    className="MuiTouchRipple-root"
+                  />
+                </span>
+                <span
+                  className="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
+                >
+                  Female
+                </span>
+              </label>
+              <label
+                className="MuiFormControlLabel-root"
+              >
+                <span
+                  className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiRadio-root MuiRadio-colorPrimary"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchMove={[Function]}
+                  onTouchStart={[Function]}
+                  tabIndex={null}
+                >
+                  <span
+                    className="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                      />
+                    </svg>
+                    <input
+                      checked={false}
+                      className="MuiSwitchBase-input"
+                      disabled={false}
+                      name="gender"
+                      onChange={[Function]}
+                      type="radio"
+                      value="male"
+                    />
+                  </span>
+                  <span
+                    className="MuiTouchRipple-root"
+                  />
+                </span>
+                <span
+                  className="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
+                >
+                  Male
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiGrid-item"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-marginNormal c5"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+          >
+            <label
+              className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+              data-shrink={true}
+              htmlFor="birthdate"
+            >
+              Date of Birth
+            </label>
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+            >
+              <div
+                className="MuiInputAdornment-root MuiInputAdornment-positionStart"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </div>
+              <input
+                aria-invalid={false}
+                className="MuiInput-input"
+                disabled={false}
+                id="birthdate"
+                mask={null}
+                name="birthdate"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                readOnly={true}
+                required={false}
+                type="text"
+                value="September 26th"
+              />
+            </div>
+            
+          </div>
+        </div>
+        <div
+          className="MuiGrid-item"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth"
+          >
+            <label
+              className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+              data-shrink={false}
+              htmlFor="weight"
+            >
+              Weight
+            </label>
+            <div
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+            >
+              <input
+                aria-invalid={false}
+                className="MuiInput-input"
+                disabled={false}
+                id="weight"
+                name="weight"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                required={false}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiGrid-item"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth"
+          >
+            <label
+              className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+              data-shrink={false}
+              htmlFor="height"
+            >
+              Height
+            </label>
+            <div
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+            >
+              <input
+                aria-invalid={false}
+                className="MuiInput-input"
+                disabled={false}
+                id="height"
+                name="height"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                required={false}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiGrid-item"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth"
+          >
+            <label
+              className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+              data-shrink={false}
+              htmlFor="healthCard"
+            >
+              Health Card
+            </label>
+            <div
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+            >
+              <input
+                aria-invalid={false}
+                className="MuiInput-input"
+                disabled={false}
+                id="healthCard"
+                name="healthCard"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                required={false}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiGrid-item"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth"
+          >
+            <label
+              className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+              data-shrink={false}
+              htmlFor="emergencyContact"
+            >
+              Emergency Contact
+            </label>
+            <div
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+            >
+              <input
+                aria-invalid={false}
+                className="MuiInput-input"
+                disabled={false}
+                id="emergencyContact"
+                name="emergencyContact"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                required={false}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiGrid-item"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth"
+          >
+            <label
+              className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+              data-shrink={false}
+              htmlFor="address"
+            >
+              Address
+            </label>
+            <div
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+            >
+              <input
+                aria-invalid={false}
+                className="MuiInput-input"
+                disabled={false}
+                id="address"
+                name="address"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                required={false}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiGrid-item"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth"
+          >
+            <label
+              className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+              data-shrink={false}
+              htmlFor="phone"
+            >
+              Phone
+            </label>
+            <div
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+            >
+              <input
+                aria-invalid={false}
+                className="MuiInput-input"
+                disabled={false}
+                id="phone"
+                name="phone"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                required={false}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiGrid-item"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth"
+          >
+            <label
+              className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+              data-shrink={false}
+              htmlFor="bloodType"
+            >
+              Blood Type
+            </label>
+            <div
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+            >
+              <input
+                aria-invalid={false}
+                className="MuiInput-input"
+                disabled={false}
+                id="bloodType"
+                name="bloodType"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                required={false}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div
+    className="c6"
+  >
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-fab MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary c7 "
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex="0"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        <svg
+          aria-hidden="true"
+          className="MuiSvgIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"
+          />
+        </svg>
+      </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Screens/PatientInformation/PatientDemoGraphicsForm default 1`] = `
+Array [
+  <h2
+    className="MuiTypography-root MuiTypography-title"
+  >
+    Demographics
+  </h2>,
+  .c2 > div {
+  -webkit-align-items: unset;
+  -webkit-box-align: unset;
+  -ms-flex-align: unset;
+  align-items: unset;
+}
+
+.c0 {
+  margin-top: 12px;
+}
+
+.c1.c1 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+<form
+    onSubmit={[Function]}
+  >
+    <div
+      className="MuiGrid-container MuiGrid-spacing-xs-24"
+    >
+      <div
+        className="MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4"
+      >
+        <div
+          className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth"
+        >
+          <label
+            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+            data-shrink={false}
+            htmlFor="firstName"
+          >
+            First name
+          </label>
+          <div
+            className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+          >
+            <input
+              aria-invalid={false}
+              className="MuiInput-input"
+              disabled={false}
+              id="firstName"
+              name="firstName"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              required={false}
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4"
+      >
+        <div
+          className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth"
+        >
+          <label
+            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+            data-shrink={false}
+            htmlFor="middleName"
+          >
+            Middle name
+          </label>
+          <div
+            className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+          >
+            <input
+              aria-invalid={false}
+              className="MuiInput-input"
+              disabled={false}
+              id="middleName"
+              name="middleName"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              required={false}
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4"
+      >
+        <div
+          className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth"
+        >
+          <label
+            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+            data-shrink={false}
+            htmlFor="lastName"
+          >
+            Last name
+          </label>
+          <div
+            className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+          >
+            <input
+              aria-invalid={false}
+              className="MuiInput-input"
+              disabled={false}
+              id="lastName"
+              name="lastName"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              required={false}
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-item"
+      >
+        <div
+          className="MuiFormControl-root"
+        >
+          <label
+            className="MuiFormLabel-root c0"
+          >
+            Gender
+          </label>
+          <div
+            aria-label="Gender"
+            className="MuiFormGroup-root c1"
+            onBlur={[Function]}
+            role="radiogroup"
+          >
+            <label
+              className="MuiFormControlLabel-root"
+            >
+              <span
+                className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiRadio-root MuiRadio-colorPrimary"
+                onBlur={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={null}
+              >
+                <span
+                  className="MuiIconButton-label"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                    />
+                  </svg>
+                  <input
+                    checked={false}
+                    className="MuiSwitchBase-input"
+                    disabled={false}
+                    name="gender"
+                    onChange={[Function]}
+                    type="radio"
+                    value="female"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </span>
+              <span
+                className="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
+              >
+                Female
+              </span>
+            </label>
+            <label
+              className="MuiFormControlLabel-root"
+            >
+              <span
+                className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiRadio-root MuiRadio-colorPrimary"
+                onBlur={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={null}
+              >
+                <span
+                  className="MuiIconButton-label"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                    />
+                  </svg>
+                  <input
+                    checked={false}
+                    className="MuiSwitchBase-input"
+                    disabled={false}
+                    name="gender"
+                    onChange={[Function]}
+                    type="radio"
+                    value="male"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </span>
+              <span
+                className="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
+              >
+                Male
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-item"
+      >
+        <div
+          className="MuiFormControl-root MuiFormControl-marginNormal c2"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+        >
+          <label
+            className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+            data-shrink={true}
+            htmlFor="birthdate"
+          >
+            Date of Birth
+          </label>
+          <div
+            className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+          >
+            <div
+              className="MuiInputAdornment-root MuiInputAdornment-positionStart"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </div>
+            <input
+              aria-invalid={false}
+              className="MuiInput-input"
+              disabled={false}
+              id="birthdate"
+              mask={null}
+              name="birthdate"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              readOnly={true}
+              required={false}
+              type="text"
+              value="September 26th"
+            />
+          </div>
+          
+        </div>
+      </div>
+      <div
+        className="MuiGrid-item"
+      >
+        <div
+          className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth"
+        >
+          <label
+            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+            data-shrink={false}
+            htmlFor="weight"
+          >
+            Weight
+          </label>
+          <div
+            className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+          >
+            <input
+              aria-invalid={false}
+              className="MuiInput-input"
+              disabled={false}
+              id="weight"
+              name="weight"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              required={false}
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-item"
+      >
+        <div
+          className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth"
+        >
+          <label
+            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+            data-shrink={false}
+            htmlFor="height"
+          >
+            Height
+          </label>
+          <div
+            className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+          >
+            <input
+              aria-invalid={false}
+              className="MuiInput-input"
+              disabled={false}
+              id="height"
+              name="height"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              required={false}
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-item"
+      >
+        <div
+          className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth"
+        >
+          <label
+            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+            data-shrink={false}
+            htmlFor="healthCard"
+          >
+            Health Card
+          </label>
+          <div
+            className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+          >
+            <input
+              aria-invalid={false}
+              className="MuiInput-input"
+              disabled={false}
+              id="healthCard"
+              name="healthCard"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              required={false}
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-item"
+      >
+        <div
+          className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth"
+        >
+          <label
+            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+            data-shrink={false}
+            htmlFor="emergencyContact"
+          >
+            Emergency Contact
+          </label>
+          <div
+            className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+          >
+            <input
+              aria-invalid={false}
+              className="MuiInput-input"
+              disabled={false}
+              id="emergencyContact"
+              name="emergencyContact"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              required={false}
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-item"
+      >
+        <div
+          className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth"
+        >
+          <label
+            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+            data-shrink={false}
+            htmlFor="address"
+          >
+            Address
+          </label>
+          <div
+            className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+          >
+            <input
+              aria-invalid={false}
+              className="MuiInput-input"
+              disabled={false}
+              id="address"
+              name="address"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              required={false}
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-item"
+      >
+        <div
+          className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth"
+        >
+          <label
+            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+            data-shrink={false}
+            htmlFor="phone"
+          >
+            Phone
+          </label>
+          <div
+            className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+          >
+            <input
+              aria-invalid={false}
+              className="MuiInput-input"
+              disabled={false}
+              id="phone"
+              name="phone"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              required={false}
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-item"
+      >
+        <div
+          className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth"
+        >
+          <label
+            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+            data-shrink={false}
+            htmlFor="bloodType"
+          >
+            Blood Type
+          </label>
+          <div
+            className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+          >
+            <input
+              aria-invalid={false}
+              className="MuiInput-input"
+              disabled={false}
+              id="bloodType"
+              name="bloodType"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              required={false}
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>,
+]
+`;
+
+exports[`Storyshots Screens/PatientInformation/PatientMedicalForm default 1`] = `
+Array [
+  <h2
+    className="MuiTypography-root MuiTypography-title"
+  >
+    Medical History
+  </h2>,
+  .c1 > div {
+  -webkit-align-items: unset;
+  -webkit-box-align: unset;
+  -ms-flex-align: unset;
+  align-items: unset;
+}
+
+.c0.c0 > div {
+  margin-top: 20px;
+}
+
+<form
+    onSubmit={[Function]}
+  >
+    <div
+      className="MuiGrid-container"
+    >
+      <div
+        className="MuiGrid-item MuiGrid-grid-xs-12"
+      >
+        <div
+          className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth c0 ChipInput-root"
+          name="healthConditions"
+          onClick={[Function]}
+        >
+          <label
+            className="MuiFormLabel-root MuiInputLabel-root ChipInput-label MuiInputLabel-formControl MuiInputLabel-animated"
+            data-shrink={false}
+            htmlFor="healthCondition"
+          >
+            Health Conditions
+          </label>
+          <div
+            className="ChipInput-chipContainer ChipInput-inkbar ChipInput-underline ChipInput-labeled"
+          >
+            <div
+              className="MuiInput-root ChipInput-inputRoot MuiInput-formControl"
+              onKeyPress={[Function]}
+            >
+              <input
+                aria-invalid={false}
+                className="MuiInput-input ChipInput-input"
+                disabled={false}
+                id="healthCondition"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                placeholder={null}
+                required={false}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-item MuiGrid-grid-xs-12"
+      >
+        <div
+          className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth c0 ChipInput-root"
+          name="medications"
+          onClick={[Function]}
+        >
+          <label
+            className="MuiFormLabel-root MuiInputLabel-root ChipInput-label MuiInputLabel-formControl MuiInputLabel-animated"
+            data-shrink={false}
+            htmlFor="medications"
+          >
+            Medications
+          </label>
+          <div
+            className="ChipInput-chipContainer ChipInput-inkbar ChipInput-underline ChipInput-labeled"
+          >
+            <div
+              className="MuiInput-root ChipInput-inputRoot MuiInput-formControl"
+              onKeyPress={[Function]}
+            >
+              <input
+                aria-invalid={false}
+                className="MuiInput-input ChipInput-input"
+                disabled={false}
+                id="medications"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                placeholder={null}
+                required={false}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-item MuiGrid-grid-xs-12"
+      >
+        <div
+          className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth c0 ChipInput-root"
+          name="treatments"
+          onClick={[Function]}
+        >
+          <label
+            className="MuiFormLabel-root MuiInputLabel-root ChipInput-label MuiInputLabel-formControl MuiInputLabel-animated"
+            data-shrink={false}
+            htmlFor="treatments"
+          >
+            Treatments
+          </label>
+          <div
+            className="ChipInput-chipContainer ChipInput-inkbar ChipInput-underline ChipInput-labeled"
+          >
+            <div
+              className="MuiInput-root ChipInput-inputRoot MuiInput-formControl"
+              onKeyPress={[Function]}
+            >
+              <input
+                aria-invalid={false}
+                className="MuiInput-input ChipInput-input"
+                disabled={false}
+                id="treatments"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                placeholder={null}
+                required={false}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-container MuiGrid-spacing-xs-24"
+    >
+      <div
+        className="MuiGrid-item"
+      >
+        <div
+          className="MuiFormControl-root MuiFormControl-marginNormal"
+        >
+          <label
+            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+            data-shrink={false}
+            htmlFor="diagnostic"
+          >
+            Diagnostic
+          </label>
+          <div
+            className="MuiInput-root MuiInput-formControl MuiInput-underline"
+          >
+            <input
+              aria-invalid={false}
+              className="MuiInput-input"
+              disabled={false}
+              id="diagnostic"
+              name="diagnostic"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              required={false}
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-item"
+      >
+        <div
+          className="MuiFormControl-root MuiFormControl-marginNormal c1"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+        >
+          <label
+            className="MuiFormLabel-root MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+            data-shrink={true}
+            htmlFor="diagnosticDate"
+          >
+            Diagnostic Date
+          </label>
+          <div
+            className="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils(DateTextField)-input"
+          >
+            <div
+              className="MuiInputAdornment-root MuiInputAdornment-positionStart"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </div>
+            <input
+              aria-invalid={false}
+              className="MuiInput-input"
+              disabled={false}
+              id="diagnosticDate"
+              mask={null}
+              name="diagnosticDate"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              readOnly={true}
+              required={false}
+              type="text"
+              value="September 26th"
+            />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </form>,
+]
 `;
 
 exports[`Storyshots Screens/PatientRecords default 1`] = `
