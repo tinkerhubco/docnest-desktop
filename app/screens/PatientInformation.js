@@ -50,6 +50,7 @@ export class PatientInformation extends React.Component {
       >
         <StyledTabsContainer>
           <Tabs
+            fullWidth
             value={tabIndex}
             indicatorColor="primary"
             textColor="primary"
