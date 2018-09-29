@@ -5,7 +5,9 @@ import Table from '../components/Table/Table';
 
 import PatientRecordsSearch from './patientRecords/PatientRecordsSearch';
 
-export default class PatientRecords extends React.Component {
+import { Redirect } from '../Routes';
+
+export class PatientRecords extends React.Component {
   state = {
     tableOptions: {
       rowOptions: {
@@ -41,10 +43,13 @@ export default class PatientRecords extends React.Component {
         lastName: 'Dela Cruz',
         date: '2018-08-25T02:44:44Z'
       }
-    ]
+    ],
+    redirectTo: undefined
   };
 
-  handleActionClick = () => {};
+  handleActionClick = () => {
+    this.setState({ redirectTo: `patients/1` });
+  };
 
   render() {
     const {
@@ -56,9 +61,12 @@ export default class PatientRecords extends React.Component {
         title="Patient Records"
         onActionClick={this.handleActionClick}
       >
+        <Redirect to={this.state.redirectTo} />
         <PatientRecordsSearch />
         <Table rowOptions={rowOptions} columns={columns} rows={tableData} />
       </MainContent>
     );
   }
 }
+
+export default PatientRecords;

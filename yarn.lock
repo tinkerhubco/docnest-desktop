@@ -8597,6 +8597,13 @@ material-design-icons@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/material-design-icons/-/material-design-icons-3.0.1.tgz#9a71c48747218ebca51e51a66da682038cdcb7bf"
 
+material-ui-chip-input@^1.0.0-beta.7:
+  version "1.0.0-beta.7"
+  resolved "https://registry.yarnpkg.com/material-ui-chip-input/-/material-ui-chip-input-1.0.0-beta.7.tgz#6d9921028f9f1774ab7821ab5a9aa3c44cedb7b6"
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.6.1"
+
 material-ui-pickers@^1.0.0-rc.14:
   version "1.0.0-rc.14"
   resolved "https://registry.yarnpkg.com/material-ui-pickers/-/material-ui-pickers-1.0.0-rc.14.tgz#e36a0c49b42931ce2d418292929732c7e53df03f"
