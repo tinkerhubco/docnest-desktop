@@ -1,78 +1,50 @@
 import React from 'react';
-import styled from 'styled-components';
 
-import AccountBoxIcon from '@material-ui/icons/AccountBox';
-import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
 import SaveIcon from '@material-ui/icons/Save';
 
-import PatientDemographicsForm from './patientInformation/PatientDemographicsForm';
-import PatientMedicalForm from './patientInformation/PatientMedicalForm';
+import PatientDetailsForm from './patientDetails/PatientDetailsForm';
 import MainContent from '../components/MainContent/MainContent';
-import Tabs from '../components/Tabs/Tabs';
-import Tab from '../components/Tab/Tab';
 
-const StyledFormSectionContainer = styled.div`
-  margin: 24px 0 12px;
-`;
+// TODO: Will be supplied by 'PatientDetailsForm'
+// with the help of connector or/and conversions module
 
-const StyledTabsContainer = styled.div`
-  margin: 8px 0 12px;
-`;
-
-const TABS = {
-  DEMOGRAPHICS: 0,
-  MEDICAL_HISTORY: 1
+const initialValues = {
+  healthConditions: [],
+  medications: [],
+  treatments: [],
+  diagnostic: '',
+  diagnosticDate: new Date(),
+  firstName: '',
+  middleName: '',
+  lastName: '',
+  birthDate: new Date(),
+  gender: '',
+  weight: '',
+  height: '',
+  healthCard: '',
+  emergencyContact: '',
+  address: '',
+  phone: '',
+  bloodType: ''
 };
 
 export class PatientDetails extends React.Component {
-  state = {
-    tabIndex: 0
-  };
-
-  handleActionClick = () => {
-    console.log('save');
-  };
-
-  handleTabsChange = (event, tabIndex) => {
-    this.setState({
-      tabIndex
-    });
-  };
-
   render() {
-    const { tabIndex } = this.state;
-
     return (
-      <MainContent
-        title="Patient Information"
-        buttonIcon={<SaveIcon />}
-        onActionClick={this.handleActionClick}
+      <PatientDetailsForm
+        initialValues={initialValues}
+        onSubmit={values => console.log(values)}
       >
-        <StyledTabsContainer>
-          <Tabs
-            fullWidth
-            value={tabIndex}
-            indicatorColor="primary"
-            textColor="primary"
-            onChange={this.handleTabsChange}
+        {({ form, formik: { handleSubmit } }) => (
+          <MainContent
+            title="Patient Information"
+            buttonIcon={<SaveIcon />}
+            onActionClick={handleSubmit}
           >
-            <Tab icon={<AccountBoxIcon />} label="Demographics" />
-            <Tab icon={<LocalHospitalIcon />} label="Medical History" />
-          </Tabs>
-        </StyledTabsContainer>
-
-        {tabIndex === TABS.DEMOGRAPHICS && (
-          <StyledFormSectionContainer>
-            <PatientDemographicsForm />
-          </StyledFormSectionContainer>
+            {form}
+          </MainContent>
         )}
-
-        {tabIndex === TABS.MEDICAL_HISTORY && (
-          <StyledFormSectionContainer>
-            <PatientMedicalForm />
-          </StyledFormSectionContainer>
-        )}
-      </MainContent>
+      </PatientDetailsForm>
     );
   }
 }
