@@ -8,9 +8,7 @@ import Button from '../../components/Button/Button';
 import Form from '../../components/Form/Form';
 import Grid from '../../components/Grid/Grid';
 import InputAdornment from '../../components/Input/InputAdornment';
-import TextField from '../../components/FormField/TextField';
-
-const StyledSearchTextField = styled(TextField)``;
+import TextInput from '../../components/TextInput/TextInput';
 
 const StyledForm = styled(Form)`
   display: flex;
@@ -33,7 +31,7 @@ export function PatientRecordsSearch() {
               <Field
                 name="search"
                 render={({ field }) => (
-                  <StyledSearchTextField
+                  <TextInput
                     {...field}
                     id="patient-search-field"
                     placeholder="Search Patient"

@@ -13,7 +13,7 @@ import Form from '../../components/Form/Form';
 import Grid from '../../components/Grid/Grid';
 import InputChip from '../../components/InputChip/InputChip';
 import InputAdornment from '../../components/Input/InputAdornment';
-import TextField from '../../components/FormField/TextField';
+import TextInput from '../../components/TextInput/TextInput';
 import Typography from '../../components/Typography/Typography';
 
 const StyledDatePicker = styled(DatePicker)`
@@ -139,7 +139,7 @@ export function PatientMedicalForm() {
                 <Field
                   name="diagnostic"
                   render={({ field }) => (
-                    <TextField
+                    <TextInput
                       {...field}
                       id="diagnostic"
                       label="Diagnostic"

@@ -10,9 +10,7 @@ import DatePicker from '../../components/DatePicker/DatePicker';
 import Form from '../../components/Form/Form';
 import Grid from '../../components/Grid/Grid';
 import InputAdornment from '../../components/Input/InputAdornment';
-import TextField from '../../components/FormField/TextField';
-
-const StyledSearchTextField = styled(TextField)``;
+import TextInput from '../../components/TextInput/TextInput';
 
 const StyledForm = styled(Form)`
   display: flex;
@@ -41,7 +39,7 @@ export function AppointmentScheduleSearch() {
               <Field
                 name="search"
                 render={({ field }) => (
-                  <StyledSearchTextField
+                  <TextInput
                     {...field}
                     id="appointment-search-field"
                     placeholder="Search Appointment"

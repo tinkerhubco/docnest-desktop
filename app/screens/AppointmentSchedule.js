@@ -3,7 +3,7 @@ import React from 'react';
 import Button from '../components/Button/Button';
 import DateTimePicker from '../components/DateTimePicker/DateTimePicker';
 import Dialog from '../components/Dialog/Dialog';
-import TextField from '../components/FormField/TextField';
+import TextInput from '../components/TextInput/TextInput';
 import MainContent from '../components/MainContent/MainContent';
 import Table from '../components/Table/Table';
 
@@ -97,7 +97,7 @@ export class AppointmentSchedule extends React.Component {
           subtitle="Patient appointment schedule"
           dialogContentNodeChildren={
             <div>
-              <TextField
+              <TextInput
                 autoFocus
                 margin="dense"
                 id="appointmentName"

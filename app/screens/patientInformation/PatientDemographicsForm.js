@@ -10,14 +10,14 @@ import DateRangeIcon from '@material-ui/icons/DateRange';
 
 import DatePicker from '../../components/DatePicker/DatePicker';
 import Form from '../../components/Form/Form';
-import FormControl from '../../components/FormField/FormControl';
+import FormControl from '../../components/FormControl/FormControl';
 import FormControlLabel from '../../components/FormControlLabel/FormControlLabel';
 import FormLabel from '../../components/FormLabel/FormLabel';
 import Grid from '../../components/Grid/Grid';
 import InputAdornment from '../../components/Input/InputAdornment';
 import Radio from '../../components/Radio/Radio';
 import RadioGroup from '../../components/RadioGroup/RadioGroup';
-import TextField from '../../components/FormField/TextField';
+import TextInput from '../../components/TextInput/TextInput';
 import Typography from '../../components/Typography/Typography';
 
 const StyledDatePicker = styled(DatePicker)`
@@ -65,7 +65,7 @@ export function PatientDemographicsForm() {
                 <Field
                   name="firstName"
                   render={({ field }) => (
-                    <TextField
+                    <TextInput
                       {...field}
                       fullWidth
                       id="firstName"
@@ -79,7 +79,7 @@ export function PatientDemographicsForm() {
                 <Field
                   name="middleName"
                   render={({ field }) => (
-                    <TextField
+                    <TextInput
                       {...field}
                       fullWidth
                       id="middleName"
@@ -93,7 +93,7 @@ export function PatientDemographicsForm() {
                 <Field
                   name="lastName"
                   render={({ field }) => (
-                    <TextField
+                    <TextInput
                       {...field}
                       fullWidth
                       id="lastName"
@@ -158,7 +158,7 @@ export function PatientDemographicsForm() {
                 <Field
                   name="weight"
                   render={({ field }) => (
-                    <TextField
+                    <TextInput
                       {...field}
                       fullWidth
                       id="weight"
@@ -172,7 +172,7 @@ export function PatientDemographicsForm() {
                 <Field
                   name="height"
                   render={({ field }) => (
-                    <TextField
+                    <TextInput
                       {...field}
                       fullWidth
                       id="height"
@@ -186,7 +186,7 @@ export function PatientDemographicsForm() {
                 <Field
                   name="healthCard"
                   render={({ field }) => (
-                    <TextField
+                    <TextInput
                       {...field}
                       fullWidth
                       id="healthCard"
@@ -200,7 +200,7 @@ export function PatientDemographicsForm() {
                 <Field
                   name="emergencyContact"
                   render={({ field }) => (
-                    <TextField
+                    <TextInput
                       {...field}
                       fullWidth
                       id="emergencyContact"
@@ -214,7 +214,7 @@ export function PatientDemographicsForm() {
                 <Field
                   name="address"
                   render={({ field }) => (
-                    <TextField
+                    <TextInput
                       {...field}
                       fullWidth
                       id="address"
@@ -228,7 +228,7 @@ export function PatientDemographicsForm() {
                 <Field
                   name="phone"
                   render={({ field }) => (
-                    <TextField
+                    <TextInput
                       {...field}
                       fullWidth
                       id="phone"
@@ -242,7 +242,7 @@ export function PatientDemographicsForm() {
                 <Field
                   name="bloodType"
                   render={({ field }) => (
-                    <TextField
+                    <TextInput
                       {...field}
                       fullWidth
                       id="bloodType"
