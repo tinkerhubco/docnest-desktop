@@ -24,7 +24,7 @@ const TABS = {
   MEDICAL_HISTORY: 1
 };
 
-export class PatientInformation extends React.Component {
+export class PatientDetails extends React.Component {
   state = {
     tabIndex: 0
   };
@@ -77,4 +77,4 @@ export class PatientInformation extends React.Component {
   }
 }
 
-export default PatientInformation;
+export default PatientDetails;
