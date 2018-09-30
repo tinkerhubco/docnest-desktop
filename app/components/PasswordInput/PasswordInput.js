@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 
-import TextField from './TextField';
+import TextInput from '../TextInput/TextInput';
 import InputAdornment from '../Input/InputAdornment';
 import IconButton from '../IconButton/IconButton';
 
-export class PasswordField extends Component {
+export class PasswordInput extends Component {
   state = {
     showPassword: this.props.showPassword
   };
@@ -22,13 +22,13 @@ export class PasswordField extends Component {
 
   render() {
     const { props } = this;
-    const { showPassword: showPasswordProp, ...textFieldProps } = props;
+    const { showPassword: showPasswordProp, ...textInputProps } = props;
 
     const { showPassword } = this.state;
 
     return (
-      <TextField
-        {...textFieldProps}
+      <TextInput
+        {...textInputProps}
         InputProps={{
           endAdornment: (
             <InputAdornment position="end">
@@ -48,12 +48,12 @@ export class PasswordField extends Component {
   }
 }
 
-PasswordField.propTypes = {
+PasswordInput.propTypes = {
   showPassword: PropTypes.bool
 };
 
-PasswordField.defaultProps = {
+PasswordInput.defaultProps = {
   showPassword: false
 };
 
-export default PasswordField;
+export default PasswordInput;

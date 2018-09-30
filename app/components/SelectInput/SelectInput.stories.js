@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import Select from './Select';
+import SelectInput from './SelectInput';
 
 const menuItems = [
   {
@@ -27,9 +27,9 @@ const onChangeHandler = event => {
 
 const placeholderId = 'select-id';
 
-storiesOf('Select', module)
+storiesOf('SelectInput', module)
   .add('default', () => (
-    <Select
+    <SelectInput
       id={placeholderId}
       value={1}
       onChange={onChangeHandler}
@@ -37,7 +37,7 @@ storiesOf('Select', module)
     />
   ))
   .add('disabled', () => (
-    <Select
+    <SelectInput
       id={placeholderId}
       disabled
       value={1}
@@ -46,7 +46,7 @@ storiesOf('Select', module)
     />
   ))
   .add('required', () => (
-    <Select
+    <SelectInput
       id={placeholderId}
       required
       value={1}
@@ -56,8 +56,8 @@ storiesOf('Select', module)
     />
   ));
 
-storiesOf('Select/Label', module).add('default', () => (
-  <Select
+storiesOf('SelectInput/Label', module).add('default', () => (
+  <SelectInput
     id={placeholderId}
     label="Items"
     value={1}
@@ -66,9 +66,9 @@ storiesOf('Select/Label', module).add('default', () => (
   />
 ));
 
-storiesOf('Select/HelperText', module)
+storiesOf('SelectInput/HelperText', module)
   .add('default', () => (
-    <Select
+    <SelectInput
       id={placeholderId}
       value={1}
       onChange={onChangeHandler}
@@ -77,7 +77,7 @@ storiesOf('Select/HelperText', module)
     />
   ))
   .add('With Label', () => (
-    <Select
+    <SelectInput
       id={placeholderId}
       label="Items"
       value={1}
