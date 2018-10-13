@@ -49,7 +49,7 @@ export class PatientRecords extends React.Component {
     redirectTo: undefined
   };
 
-  handlePatientRecordClick = () => {
+  handleActionClick = () => {
     this.setState({ redirectTo: `patients/1` });
   };
 
@@ -74,7 +74,7 @@ export class PatientRecords extends React.Component {
             {({ form }) => (
               <MainContent
                 title="Patient Records"
-                onActionClick={this.handlePatientRecordClick}
+                onActionClick={this.handleActionClick}
               >
                 <Redirect to={this.state.redirectTo} />
                 {form}
