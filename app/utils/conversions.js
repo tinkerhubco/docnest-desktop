@@ -1,3 +1,19 @@
+// TODO: Currying
+
+export const appointmentScheduleCreateConversions = {
+  formValuesToRequest: values => {
+    // conversions here
+    return values;
+  }
+};
+
+export const appointmentScheduleSearchConversions = {
+  formValuesToRequest: values => {
+    // conversions here
+    return values;
+  }
+};
+
 export const patientDetailsConversions = {
   responseToFormValues: response => {
     // conversions here
@@ -9,6 +25,15 @@ export const patientDetailsConversions = {
   }
 };
 
+export const patientSearchConversions = {
+  formValuesToRequest: values => {
+    // conversions here
+    return values;
+  }
+};
+
 export default {
-  patientDetailsConversions
+  appointmentScheduleSearchConversions,
+  patientDetailsConversions,
+  patientSearchConversions
 };
