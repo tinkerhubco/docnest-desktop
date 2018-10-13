@@ -1,23 +1,21 @@
 import React from 'react';
 
-import Button from '../components/Button/Button';
-import DateTimePicker from '../components/DateTimePicker/DateTimePicker';
-import Dialog from '../components/Dialog/Dialog';
-import TextInput from '../components/TextInput/TextInput';
 import MainContent from '../components/MainContent/MainContent';
 import Table from '../components/Table/Table';
 
+import AppointmentScheduleCreateConnector from './appointmentSchedule/AppointmentScheduleCreateConnector';
+import AppointmentScheduleCreateForm from './appointmentSchedule/AppointmentScheduleCreateForm';
 import AppointmentScheduleSearchConnector from './appointmentSchedule/AppointmentScheduleSearchConnector';
 import AppointmentScheduleSearchForm from './appointmentSchedule/AppointmentScheduleSearchForm';
 
-import { appointmentScheduleSearchConversions as conversions } from '../utils/conversions';
+import {
+  appointmentScheduleCreateConversions as createConversions,
+  appointmentScheduleSearchConversions as searchConversions
+} from '../utils/conversions';
 
 export class AppointmentSchedule extends React.Component {
   state = {
-    appointment: {
-      schedule: new Date()
-    },
-    open: false,
+    showCreateForm: false,
     tableOptions: {
       rowOptions: {
         hover: true,
@@ -68,24 +66,24 @@ export class AppointmentSchedule extends React.Component {
       time: dateNow
     });
 
-    this.setState({ tableData, open: false });
+    this.setState({ tableData, showCreateForm: false });
   };
 
   handleClose = () => {
-    return this.setState({ open: false });
+    return this.setState({ showCreateForm: false });
   };
 
   handleActionClick = () => {
-    return this.setState({ open: true });
+    return this.setState({ showCreateForm: true });
   };
 
   render() {
     const {
       tableOptions: { rowOptions, columns },
-      appointment: { schedule },
       tableData,
-      open
+      showCreateForm
     } = this.state;
+
     return (
       <MainContent
         title="Appointment Schedule"
@@ -101,7 +99,7 @@ export class AppointmentSchedule extends React.Component {
               }}
               onSubmit={values =>
                 appointmentScheduleSearchUpdater.execute(
-                  conversions.formValuesToRequest(values)
+                  searchConversions.formValuesToRequest(values)
                 )
               }
             >
@@ -110,42 +108,25 @@ export class AppointmentSchedule extends React.Component {
           )}
         </AppointmentScheduleSearchConnector>
         <Table rowOptions={rowOptions} columns={columns} rows={tableData} />
-        <Dialog
-          open={open}
-          onClose={this.handleClose}
-          title="Add Appointment"
-          subtitle="Patient appointment schedule"
-          dialogContentNodeChildren={
-            <div>
-              <TextInput
-                autoFocus
-                margin="dense"
-                id="appointmentName"
-                label="Appointment Name"
-                fullWidth
-              />
-              <DateTimePicker
-                label="Appointment Schedule"
-                showTodayButton
-                todayLabel="Now"
-                value={schedule}
-                onChange={() => {}}
-              />
-            </div>
-          }
-          dialogActionNodeChildren={
-            <div>
-              <Button onClick={this.handleClose}>Cancel</Button>
-              <Button
-                onClick={this.appointmentAddHandler}
-                color="primary"
-                variant="contained"
-              >
-                Add Appointment
-              </Button>
-            </div>
-          }
-        />
+        <AppointmentScheduleCreateConnector>
+          {({ appointmentScheduleCreator }) => (
+            <AppointmentScheduleCreateForm
+              open={showCreateForm}
+              initialValues={{
+                patient: '',
+                schedule: new Date()
+              }}
+              onClose={this.handleClose}
+              onSubmit={values =>
+                appointmentScheduleCreator.execute(
+                  createConversions.formValuesToRequest(values)
+                )
+              }
+            >
+              {({ form }) => form}
+            </AppointmentScheduleCreateForm>
+          )}
+        </AppointmentScheduleCreateConnector>
       </MainContent>
     );
   }
