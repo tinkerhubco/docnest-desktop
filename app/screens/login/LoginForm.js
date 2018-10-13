@@ -5,8 +5,8 @@ import styled from 'styled-components';
 import { Redirect } from '../../Routes';
 import Button from '../../components/Button/Button';
 import Form from '../../components/Form/Form';
-import PasswordField from '../../components/FormField/PasswordField';
-import TextField from '../../components/FormField/TextField';
+import PasswordInput from '../../components/PasswordInput/PasswordInput';
+import TextInput from '../../components/TextInput/TextInput';
 import Paper from '../../components/Paper/Paper';
 
 const StyledPaper = styled(Paper)`
@@ -49,7 +49,7 @@ export function LoginForm() {
             <Field
               name="email"
               render={({ field }) => (
-                <TextField
+                <TextInput
                   {...field}
                   id="email"
                   label="Email"
@@ -61,7 +61,7 @@ export function LoginForm() {
             <Field
               name="password"
               render={({ field }) => (
-                <PasswordField
+                <PasswordInput
                   {...field}
                   id="password"
                   label="Password"

@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 
 import MUIFormControl from '@material-ui/core/FormControl';
 
+export function FormControl(props) {
+  return <MUIFormControl {...props} />;
+}
+
 FormControl.propTypes = {
   /**
    * The contents of the form control.
@@ -51,9 +55,5 @@ FormControl.defaultProps = {
   margin: 'none',
   required: false
 };
-
-export function FormControl(props) {
-  return <MUIFormControl {...props} />;
-}
 
 export default FormControl;

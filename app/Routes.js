@@ -18,7 +18,7 @@ import App from './App';
 import DefaultLayout from './layout/DefaultLayout';
 import Login from './screens/Login';
 import AppointmentSchedule from './screens/AppointmentSchedule';
-import PatientInformation from './screens/PatientInformation';
+import PatientDetails from './screens/PatientDetails';
 import PatientRecords from './screens/PatientRecords';
 
 function ProtectedRoute({ component: Component, ...rest }) {
@@ -102,7 +102,7 @@ const PATIENT_ROUTES = [
   },
   {
     path: '/patients/:id',
-    component: PatientInformation
+    component: PatientDetails
   }
 ];
 

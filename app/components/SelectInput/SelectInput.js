@@ -3,34 +3,11 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import MUISelect from '@material-ui/core/Select';
 import InputLabel from '@material-ui/core/InputLabel';
-import FormControl from '@material-ui/core/FormControl';
 import FormHelperText from '@material-ui/core/FormHelperText';
 
+import FormControl from '../FormControl/FormControl';
+
 import MenuItem from '../Menu/MenuItem';
-
-Select.propTypes = {
-  id: PropTypes.string.isRequired,
-  label: PropTypes.string,
-  helperText: PropTypes.string,
-  items: PropTypes.arrayOf(
-    PropTypes.shape({
-      value: PropTypes.any,
-      label: PropTypes.string
-    })
-  ).isRequired,
-  disabled: PropTypes.bool,
-  required: PropTypes.bool,
-  renderMenuItem: PropTypes.func
-};
-
-Select.defaultProps = {
-  renderMenuItem: items =>
-    items.map(({ value, label } = {}) => (
-      <MenuItem key={value || label} value={value || label}>
-        {label || value}
-      </MenuItem>
-    ))
-};
 
 const StyledInputLabel = styled(InputLabel)`
   ${props => toggleDisplay(props.label)};
@@ -45,7 +22,7 @@ function toggleDisplay(determinator) {
   `;
 }
 
-export function Select(props) {
+export function SelectInput(props) {
   const {
     disabled,
     helperText,
@@ -69,4 +46,28 @@ export function Select(props) {
   );
 }
 
-export default Select;
+SelectInput.propTypes = {
+  id: PropTypes.string.isRequired,
+  label: PropTypes.string,
+  helperText: PropTypes.string,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      value: PropTypes.any,
+      label: PropTypes.string
+    })
+  ).isRequired,
+  disabled: PropTypes.bool,
+  required: PropTypes.bool,
+  renderMenuItem: PropTypes.func
+};
+
+SelectInput.defaultProps = {
+  renderMenuItem: items =>
+    items.map(({ value, label } = {}) => (
+      <MenuItem key={value || label} value={value || label}>
+        {label || value}
+      </MenuItem>
+    ))
+};
+
+export default SelectInput;
