@@ -1,4 +1,4 @@
-export function AppointmentScheduleSearchForm(props) {
+export function AppointmentScheduleSearchConnector(props) {
   return props.children({
     appointmentScheduleSearchUpdater: {
       // TODO: Redux action
@@ -7,4 +7,4 @@ export function AppointmentScheduleSearchForm(props) {
   });
 }
 
-export default AppointmentScheduleSearchForm;
+export default AppointmentScheduleSearchConnector;
