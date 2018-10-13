@@ -9,6 +9,14 @@ export const patientDetailsConversions = {
   }
 };
 
+export const patientSearchConversions = {
+  formValuesToRequest: values => {
+    // conversions here
+    return values;
+  }
+};
+
 export default {
-  patientDetailsConversions
+  patientDetailsConversions,
+  patientSearchConversions
 };
