@@ -7,7 +7,10 @@ import TextInput from '../components/TextInput/TextInput';
 import MainContent from '../components/MainContent/MainContent';
 import Table from '../components/Table/Table';
 
-import AppointmentScheduleSearch from './appointmentSchedule/AppointmentScheduleSearch';
+import AppointmentScheduleSearchConnector from './appointmentSchedule/AppointmentScheduleSearchConnector';
+import AppointmentScheduleSearchForm from './appointmentSchedule/AppointmentScheduleSearchForm';
+
+import { appointmentScheduleSearchConversions as conversions } from '../utils/conversions';
 
 export class AppointmentSchedule extends React.Component {
   state = {
@@ -88,7 +91,24 @@ export class AppointmentSchedule extends React.Component {
         title="Appointment Schedule"
         onActionClick={this.handleActionClick}
       >
-        <AppointmentScheduleSearch />
+        <AppointmentScheduleSearchConnector>
+          {({ appointmentScheduleSearchUpdater }) => (
+            <AppointmentScheduleSearchForm
+              initialValues={{
+                search: '',
+                fromDate: new Date(),
+                toDate: new Date()
+              }}
+              onSubmit={values =>
+                appointmentScheduleSearchUpdater.execute(
+                  conversions.formValuesToRequest(values)
+                )
+              }
+            >
+              {({ form }) => form}
+            </AppointmentScheduleSearchForm>
+          )}
+        </AppointmentScheduleSearchConnector>
         <Table rowOptions={rowOptions} columns={columns} rows={tableData} />
         <Dialog
           open={open}
