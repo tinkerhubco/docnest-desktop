@@ -3,9 +3,11 @@ import React from 'react';
 import MainContent from '../components/MainContent/MainContent';
 import Table from '../components/Table/Table';
 
-import PatientRecordsSearch from './patientRecords/PatientRecordsSearch';
+import PatientSearchConnector from './patientRecords/PatientSearchConnector';
+import PatientSearchForm from './patientRecords/PatientSearchForm';
 
 import { Redirect } from '../Routes';
+import { patientSearchConversions as conversions } from '../utils/conversions';
 
 export class PatientRecords extends React.Component {
   state = {
@@ -47,7 +49,7 @@ export class PatientRecords extends React.Component {
     redirectTo: undefined
   };
 
-  handleActionClick = () => {
+  handlePatientRecordClick = () => {
     this.setState({ redirectTo: `patients/1` });
   };
 
@@ -57,14 +59,35 @@ export class PatientRecords extends React.Component {
       tableData
     } = this.state;
     return (
-      <MainContent
-        title="Patient Records"
-        onActionClick={this.handleActionClick}
-      >
-        <Redirect to={this.state.redirectTo} />
-        <PatientRecordsSearch />
-        <Table rowOptions={rowOptions} columns={columns} rows={tableData} />
-      </MainContent>
+      <PatientSearchConnector>
+        {({ patientSearchUpdater }) => (
+          <PatientSearchForm
+            initialValues={{
+              search: ''
+            }}
+            onSubmit={values =>
+              patientSearchUpdater.execute(
+                conversions.formValuesToRequest(values)
+              )
+            }
+          >
+            {({ form }) => (
+              <MainContent
+                title="Patient Records"
+                onActionClick={this.handlePatientRecordClick}
+              >
+                <Redirect to={this.state.redirectTo} />
+                {form}
+                <Table
+                  rowOptions={rowOptions}
+                  columns={columns}
+                  rows={tableData}
+                />
+              </MainContent>
+            )}
+          </PatientSearchForm>
+        )}
+      </PatientSearchConnector>
     );
   }
 }
