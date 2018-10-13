@@ -1,5 +1,12 @@
 // TODO: Currying
 
+export const appointmentScheduleCreateConversions = {
+  formValuesToRequest: values => {
+    // conversions here
+    return values;
+  }
+};
+
 export const appointmentScheduleSearchConversions = {
   formValuesToRequest: values => {
     // conversions here
