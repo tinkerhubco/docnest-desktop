@@ -11,6 +11,6 @@ export const appointment = new schema.Entity('appointments', {
   patient: user
 });
 
-export const currentUser = new schema.Entity('currentUser', {
+user.define({
   appointments: [appointment]
 });
