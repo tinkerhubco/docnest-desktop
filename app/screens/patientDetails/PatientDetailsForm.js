@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Formik } from 'formik';
@@ -25,74 +25,71 @@ const TABS = {
   MEDICAL_HISTORY: 1
 };
 
-export class PatientDetailsForm extends React.Component {
-  state = {
-    tabIndex: 0
-  };
+function PatientDetailsForm(props) {
+  const { initialValues, onSubmit } = props;
+  const [tabIndex, setTabIndex] = useState(0);
 
-  handleActionClick = () => {
-    console.log('save');
-  };
+  setTimeout(() => {
+    setTabIndex(1);
+    console.log(tabIndex);
+  }, 3000);
+  setTimeout(() => {
+    setTimeout(() => {
+      console.log(tabIndex);
+    }, 4000);
+  });
 
-  handleTabsChange = (event, tabIndex) => {
-    this.setState({
-      tabIndex
-    });
-  };
+  return (
+    <Formik
+      initialValues={initialValues}
+      // TODO: Validation - schema or use validate?
+      onSubmit={values => {
+        // TODO: encapsulate attaching state handling
+        // upon submission within the form. The details/create
+        // component just `addHandlers` to it's mutation.
+        onSubmit(values);
+      }}
+      render={formikProps => {
+        const form = (
+          <React.Fragment>
+            <StyledTabsContainer>
+              <Tabs
+                fullWidth
+                value={tabIndex}
+                indicatorColor="primary"
+                textColor="primary"
+                onChange={(event, nextTabIndex) => {
+                  console.log(nextTabIndex);
+                  setTabIndex(nextTabIndex);
+                }}
+              >
+                <Tab icon={<AccountBoxIcon />} label="Demographics" />
+                <Tab icon={<LocalHospitalIcon />} label="Medical History" />
+              </Tabs>
+            </StyledTabsContainer>
+            <Form>
+              {tabIndex === TABS.DEMOGRAPHICS && (
+                <StyledFormSectionContainer>
+                  <PatientDemographicsSubform formik={formikProps} />
+                </StyledFormSectionContainer>
+              )}
 
-  render() {
-    const { initialValues, onSubmit } = this.props;
-    const { tabIndex } = this.state;
+              {tabIndex === TABS.MEDICAL_HISTORY && (
+                <StyledFormSectionContainer>
+                  <PatientMedicalHistorySubform formik={formikProps} />
+                </StyledFormSectionContainer>
+              )}
+            </Form>
+          </React.Fragment>
+        );
 
-    return (
-      <Formik
-        initialValues={initialValues}
-        // TODO: Validation - schema or use validate?
-        onSubmit={values => {
-          // TODO: encapsulate attaching state handling
-          // upon submission within the form. The details/create
-          // component just `addHandlers` to it's mutation.
-          onSubmit(values);
-        }}
-        render={formikProps => {
-          const form = (
-            <React.Fragment>
-              <StyledTabsContainer>
-                <Tabs
-                  fullWidth
-                  value={tabIndex}
-                  indicatorColor="primary"
-                  textColor="primary"
-                  onChange={this.handleTabsChange}
-                >
-                  <Tab icon={<AccountBoxIcon />} label="Demographics" />
-                  <Tab icon={<LocalHospitalIcon />} label="Medical History" />
-                </Tabs>
-              </StyledTabsContainer>
-              <Form>
-                {tabIndex === TABS.DEMOGRAPHICS && (
-                  <StyledFormSectionContainer>
-                    <PatientDemographicsSubform formik={formikProps} />
-                  </StyledFormSectionContainer>
-                )}
-
-                {tabIndex === TABS.MEDICAL_HISTORY && (
-                  <StyledFormSectionContainer>
-                    <PatientMedicalHistorySubform formik={formikProps} />
-                  </StyledFormSectionContainer>
-                )}
-              </Form>
-            </React.Fragment>
-          );
-
-          return this.props.children({
-            form,
-            formik: formikProps
-          });
-        }}
-      />
-    );
-  }
+        return props.children({
+          form,
+          formik: formikProps
+        });
+      }}
+    />
+  );
 }
 
 PatientDetailsForm.propTypes = {
