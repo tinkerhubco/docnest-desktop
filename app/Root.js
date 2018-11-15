@@ -2,8 +2,10 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import { Router } from 'react-router-dom';
+import { ApolloProvider } from 'react-apollo';
 
 import Routes from './Routes';
+import client from './utils/graphql-client';
 
 type Props = {
   store: {},
@@ -15,11 +17,13 @@ export default class Root extends Component<Props> {
     const { history, store } = this.props;
 
     return (
-      <Provider store={store}>
-        <Router history={history}>
-          <Routes />
-        </Router>
-      </Provider>
+      <ApolloProvider client={client}>
+        <Provider store={store}>
+          <Router history={history}>
+            <Routes />
+          </Router>
+        </Provider>
+      </ApolloProvider>
     );
   }
 }
