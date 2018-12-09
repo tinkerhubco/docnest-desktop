@@ -13,11 +13,11 @@ export function AppointmentScheduleCreateForm(props) {
   return (
     <Formik
       initialValues={initialValues}
-      onSubmit={values => {
+      onSubmit={(values, formikBag) => {
         // TODO: encapsulate attaching state handling
         // upon submission within the form. The details/create
         // component just `addHandlers` to it's mutation.
-        onSubmit(values);
+        onSubmit(values, formikBag);
       }}
       render={formikProps => {
         const { handleSubmit, setFieldValue } = formikProps;

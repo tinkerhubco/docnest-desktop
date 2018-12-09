@@ -1,4 +1,6 @@
 import React from 'react';
+import { Query } from 'react-apollo';
+import gql from 'graphql-tag';
 
 import MainContent from '../components/MainContent/MainContent';
 import Table from '../components/Table/Table';
@@ -15,58 +17,7 @@ import {
 
 export class AppointmentSchedule extends React.Component {
   state = {
-    showCreateForm: false,
-    tableOptions: {
-      rowOptions: {
-        hover: true,
-        onClick: row => {
-          console.log('row', row);
-        }
-      },
-      columns: [
-        {
-          key: 'appointmentName',
-          label: 'Appointment Schedule',
-          value: 'name'
-        },
-        {
-          key: 'appointmentDate',
-          label: 'Date',
-          value: 'date',
-          isDate: true,
-          dateFormat: 'MM/dd/yyyy'
-        },
-        {
-          key: 'appointmentTime',
-          label: 'Time',
-          value: 'time',
-          isDate: true,
-          dateFormat: 'HH:ss aa'
-        }
-      ]
-    },
-    tableData: [
-      {
-        id: 1,
-        name: 'Test',
-        date: '2018-08-25T02:44:44Z',
-        time: '2018-08-25T02:44:44Z'
-      }
-    ]
-  };
-
-  handleAppointmentAdd = () => {
-    const tableData = [...this.state.tableData];
-    const dateNow = new Date();
-
-    tableData.push({
-      id: dateNow.getMilliseconds(),
-      name: 'Test',
-      date: dateNow,
-      time: dateNow
-    });
-
-    this.setState({ tableData, showCreateForm: false });
+    showCreateForm: false
   };
 
   handleClose = () => {
@@ -78,11 +29,7 @@ export class AppointmentSchedule extends React.Component {
   };
 
   render() {
-    const {
-      tableOptions: { rowOptions, columns },
-      tableData,
-      showCreateForm
-    } = this.state;
+    const { showCreateForm } = this.state;
 
     return (
       <MainContent
@@ -107,7 +54,51 @@ export class AppointmentSchedule extends React.Component {
             </AppointmentScheduleSearchForm>
           )}
         </AppointmentScheduleSearchConnector>
-        <Table rowOptions={rowOptions} columns={columns} rows={tableData} />
+        <Query
+          query={gql`
+            {
+              appointments @client {
+                id
+                date
+                name
+              }
+            }
+          `}
+        >
+          {({ data }) => (
+            <Table
+              rowOptions={{
+                hover: true,
+                onClick: row => {
+                  console.log('row', row);
+                }
+              }}
+              columns={[
+                {
+                  key: 'appointmentName',
+                  label: 'Appointment Schedule',
+                  value: 'name'
+                },
+                {
+                  key: 'appointmentDate',
+                  label: 'Date',
+                  value: 'date',
+                  isDate: true,
+                  dateFormat: 'MM/dd/yyyy'
+                },
+                {
+                  key: 'appointmentTime',
+                  label: 'Time',
+                  value: 'date',
+                  isDate: true,
+                  dateFormat: 'HH:mm aa'
+                }
+              ]}
+              rows={data.appointments}
+            />
+          )}
+        </Query>
+
         <AppointmentScheduleCreateConnector>
           {({ appointmentScheduleCreator }) => (
             <AppointmentScheduleCreateForm
@@ -117,11 +108,15 @@ export class AppointmentSchedule extends React.Component {
                 schedule: new Date()
               }}
               onClose={this.handleClose}
-              onSubmit={values =>
+              onSubmit={(values, formikBag) => {
                 appointmentScheduleCreator.execute(
                   createConversions.formValuesToRequest(values)
-                )
-              }
+                );
+
+                formikBag.resetForm();
+
+                this.handleClose();
+              }}
             >
               {({ form }) => form}
             </AppointmentScheduleCreateForm>

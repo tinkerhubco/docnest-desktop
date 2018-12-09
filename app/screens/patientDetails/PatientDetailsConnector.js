@@ -25,7 +25,10 @@ export function PatientDetailsConnector(props) {
     },
     patientUpdater: {
       // TODO: Redux action
-      execute: draft => console.log(draft)
+      execute: draft => {
+        console.log('update');
+        console.log(draft);
+      }
     }
   });
 }

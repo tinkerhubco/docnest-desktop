@@ -3,7 +3,11 @@
 export const appointmentScheduleCreateConversions = {
   formValuesToRequest: values => {
     // conversions here
-    return values;
+    return {
+      ...values,
+      date: values.schedule.toJSON(),
+      name: values.patient
+    };
   }
 };
 
@@ -21,7 +25,11 @@ export const patientDetailsConversions = {
   },
   formValuesToRequest: values => {
     // conversions here
-    return values;
+    return {
+      ...values,
+      birthdate: values.birthdate.toJSON(),
+      diagnosticDate: values.diagnosticDate.toJSON()
+    };
   }
 };
 

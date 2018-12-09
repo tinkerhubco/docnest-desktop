@@ -30,10 +30,6 @@ export class PatientDetailsForm extends React.Component {
     tabIndex: 0
   };
 
-  handleActionClick = () => {
-    console.log('save');
-  };
-
   handleTabsChange = (event, tabIndex) => {
     this.setState({
       tabIndex
@@ -48,11 +44,11 @@ export class PatientDetailsForm extends React.Component {
       <Formik
         initialValues={initialValues}
         // TODO: Validation - schema or use validate?
-        onSubmit={values => {
+        onSubmit={(values, formikBag) => {
           // TODO: encapsulate attaching state handling
           // upon submission within the form. The details/create
           // component just `addHandlers` to it's mutation.
-          onSubmit(values);
+          onSubmit(values, formikBag);
         }}
         render={formikProps => {
           const form = (

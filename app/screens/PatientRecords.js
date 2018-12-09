@@ -1,4 +1,6 @@
 import React from 'react';
+import { Query } from 'react-apollo';
+import gql from 'graphql-tag';
 
 import MainContent from '../components/MainContent/MainContent';
 import Table from '../components/Table/Table';
@@ -11,53 +13,16 @@ import { patientSearchConversions as conversions } from '../utils/conversions';
 
 export class PatientRecords extends React.Component {
   state = {
-    tableOptions: {
-      rowOptions: {
-        hover: true,
-        onClick: row => {
-          console.log('row', row);
-        }
-      },
-      columns: [
-        {
-          key: 'firstName',
-          label: 'First name',
-          value: 'firstName'
-        },
-        {
-          key: 'lastName',
-          label: 'Last name',
-          value: 'lastName'
-        },
-        {
-          key: 'created',
-          label: 'Created',
-          value: 'date',
-          isDate: true,
-          dateFormat: 'MM/dd/yyyy'
-        }
-      ]
-    },
-    tableData: [
-      {
-        id: 1,
-        firstName: 'Juan',
-        lastName: 'Dela Cruz',
-        date: '2018-08-25T02:44:44Z'
-      }
-    ],
     redirectTo: undefined
   };
 
   handleActionClick = () => {
-    this.setState({ redirectTo: `patients/1` });
+    this.setState({ redirectTo: `patients/add` });
   };
 
   render() {
-    const {
-      tableOptions: { rowOptions, columns },
-      tableData
-    } = this.state;
+    const { redirectTo } = this.state;
+
     return (
       <PatientSearchConnector>
         {({ patientSearchUpdater }) => (
@@ -76,13 +41,51 @@ export class PatientRecords extends React.Component {
                 title="Patient Records"
                 onActionClick={this.handleActionClick}
               >
-                <Redirect to={this.state.redirectTo} />
+                <Redirect to={redirectTo} />
                 {form}
-                <Table
-                  rowOptions={rowOptions}
-                  columns={columns}
-                  rows={tableData}
-                />
+                <Query
+                  query={gql`
+                    {
+                      patients @client {
+                        id
+                        firstName
+                        lastName
+                        created
+                      }
+                    }
+                  `}
+                >
+                  {({ data }) => (
+                    <Table
+                      rowOptions={{
+                        hover: true,
+                        onClick: row => {
+                          console.log('row', row);
+                        }
+                      }}
+                      columns={[
+                        {
+                          key: 'firstName',
+                          label: 'First name',
+                          value: 'firstName'
+                        },
+                        {
+                          key: 'lastName',
+                          label: 'Last name',
+                          value: 'lastName'
+                        },
+                        {
+                          key: 'created',
+                          label: 'Created',
+                          value: 'created',
+                          isDate: true,
+                          dateFormat: 'MM/dd/yyyy'
+                        }
+                      ]}
+                      rows={data.patients}
+                    />
+                  )}
+                </Query>
               </MainContent>
             )}
           </PatientSearchForm>
