@@ -16,8 +16,10 @@ import ScheduleIcon from '@material-ui/icons/Schedule';
 
 import App from './App';
 import DefaultLayout from './layout/DefaultLayout';
-import Login from './screens/Login';
+
 import AppointmentSchedule from './screens/AppointmentSchedule';
+import Dashboard from './screens/Dashboard';
+import Login from './screens/Login';
 import PatientDetails from './screens/PatientDetails';
 import PatientRecords from './screens/PatientRecords';
 
@@ -53,7 +55,7 @@ export const ROUTES = [
     path: '/',
     exact: true,
     title: 'Dashboard',
-    component: () => <div>Dashboard</div>,
+    component: Dashboard,
     icon: <DashboardIcon />
   },
   {
